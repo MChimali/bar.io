@@ -29,7 +29,7 @@ const estacionTerminoFutureJSON: RestaurantInfo = {
   locationUrl:
     "https://www.google.com/maps/place/Estaci%C3%B3n+T%C3%A9rmino+Restaurante/@36.7166232,-4.2816961,15z/data=!4m5!3m4!1s0x0:0xdfb3fd3416c42c60!8m2!3d36.7166232!4d-4.2816961",
   description: "",
-}
+};
 
 const palubaFutureJSON: RestaurantInfo = {
   name: "Paluba II",
@@ -42,9 +42,20 @@ const palubaFutureJSON: RestaurantInfo = {
   description: "Cervecería & Urban Food",
 };
 
+const pizzeriaManolinJSON: RestaurantInfo = {
+  name: "Pizzería Manolín",
+  urlName: "pizzeriaManolin",
+  phone: "856 099 277",
+  address: "C. Virgen de los Remedios, 7, 11693 Alcalá del Valle, Cádiz",
+  locationUrl:
+    "https://www.google.com/maps/place/Pizzeria+Manolin/@36.9028876,-5.1709014,15z/data=!4m12!1m6!3m5!1s0x0:0x225efb7abc22f620!2sPizzeria+Manolin!8m2!3d36.9028876!4d-5.1709014!3m4!1s0x0:0x225efb7abc22f620!8m2!3d36.9028876!4d-5.1709014",
+  description: "",
+};
+
 export const restaurantListMockData: RestaurantInfo[] = [
   papulinosFutureJSON,
   hermanosAlbaFutureJSON,
   estacionTerminoFutureJSON,
   palubaFutureJSON,
+  pizzeriaManolinJSON,
 ];
