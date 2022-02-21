@@ -8,12 +8,12 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
 import PlaceIcon from "@mui/icons-material/Place";
+import EmailIcon from "@mui/icons-material/Email";
 import Button from "@mui/material/Button";
 import * as classes from "./restaurant-list.styles";
 import { ThemeProvider } from "@mui/material/styles";
 import { chooseTheme } from "core/theme";
 import { useTheme } from "@mui/material/styles";
-import { clearScreenDown } from "readline";
 
 interface Props {
   restaurantList: RestaurantInfo[];
@@ -34,15 +34,16 @@ const RestaurantList: React.FC<Props> = (props) => {
     } = restaurant;
     return (
       <ThemeProvider theme={chooseTheme(themeName)}>
-        <div className={classes.Container(theme)}>
-          
+        <div className={classes.Container}>
           <Card key={name} className={classes.cardContainer(theme)}>
             <CardContent className={classes.cardContent}>
               <div className={classes.rowIndent}>
                 <Typography variant="subtitle1" component="h2">
                   {phone}
                 </Typography>
-                <PhoneEnabledIcon sx={{ color: "secondary.main" }} />
+                <a href={`tel: ${phone}`}>
+                  <PhoneEnabledIcon sx={{ color: "secondary.main" }} />
+                </a>
               </div>
               <div className={classes.rowIndent}>
                 <Typography variant="subtitle2" component="h2">
@@ -56,7 +57,11 @@ const RestaurantList: React.FC<Props> = (props) => {
               </div>
               <Link href={routes.restaurant(urlName)}>
                 <a className={classes.anchorDefault}>
-                  <Typography variant="h3" component="h1" className={classes.nameRestaurant}>
+                  <Typography
+                    variant="h3"
+                    component="h1"
+                    className={classes.nameRestaurant(theme)}
+                  >
                     {name}
                   </Typography>
                 </a>
@@ -91,7 +96,47 @@ const RestaurantList: React.FC<Props> = (props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>{restaurantElements}</main>
+      <main>
+        <div className={classes.creditsContainer}>
+          <div className={classes.credits(theme)}>
+            <Link href="#">
+              <a target="_blank" className={classes.anchor}>
+                <Typography
+                  variant="caption"
+                  component="h5"
+                  className={classes.aboutus}
+                >
+                  quienes somos
+                </Typography>
+              </a>
+            </Link>
+            <Typography
+              variant="caption"
+              component="h5"
+              className={classes.gastrocarta}
+            >
+              gastrocarta.net
+            </Typography>
+          </div>
+          <div className={classes.info(theme)}>
+            <a href="mailto:info@gastrobar.net" target="_blank">
+              <EmailIcon className={classes.emailIcon(theme)} />
+            </a>
+            <Typography variant="body2" component="h2">
+              Si eres el propiertario de un establecimiento puedes publicar tu
+              carta de forma gratuita, ponte en contacto con nosotros en{" "}
+              <a
+                href="mailto:info@gastrobar.net"
+                target="_blank"
+                className={classes.emailSend}
+              >
+                info@gastrobar.net
+              </a>
+            </Typography>
+          </div>
+        </div>
+        {restaurantElements}
+      </main>
     </div>
   );
 };

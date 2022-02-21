@@ -25,11 +25,11 @@ export const rowIndent = css`
   margin-bottom: 0.5rem;
 `;
 
-export const nameRestaurant = css`
-  margin-top: 2rem;
+export const nameRestaurant = (theme: Theme) => css`
+  margin-top: ${theme.spacing(6)};;
 `;
 
-export const Container = (theme: Theme) => css`
+export const Container = css`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,21 +60,87 @@ export const anchorDefault = css`
   text-decoration: none;
 `;
 
-export const subHeading = css`
-  color: white;
-  background-color: black;
-  /* width is not same as card because not border-box apply globally */
-  max-width: 345px;
+export const creditsContainer = css`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const credits = (theme: Theme) => css`
   display: flex;
   justify-content: space-between;
-  padding: 6px 12px;
-  align-items: baseline;
+  align-items: center;
+  padding: 0 ${theme.spacing(1)};
+  margin-bottom: ${theme.spacing(1)};
+  text-decoration: none;
+  width: 100%;
+  @media (min-width: ${defaultTheme.breakpoints.values.sm}px) {
+    max-width: 50%;
+  }
+  @media (min-width: ${defaultTheme.breakpoints.values.md}px) {
+    width: 35%;
+  }
+  @media (min-width: ${defaultTheme.breakpoints.values.lg}px) {
+    width: 25%;
+  }
 `;
 
-export const appName = css`
-  font-weight: 600;
+export const info = (theme: Theme) => css`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: ${theme.spacing(1)};
+  margin: ${theme.spacing(12)};
+  width: 100%;
+  @media (min-width: ${defaultTheme.breakpoints.values.sm}px) {
+    max-width: 50%;
+  }
+  @media (min-width: ${defaultTheme.breakpoints.values.md}px) {
+    width: 35%;
+  }
+  @media (min-width: ${defaultTheme.breakpoints.values.lg}px) {
+    width: 25%;
+  }
 `;
 
-export const restaurantHeadingColor = (theme: string) => css`
-  color: ${varsRestaurantType[theme] ? varsRestaurantType[theme] : "#00000"};
+export const emailIcon = (theme: Theme) => css`
+  color: #00a825;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+`;
+
+export const emailSend = css`
+  text-decoration: none;
+  color: #00a825;
+  font-weight: bold;
+`;
+
+export const aboutus = css`
+  color: #00a825;
+  font-weight: bold;
+`;
+
+export const anchor = css`
+  text-decoration: none;
+`;
+
+export const gastrocarta = css`
+  font-weight: bold;
+`;
+
+export const main = css`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @media (min-width: ${defaultTheme.breakpoints.values.sm}px) {
+    max-width: 50%;
+  }
+  @media (min-width: ${defaultTheme.breakpoints.values.md}px) {
+    width: 35%;
+  }
+  @media (min-width: ${defaultTheme.breakpoints.values.lg}px) {
+    width: 25%;
+  }
 `;
