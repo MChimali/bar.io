@@ -33,9 +33,9 @@ const RestaurantList: React.FC<Props> = (props) => {
       theme: themeName,
     } = restaurant;
     return (
-      <ThemeProvider theme={chooseTheme(themeName)}>
+      <ThemeProvider theme={chooseTheme(themeName)} key={name}>
         <div className={classes.Container}>
-          <Card key={name} className={classes.cardContainer(theme)}>
+          <Card className={classes.cardContainer(theme)}>
             <CardContent className={classes.cardContent}>
               <div className={classes.rowIndent}>
                 <Typography variant="subtitle1" component="h2">
