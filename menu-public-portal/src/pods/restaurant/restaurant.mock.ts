@@ -1309,10 +1309,121 @@ const pizzeriaManolinFutureJSON: RestaurantInfo = {
   ],
 };
 
+const cerveceriaElSitioFutureJSON: RestaurantInfo = {
+  name: "Cervecería El Sitio",
+  urlName: "cerveceriaElSitio",
+  phone: "956 12 66 10",
+  address: "C. Virgen de los Remedios, 3, 11693 Alcalá del Valle, Cádiz",
+  locationUrl:
+    "https://www.google.com/maps/place/Cervercer%C3%ADa+El+Sitio/@36.9029977,-5.170835,15z/data=!3m1!5s0xd0d4916f2046fc1:0x1fb401da96efca51!4m12!1m6!3m5!1s0x0:0xaa583b7ce7103d67!2sCervercer%C3%ADa+El+Sitio!8m2!3d36.9029977!4d-5.170835!3m4!1s0xd0d4916f02ec7b7:0xaa583b7ce7103d67!8m2!3d36.9029977!4d-5.170835",
+  theme: "default",
+  official: true,
+  menuDate: "Actualizada el 21 de Febrero de 2022",
+  description: "",
+  menu: [
+    {
+      name: "Tapas y Raciones",
+      items: [
+        {
+          name: "Ensaladilla Rusa",
+          priceByRation: {
+            rationsTypes: [
+              { price: 1, unit: "Tapa" },
+              { price: 4.5, unit: "Ración" },
+            ],
+            rationName: "",
+          },
+        },
+        {
+          name: "Jamón Serrano",
+          priceByRation: {
+            rationsTypes: [
+              { price: 1, unit: "Tapa" },
+              { price: 7, unit: "Ración" },
+            ],
+            rationName: "",
+          },
+        },
+        {
+          name: "Chorizo Ibérico",
+          priceByRation: {
+            rationsTypes: [
+              { price: 1.2, unit: "Tapa" },
+              { price: 8, unit: "Ración" },
+            ],
+            rationName: "",
+          },
+        },
+        {
+          name: "Salchichón Ibérico",
+          priceByRation: {
+            rationsTypes: [
+              { price: 1, unit: "Tapa" },
+              { price: 7, unit: "Ración" },
+            ],
+            rationName: "",
+          },
+        },
+        {
+          name: "Morzilla Ibérico",
+          priceByRation: {
+            rationsTypes: [
+              { price: 1, unit: "Tapa" },
+              { price: 7, unit: "Ración" },
+            ],
+            rationName: "",
+          },
+        },
+        {
+          name: "Tortilla de Patatas",
+          priceByRation: {
+            rationsTypes: [
+              { price: 1, unit: "Tapa" },
+              { price: 7, unit: "Ración" },
+            ],
+            rationName: "",
+          },
+        },
+        {
+          name: "Patatas Ali-Oli",
+          priceByRation: {
+            rationsTypes: [
+              { price: 1, unit: "Tapa" },
+              { price: 4.5, unit: "Ración" },
+            ],
+            rationName: "",
+          },
+        },
+        {
+          name: "Picadillo de Pulpo",
+          priceByRation: {
+            rationsTypes: [
+              { price: 1.2, unit: "Tapa" },
+              { price: 6, unit: "Ración" },
+            ],
+            rationName: "",
+          },
+        },
+        {
+          name: "Serranito",
+          priceByRation: {
+            rationsTypes: [
+              { price: 1.2, unit: "Tapa" },
+              { price: 12, unit: "Ración" },
+            ],
+            rationName: "",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 export const restaurantMockData: RestaurantInfo[] = [
   papulinosFutureJSON,
   hermanosAlbaFutureJSON,
   estacionTerminoFutureJSON,
   palubaFutureJSON,
   pizzeriaManolinFutureJSON,
+  cerveceriaElSitioFutureJSON,
 ];
