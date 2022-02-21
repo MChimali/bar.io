@@ -1,5 +1,5 @@
 import { execPath } from "process";
-import * as restaurantApi from "./api/api.model";
+import * as restaurantApi from "./api/restaurant.api.model";
 import {
   mapDatefromApiToModel,
   mapFromRestaurantApiToRestaurantVm,

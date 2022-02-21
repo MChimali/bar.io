@@ -1,4 +1,4 @@
-import * as restaurantApi from "./api/api.model";
+import * as restaurantApi from "./api/restaurant.api.model";
 import * as restaurantVm from "./restaurant.vm";
 import { mapToCollection } from "common/mappers";
 import { emptyRestaurantInfo } from "./restaurant.vm";

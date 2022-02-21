@@ -1,4 +1,4 @@
-import { RestaurantApi } from "./restaurant.api.model";
+import { RestaurantApi } from "./restaurant-list.api.model";
 
 export const getRestaurantByName = async (
   restaurantName: string
