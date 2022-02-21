@@ -51,6 +51,15 @@ const pizzeriaManolinJSON: RestaurantInfo = {
     "https://www.google.com/maps/place/Pizzeria+Manolin/@36.9028876,-5.1709014,15z/data=!4m12!1m6!3m5!1s0x0:0x225efb7abc22f620!2sPizzeria+Manolin!8m2!3d36.9028876!4d-5.1709014!3m4!1s0x0:0x225efb7abc22f620!8m2!3d36.9028876!4d-5.1709014",
   description: "",
 };
+const cerveceriaElSitioJSON: RestaurantInfo = {
+  name: "Cervecería El Sitio",
+  urlName: "cerveceriaElSitio",
+  phone: "956 12 66 10",
+  address: "C. Virgen de los Remedios, 3, 11693 Alcalá del Valle, Cádiz",
+  locationUrl:
+    "https://www.google.com/maps/place/Cervercer%C3%ADa+El+Sitio/@36.9029977,-5.170835,15z/data=!3m1!5s0xd0d4916f2046fc1:0x1fb401da96efca51!4m12!1m6!3m5!1s0x0:0xaa583b7ce7103d67!2sCervercer%C3%ADa+El+Sitio!8m2!3d36.9029977!4d-5.170835!3m4!1s0xd0d4916f02ec7b7:0xaa583b7ce7103d67!8m2!3d36.9029977!4d-5.170835",
+  description: "",
+};
 
 export const restaurantListMockData: RestaurantInfo[] = [
   papulinosFutureJSON,
@@ -58,4 +67,5 @@ export const restaurantListMockData: RestaurantInfo[] = [
   estacionTerminoFutureJSON,
   palubaFutureJSON,
   pizzeriaManolinJSON,
+  cerveceriaElSitioJSON,
 ];
