@@ -1,49 +1,58 @@
 import { css } from "@emotion/css";
+import { defaultTheme, varsRestaurantType } from "core/theme";
 import { Theme } from "@mui/material/styles";
 
-export const restaurantListWrapper = css`
+export const buttonRestaurantList = (theme: Theme) => css`
+  font-weight: 600;
+  font-size: 1rem;
+  width: ${theme.spacing(30)};
+  margin-bottom: ${theme.spacing(2)};
+  color: ${defaultTheme.palette.text.secondary};
+`;
+
+export const cardContent = css`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center;
+  width: 90%;
 `;
 
-export const infoRow = (theme: Theme) => css`
+export const rowIndent = css`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: ${theme.spacing(1)};
-`;
-
-export const numberPhone = (theme: Theme) => css`
-  font-size: ${theme.spacing(2)};
-`;
-
-export const address = (theme: Theme) => css`
-  font-size: ${theme.spacing(1.75)};
-`;
-
-export const buttonRestaurantList = css`
-  font-weight: 600;
-  font-size: ${18 / 16}rem;
   width: 100%;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
 `;
 
-export const CardContainer = (theme: Theme) => css`
-  padding: ${theme.spacing(3)};
-  text-align: center;
-  margin-bottom: ${theme.spacing(15)};
+export const nameRestaurant = css`
+  margin-top: 2rem;
 `;
 
-export const restaurantName = (theme: Theme) => css`
-  margin-bottom: ${theme.spacing(3)};
-  margin-top: ${theme.spacing(5)};
-  border-bottom: 3px solid #35a7cb;
-  padding-bottom: 4px;
+export const Container = (theme: Theme) => css`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
-export const cardActionContainer = (theme: Theme) => css`
-  margin-top: ${theme.spacing(10)};
+export const cardContainer = (theme: Theme) => css`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: ${theme.spacing(15)};
+  margin-bottom: ${theme.spacing(8)};
+  width: 100%;
+  @media (min-width: ${defaultTheme.breakpoints.values.sm}px) {
+    max-width: 50%;
+  }
+  @media (min-width: ${defaultTheme.breakpoints.values.md}px) {
+    width: 35%;
+  }
+  @media (min-width: ${defaultTheme.breakpoints.values.lg}px) {
+    width: 25%;
+  }
 `;
 
 export const anchorDefault = css`
@@ -64,4 +73,8 @@ export const subHeading = css`
 
 export const appName = css`
   font-weight: 600;
+`;
+
+export const restaurantHeadingColor = (theme: string) => css`
+  color: ${varsRestaurantType[theme] ? varsRestaurantType[theme] : "#00000"};
 `;

@@ -716,7 +716,7 @@ const palubaFutureJSON: RestaurantInfo = {
     "Rotonda del Motorista, La Granja, Avenida Juan Carlos I, 11405 Jerez de la Frontera, Cádiz",
   locationUrl:
     "https://www.google.com/maps/place/Cervecer%C3%ADa+Paluba/@36.6934059,-6.1025559,15z/data=!4m5!3m4!1s0x0:0x88ff8889eecfff0e!8m2!3d36.6934065!4d-6.1025711",
-  theme: "default",
+  theme: "brewery",
   official: true,
   menuDate: "Actualizada el 15 de Febrero de 2022",
   description: "Cervecería & Urban Food",
