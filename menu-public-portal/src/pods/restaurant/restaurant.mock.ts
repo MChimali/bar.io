@@ -1605,6 +1605,85 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
         },
       ],
     },
+    {
+      name: "Camperos",
+      items: [
+        {
+          name: "Normal",
+          description: "Queso, Jamón, Tomate, Lechuga y Mahonesa",
+          price: 3.2,
+        },
+        {
+          name: "Atún y Queso",
+          description: "Tomate, Lechuga y Mahonesa",
+          price: 3.5,
+        },
+        {
+          name: "Bacon",
+          description: "Tomate, Lechuga, Queso y Mahonesa",
+          price: 3.2,
+        },
+        {
+          name: "Serrano",
+          description: "Jamón Serrano, Tomate, Lechuga, Queso y Mahonesa",
+          price: 3.5,
+        },
+        {
+          name: "Pollo y Queso",
+          description: "Tomate, Lechuga y Mahonesa",
+          price: 3.5,
+        },
+        {
+          name: "Vegetal",
+          description:
+            "Queso, Lechuga, Tomate, Cebolla, Pimiento, Maiz, Zanahoria y Mahonesa",
+          price: 3,
+        },
+        {
+          name: "Capricho",
+          description: "Pollo, Huevo, Lechuga, Tomate, Queso, Bacon y Mahonesa",
+          price: 3.8,
+        },
+        {
+          name: "Kebab",
+          description: "Tomate, Lechuga, Cebolla y Salsa Kebab",
+          price: 4,
+        },
+      ],
+    },
+    {
+      name: "Ensaladas",
+      items: [
+        {
+          name: "Mixta",
+          description: "Lechuga, Tomate, Cebolla, Aceitunas, Atún",
+          price: 4,
+        },
+        {
+          name: "Casa",
+          description:
+            "Lechuga, Tomate, Cebolla, Aceitunas, Maiz, Zanahoria, Atún, Remolacha",
+          price: 4.8,
+        },
+      ],
+    },
+    {
+      name: "Papatas Fritas",
+      items: [
+        {
+          name: "Normales",
+          price: 2,
+        },
+        {
+          name: "Tres salsas",
+          price: 3,
+        },
+        {
+          name: "Kebab",
+          price: 5,
+        },
+      ],
+    },
   ],
 };
 
