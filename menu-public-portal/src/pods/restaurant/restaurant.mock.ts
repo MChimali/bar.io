@@ -1757,6 +1757,152 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
         },
       ],
     },
+    {
+      name: "Carnes a la Brasa",
+      items: [
+        {
+          name: "Churrasco Pollo",
+          price: 7,
+        },
+        {
+          name: "Churrasco Cerdo",
+          price: 7,
+        },
+        {
+          name: "Presa Húngara",
+          price: 9,
+        },
+        {
+          name: "Secreto",
+          price: 12,
+        },
+        {
+          name: "Churrasco Ibérico",
+          price: 12,
+        },
+        {
+          name: "Presa Ibérica",
+          price: 14,
+        },
+        {
+          name: "Chuletón Aguja Ternera",
+          price: 15,
+        },
+        {
+          name: "Churrasco Ternera",
+          price: 14,
+        },
+      ],
+    },
+    {
+      name: "Sandwiches",
+      items: [
+        {
+          name: "Mixto",
+          description: "Mantequilla, Jamón Cocido, Queso",
+          price: 2,
+        },
+        {
+          name: "Vegetal",
+          description: "Mantequilla, Jamón, Queso, Lechuga, Tomate, Mahonesa",
+          price: 2.7,
+        },
+        {
+          name: "Bacon",
+          description: "Mantequilla, Queso, Bacon, Lechuga, Tomate, Mahonesa",
+          price: 2.7,
+        },
+        {
+          name: "Pollo",
+          description: "Mantequilla, Queso, Pollo, Lechuga, Tomate, Mahonesa",
+          price: 2.8,
+        },
+        {
+          name: "Pollo y Bacon",
+          description:
+            "Mantequilla, Queso, Pollo, Bacon, Lechuga, Tomate, Mahonesa",
+          price: 3,
+        },
+        {
+          name: "Atún",
+          description: "Mantequilla, Tomate, Lechuga, Atún",
+          price: 2.8,
+        },
+      ],
+    },
+    {
+      name: "Pizzas",
+      items: [
+        {
+          name: "Margarita",
+          description: "Tomate, Queso, Orégano",
+          price: 5.5,
+        },
+        {
+          name: "Vesubio",
+          description: "Tomate, Queso, Jamón, Óregano",
+          price: 5.8,
+        },
+        {
+          name: "Napolitana",
+          description:
+            "Champiñones, Alcachofas, Jamón, Huevo, Óregano, Mozzarella",
+          price: 6,
+        },
+        {
+          name: "Choricera",
+          description:
+            "Champiñones, Alcachofas, Chorizo, Jamón, Huevo, Óregano, Mozzarella",
+          price: 6,
+        },
+        {
+          name: "Al Tonno",
+          description: "Tomate, Queso, Atún, Cebolla, Orégano",
+          price: 6,
+        },
+        {
+          name: "Caprichosa",
+          description: "Tomate, Queso, Jamón, Champiñones, Óregano",
+          price: 6,
+        },
+        {
+          name: "Amigo",
+          description: "Tomate, Queso, Jamón, Atún, Orégano",
+          price: 6,
+        },
+        {
+          name: "Bianca",
+          description:
+            "Champiñones, Tomate, Queso, Bacon, Nata, Cebolla, Óregano",
+          price: 6,
+        },
+        {
+          name: "Vegetal",
+          description:
+            "Tomate, Queso, Maiz, Tomate Natural, Cebolla, Aceituna, Pimiento, Champiñones, Óregano",
+          price: 6,
+        },
+        {
+          name: "Barbacoa",
+          description: "Pollo, Bacon, Cebollas, Salsa Barbacoa",
+          price: 6,
+        },
+        {
+          name: "4 Estaciones",
+          description:
+            "Champiñones, Alcachofa, Jamón, Huevo, Gambas, Mejillones",
+          price: 6,
+        },
+        {
+          name: "Kebab",
+          price: 6,
+        },
+        {
+          name: "4 Quesos",
+          price: 6,
+        },
+      ],
+    },
   ],
 };
 
