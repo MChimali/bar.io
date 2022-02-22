@@ -58,6 +58,7 @@ describe("restaurant.mapper", () => {
         mapFromRestaurantApiToRestaurantVm(restaurant);
       // Assert
       expect(result).toEqual({
+        id: "test-id",
         name: "test-name",
         urlName: "test-urlName",
         phone: "test-phone",

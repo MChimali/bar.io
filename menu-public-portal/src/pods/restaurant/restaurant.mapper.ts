@@ -66,6 +66,7 @@ export const mapFromRestaurantApiToRestaurantVm = (
 ): restaurantVm.RestaurantInfo => {
   if (restaurantApi !== undefined && restaurantApi !== null) {
     return {
+      id: restaurantApi._id,
       name: restaurantApi.name,
       urlName: restaurantApi.urlName,
       phone: restaurantApi.phone,

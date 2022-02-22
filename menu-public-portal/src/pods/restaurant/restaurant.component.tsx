@@ -144,7 +144,11 @@ export const RestaurantComponent: React.FC<Props> = (props) => {
           </Accordion>
         ))}
       </div>
-      {official ? <OfficialMenuFooter /> : <CommunityMenuFooter />}
+      {official ? (
+        <OfficialMenuFooter />
+      ) : (
+        <CommunityMenuFooter communitySourceUrl={communitySourceUrl} />
+      )}
       <Typography variant="caption" component="h2" className={classes.menuDate}>
         {menuDate}
       </Typography>

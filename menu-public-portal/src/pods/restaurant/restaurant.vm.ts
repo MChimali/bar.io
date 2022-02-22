@@ -23,6 +23,7 @@ export interface CategoryEntry {
 }
 
 export interface RestaurantInfo {
+  id: string;
   name: string;
   urlName: string;
   phone: string;
@@ -37,6 +38,7 @@ export interface RestaurantInfo {
 }
 
 export const emptyRestaurantInfo = (): RestaurantInfo => ({
+  id: "",
   name: "",
   urlName: "",
   phone: "",
