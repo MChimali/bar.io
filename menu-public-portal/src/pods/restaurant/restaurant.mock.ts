@@ -985,32 +985,38 @@ const palubaFutureJSON: RestaurantInfo = {
         {
           name: "Paluba Burguer",
           price: 7.8,
-          description: "",
+          description:
+            "Pan Brioche, 285 gr. de carne de Buey, Queso Cheda, Lechuga, tomate, cebolla roja a la plancha, pepinillo",
         },
         {
           name: "Black Angus XL",
           price: 7,
-          description: "",
+          description:
+            "Pan de sésamo, 200 gr. de carne de Angus, bacon, Doble de queso Chedar, Cebolla blanca pochada con BBQ, canónigos",
         },
         {
           name: "Pulled Pork",
           price: 6.5,
-          description: "",
+          description:
+            "Pan rústico, Pulled Pork, A elegir: (1) Aguacate, cebolla encurtida y pepinillo (2) Ensaladilla de col",
         },
         {
           name: "Chicharron's Burguer",
           price: 5.5,
-          description: "",
+          description:
+            "Pan rústico, Carne picada & chicharrones, A elegir: queso semicurado o queso de cabra, Lechuga, tomate y cebolla pochada",
         },
         {
           name: "Buey Burguer",
           price: 5.5,
-          description: "",
+          description:
+            "Pan de sésamo, Carne de Buey, bacon, Queso, Cebolla blanca, lechuga y tomate",
         },
         {
           name: "Burguer completa",
           price: 4.8,
-          description: "",
+          description:
+            "Pan de sésamo, Carne de vacuno, Queso, Cebolla blanca, lechuga y tomate",
         },
       ],
     },
