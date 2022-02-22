@@ -7,15 +7,13 @@ export type ThemeName =
   | "tapas"
   | "asian";
 
-// TODO: Technical Debt, type this
-// Possible type using ThemeName as string
-//  type MainColorTypes = {
-//    [K : keyof ThemeName]: string
-//  }
+interface ConstTheme {
+  secondaryColor: string;
+}
 
-// Typescript object keys
-// TODO Type every field key object (add interface)
-export const varsRestaurantType = {
+type ContsThemeRecord = Record<ThemeName, ConstTheme>;
+
+export const varsRestaurantType: ContsThemeRecord = {
   default: { secondaryColor: "#C5B100" },
   fish: { secondaryColor: "#35A7CB" },
   meat: { secondaryColor: "#EB1B1B" },
