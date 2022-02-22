@@ -12,7 +12,7 @@ export const run = async () => {
     const { file } = await prompt(inputQuestions);
     const { restaurant } = require(`./restaurant-list/${file}`);
 
-    await restaurantDbRepository.createRestaurantsCollection();
+    // await restaurantDbRepository.createRestaurantsCollection();
 
     const restaurantModel = await restaurantDbRepository.getRestaurantByUrlName(
       file

@@ -19,6 +19,28 @@ export const restaurantDbRepository = {
       throw error;
     }
   },
+  getRestaurantList: async (): Promise<model.Restaurant[]> => {
+    try {
+      return await getRestaurantContext()
+        .find(
+          {},
+          {
+            projection: {
+              name: 1,
+              urlName: 1,
+              phone: 1,
+              address: 1,
+              locationUrl: 1,
+              description: 1,
+              theme: 1,
+            },
+          }
+        )
+        .toArray();
+    } catch (error) {
+      throw error;
+    }
+  },
   saveRestaurant: async (restaurant: model.Restaurant) => {
     try {
       await getRestaurantContext().insertOne(restaurant);

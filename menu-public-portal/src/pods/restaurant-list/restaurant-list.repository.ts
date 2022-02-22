@@ -1,9 +1,6 @@
-import { restaurantListMockData } from "./restaurant-list.mock";
-import { RestaurantInfo } from "./restaurant-list.vm";
-import fs from "fs";
+import { RestaurantVm } from "./restaurant-list.vm";
+import { getRestaurantListFromModel } from "./api/restaurant-list.api";
+import { mapRestaurantListfromApiToVm } from "./restaurant-list.mapper";
 
-export const getRestaurantList = async (): Promise<RestaurantInfo[]> => {
-  const restaurantList = [...restaurantListMockData];
-
-  return await restaurantList;
-};
+export const getRestaurantList = async (): Promise<RestaurantVm[]> =>
+  mapRestaurantListfromApiToVm(await getRestaurantListFromModel());

@@ -3,6 +3,7 @@ import { prompt } from 'inquirer';
 const consoleRunnerList = [
   'dump-to-mongo',
   'dump-to-json',
+  'restaurant-list-to-json',
 ];
 
 (async () => {
