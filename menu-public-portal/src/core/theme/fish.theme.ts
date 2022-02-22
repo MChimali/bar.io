@@ -1,4 +1,5 @@
 import { createTheme } from "@mui/material/styles";
+import { varsRestaurantType } from "./model";
 
 export const fishTheme = createTheme({
   palette: {
@@ -6,7 +7,7 @@ export const fishTheme = createTheme({
       main: "#0D0043",
     },
     secondary: {
-      main: "#35A7CB",
+      main: varsRestaurantType.fish.secondaryColor,
     },
     text: {
       primary: "#232323",

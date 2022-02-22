@@ -1,23 +1,23 @@
 import { createTheme } from "@mui/material/styles";
 import { varsRestaurantType } from "./model";
 
-export const defaultTheme = createTheme({
+export const tapasTheme = createTheme({
   palette: {
     primary: {
-      main: "#000000",
+      main: "#1BA3CE",
     },
     secondary: {
-      main: varsRestaurantType.default.secondaryColor,
+      main: varsRestaurantType.tapas.secondaryColor,
     },
     text: {
-      primary: "#000000",
+      primary: "#232323",
       secondary: "#FFFFFF",
     },
   },
   typography: {
     fontFamily: "Dosis",
     h3: {
-      borderBottom: "3px solid #C5B100",
+      borderBottom: "3px solid #EB1B1B",
     },
   },
 });

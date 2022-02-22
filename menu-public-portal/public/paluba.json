@@ -1,0 +1,567 @@
+{
+  "_id": "6214c87f53c4bbafecedd5fa",
+  "name": "Paluba II",
+  "urlName": "paluba",
+  "phone": "606 629 069",
+  "address": "Rotonda del Motorista, La Granja, Avenida Juan Carlos I, 11405 Jerez de la Frontera, Cádiz",
+  "locationUrl": "https://www.google.com/maps/place/Cervecer%C3%ADa+Paluba/@36.6934059,-6.1025559,15z/data=!4m5!3m4!1s0x0:0x88ff8889eecfff0e!8m2!3d36.6934065!4d-6.1025711",
+  "menuDate": "2022-02-14T00:00:00.000Z",
+  "communitySourceUrl": "",
+  "description": "Cervecería & Urban Food",
+  "theme": "brewery",
+  "rationsDefinitions": [],
+  "menu": [
+    {
+      "categoryName": "Cervezas",
+      "items": [
+        {
+          "name": "Estrella Galicia Barril",
+          "description": "Agua de la ciudad de A Coruña, maltas de doscarreras (pilsen y tostada), maíz y lúpulos Nugget y Perle Hallertau. Levadura seleccionada Hijos de Rivera.",
+          "price": 1.2,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Estrella Galicia (33 cl)",
+          "description": "Agua de la ciudad de A Coruña, maltas de doscarreras (pilsen y tostada), maíz y lúpulos Nugget y Perle Hallertau. Levadura seleccionada Hijos de Rivera.",
+          "price": 1.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "1906 Reserva Especial",
+          "description": "Agua de la ciudad de A Coruña, maltas de dos carreras (pilsen y tostada), maíz y lúpulos Nugget y Perle Hallertau. Levadura seleccionada Hijos de Rivera.",
+          "price": 2,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Grolsch Radler",
+          "description": "Una mezcla de 40% de cerveza Grolsch y zumo de frutas. Carácter refrescante propio de una Radler; con la calidad y tradición propias de Grolsch. Con una mezcla de 40% de cerveza Grolsch y zumo de frutas, y elaborada solo con ingredientes naturales, Grolsch Radler tiene un sabor dulce y un regusto muy ligero, con el sabor refrescante que le aporta el limón.",
+          "price": 1.3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Brewdog - Punk IPA",
+          "description": "Levadura Wyeast 1056 - American Ale. Malta Extra Pale y Caramalt. Lúpulos Chinook, Ahtanum, Amarillo, Cascade, Simcoe y Nelson Sauvin.",
+          "price": 2.7,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Erdinger Urweisse (50 cl)",
+          "description": "Agua, Malta de trigo (+ 50%), malta de cebada, malta tostada, lúpulo Hallertau y levadura weizen.",
+          "price": 2.9,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Cervezas cero alcohol",
+      "items": [
+        {
+          "name": "Estrella Galicia 0,0%",
+          "description": "Agua de la ciudad de A Coruña, maltas de dos carreras (pilsen y tostada), maíz y lúpulos Nugget y Perle Hallertau. Levadura seleccionada Hijos de Rivera.",
+          "price": 1.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Estrella Galicia 0,0% Tostada",
+          "description": "Agua de la ciudad de A Coruña, blend de maltas con diferentes grados de secado/tostado, maíz, lúpulos de las variedades Nugget, Perle y Sladek. Levadura seleccionada de Hijos de Rivera.",
+          "price": 1.8,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Estrella Galicia 0,0% Negra",
+          "description": "Agua de la ciudad de A Coruña, un coupage de cuatro maltas (Pilsen, Dark, Caramel y Black),lúpulos de las variedades Nugget y Sladek. Levadura seleccionada de Hijos de Rivera.",
+          "price": 1.8,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Tapas frías",
+      "items": [
+        {
+          "name": "Ensaladilla",
+          "description": null,
+          "price": 2.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Ali-oli",
+          "description": null,
+          "price": 2.2,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Pimientos asados con caballa",
+          "description": null,
+          "price": 3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Boquerones en vinagre",
+          "description": null,
+          "price": 3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Chicharrones",
+          "description": null,
+          "price": 3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Tapa de queso",
+          "description": null,
+          "price": 2.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Queso con anchoas",
+          "description": null,
+          "price": 3,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Tapas Calientes",
+      "items": [
+        {
+          "name": "Carrillá Ibérica",
+          "description": null,
+          "price": 3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Albóndigas",
+          "description": null,
+          "price": 3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Pinchito guarnición",
+          "description": null,
+          "price": 4,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Croquetas de chicharrones",
+          "description": null,
+          "price": 3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Lagrimitas de pollo",
+          "description": null,
+          "price": 3.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Medallones de queso de cabra a la plancha",
+          "description": null,
+          "price": 6.3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Salchipapa",
+          "description": "Patatas fritas con salchicha y salsas",
+          "price": 3,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Montaditos",
+      "items": [
+        {
+          "name": "Palometa",
+          "description": null,
+          "price": 2.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Melva",
+          "description": null,
+          "price": 2.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Caballa",
+          "description": null,
+          "price": 2.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Lomo",
+          "description": null,
+          "price": 2.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Serranito",
+          "description": null,
+          "price": 3,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Ensaladas",
+      "items": [
+        {
+          "name": "Ensalada Mixta",
+          "description": "Lechuga, tomate, cebolla, huevo, maíz, atun",
+          "price": 5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Ensalada César con pollo",
+          "description": "Lechuga, pechuga de pollo, picatostes, queso parmesano, salsa césar",
+          "price": 5,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Entrantes",
+      "items": [
+        {
+          "name": "Nachos Mexicanos",
+          "description": "Nachos, mezcla de quesos, pico de gallo y chili con carne",
+          "price": 5.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Nachos 3 Salsas",
+          "description": "Nachos, mezcla de quesos, guacamole, crema agria y cebolla encurtida",
+          "price": 5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Patatas Paluba",
+          "description": "Patatas fritas, bacon, queso Chedar y nuestra salsa especial",
+          "price": 5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Patatas Bacon Cheese Fries",
+          "description": "Patatas fritas, bacon, mezcla de quesos y salsa ranchera",
+          "price": 5.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Patatas Chili Cheese Fries",
+          "description": "Patatas fritas, salsa ranchera, mezcla de quesos, chili con carne, pico de gallo y jalapeños",
+          "price": 6.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Patatas Pulled Pork",
+          "description": "Patatas fritas, mezcla de quesos, pulled pork",
+          "price": 6,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Patatas Bravas",
+          "description": "Patatas fritas con salsa brava",
+          "price": 3.5,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Platos",
+      "items": [
+        {
+          "name": "Costilla BBQ",
+          "description": null,
+          "price": 13,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Lasaña casera",
+          "description": "Pasta, boloñesa, queso y bechamel",
+          "price": 4.8,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Revuelto casero",
+          "description": "Patatas, huevo, jamón y pimientos",
+          "price": 4.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Huevos rotos",
+          "description": "Patatas, jamón y huevos",
+          "price": 4.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Brochetas",
+          "description": "De pollo o cerdo, con guarnición",
+          "price": 5.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Aneto",
+          "description": "A la castellana con patatas y pimientos asados",
+          "price": 4.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Escalopines",
+          "description": "De pollo empanado con patatas",
+          "price": 4,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Burguers",
+      "items": [
+        {
+          "name": "Paluba Burguer",
+          "description": "",
+          "price": 7.8,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Black Angus XL",
+          "description": "",
+          "price": 7,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Pulled Pork",
+          "description": "",
+          "price": 6.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Chicharron's Burguer",
+          "description": "",
+          "price": 5.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Buey Burguer",
+          "description": "",
+          "price": 5.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Burguer completa",
+          "description": "",
+          "price": 4.8,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Sandwiches",
+      "items": [
+        {
+          "name": "Sandwich Paluba",
+          "description": "Primer piso de ensaladilla de pollo desmenuzado. Segundo piso de queso, jamón york y huevo",
+          "price": 5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Sandwich Club",
+          "description": "Dos pisos de pollo, jamón york, bacon, queso Edam, lechuga, tomate y mayonesa",
+          "price": 5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Sandwich Vegetal",
+          "description": "Atún, pico de gallo, lechuga y salsa césar",
+          "price": 3.5,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Viva México 🇲🇽",
+      "items": [
+        {
+          "name": "Tacos de lagarto ibérico",
+          "description": "3 x Tortilla de trigo, lagarto ibérico, queso chedar y cilantro",
+          "price": 5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Tacos de carne",
+          "description": "3 x Tortilla de trigo, carne, pico de gallo y lima",
+          "price": 4.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Tacos de pollo",
+          "description": "3 x Tortilla de trigo, pollo, mix de quesos y salsa Garden",
+          "price": 4.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Pulled Pork Tacos",
+          "description": "3 x Tortilla de maíz, pulled pork, aguacate, cebolla encurtida y pepinillos",
+          "price": 5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Tacos de langostinos",
+          "description": "2 x Tortilla de maíz, pico de gallo, langostinos en tempura, salsa brava y cebolla encurtida",
+          "price": 5,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Más México",
+      "items": [
+        {
+          "name": "Fajita de pollo",
+          "description": "Pollo, pimientos, tortillas de trigo, crema agria, queso y guacamole",
+          "price": 6,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Burrito",
+          "description": "Tortilla de trigo y Tomate, arroz salvaje, pollo, maíz, mix de quesos y salsa Garden. Se acompaña con salsa alioli",
+          "price": 5.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Enchilada de Pollo",
+          "description": "Tortilla de trigo y tomate,  salsa mojo picón, mix de quesos, pollo, pico de gallo, crema agria y cebolla roja",
+          "price": 5,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Quesadillas",
+      "items": [
+        {
+          "name": "Quesadilla de carne",
+          "description": "Tortilla de trigo, carne y mix de quesos",
+          "price": 4.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Quesadilla de pollo",
+          "description": "Tortilla de trigo, pollo, maíz y mix de quesos",
+          "price": 4.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Quesadilla BBQ",
+          "description": "Tortilla de trigo, bacon, mix de quesos y salsa barbacoa",
+          "price": 4.5,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Hot Dog's",
+      "items": [
+        {
+          "name": "Hot Dog XL",
+          "description": "Con pico de gallo o queso y cebolla frita",
+          "price": 3,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Postres",
+      "items": [
+        {
+          "name": "Arroz con leche",
+          "description": null,
+          "price": 3.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Panacota",
+          "description": null,
+          "price": 3.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Coulant de chocolate",
+          "description": null,
+          "price": 3.5,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    }
+  ],
+  "official": true
+}
