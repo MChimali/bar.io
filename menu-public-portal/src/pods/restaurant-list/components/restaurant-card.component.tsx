@@ -7,7 +7,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import { chooseTheme } from "core/theme";
 import { CardContentComponent } from "./cardContent.component";
 import { useTheme } from "@mui/material/styles";
-import * as classes from "../restaurant-list.styles";
+import * as classes from "./restaurant-card.component.styles";
 
 interface Props {
   restaurant: RestaurantInfo;

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useTheme } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import EmailIcon from "@mui/icons-material/Email";
-import * as classes from "../restaurant-list.styles";
+import * as classes from "./restaurant-invitation-card.component.styles";
 
 const AboutUs: React.FC = () => {
   const theme = useTheme();
