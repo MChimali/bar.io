@@ -60,3 +60,4 @@ export const RestaurantInvitationCard: React.FC = () => {
     </div>
   );
 };
+

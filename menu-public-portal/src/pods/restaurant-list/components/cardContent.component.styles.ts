@@ -25,3 +25,5 @@ export const cardContent = css`
   align-items: center;
   width: 90%;
 `;
+
+

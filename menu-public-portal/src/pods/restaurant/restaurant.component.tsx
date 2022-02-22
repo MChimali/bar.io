@@ -109,7 +109,9 @@ export const RestaurantComponent: React.FC<Props> = (props) => {
           >
             {phone}
           </Typography>
-          <PhoneEnabledIcon sx={{ color: "secondary.main" }} />
+          <a href={`tel: ${phone}`}>
+            <PhoneEnabledIcon sx={{ color: "secondary.main" }} />
+          </a>
         </div>
         <div className={classes.rowIndent}>
           <Typography
