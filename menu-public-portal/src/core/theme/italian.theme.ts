@@ -1,4 +1,5 @@
 import { createTheme } from "@mui/material/styles";
+import { varsRestaurantType } from "./model";
 
 export const italianTheme = createTheme({
   palette: {
@@ -6,7 +7,7 @@ export const italianTheme = createTheme({
       main: "#128400",
     },
     secondary: {
-      main: "#EB1B1B",
+      main: varsRestaurantType.italian.secondaryColor,
     },
     text: {
       primary: "#232323",
@@ -14,6 +15,7 @@ export const italianTheme = createTheme({
     },
   },
   typography: {
+    fontFamily: "Dosis",
     h3: {
       borderBottom: "3px solid #EB1B1B",
     },

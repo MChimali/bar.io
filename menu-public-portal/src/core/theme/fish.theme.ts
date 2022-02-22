@@ -1,4 +1,5 @@
 import { createTheme } from "@mui/material/styles";
+import { varsRestaurantType } from "./model";
 
 export const fishTheme = createTheme({
   palette: {
@@ -6,26 +7,17 @@ export const fishTheme = createTheme({
       main: "#0D0043",
     },
     secondary: {
-      main: "#35A7CB",
+      main: varsRestaurantType.fish.secondaryColor,
     },
     text: {
       primary: "#232323",
       secondary: "#FFFFFF",
     },
   },
-  //TODO: copy same variantes to all themes.
   typography: {
     fontFamily: "Dosis",
-    h1: {
-      fontSize: `${52 / 16}rem`,
-    },
-    h2: { fontWeight: 600, fontSize: `${22 / 16}rem` },
-    h4: {
-      fontSize: `${18 / 16}rem`,
-      fontWeight: "500",
-    },
-    h5: {
-      fontSize: `${14 / 16}rem`,
+    h3: {
+      borderBottom: "3px solid #35A7CB",
     },
   },
 });

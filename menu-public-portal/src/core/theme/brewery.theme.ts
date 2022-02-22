@@ -1,4 +1,5 @@
 import { createTheme } from "@mui/material/styles";
+import { varsRestaurantType } from "./model";
 
 export const breweryTheme = createTheme({
   palette: {
@@ -6,7 +7,7 @@ export const breweryTheme = createTheme({
       main: "#CE9C1B",
     },
     secondary: {
-      main: "#862447",
+      main: varsRestaurantType.brewery.secondaryColor,
     },
     text: {
       primary: "#232323",
@@ -14,6 +15,7 @@ export const breweryTheme = createTheme({
     },
   },
   typography: {
+    fontFamily: "Dosis",
     h3: {
       borderBottom: "3px solid #862447",
     },
