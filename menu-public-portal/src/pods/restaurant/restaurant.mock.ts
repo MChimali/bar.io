@@ -1652,6 +1652,79 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
       ],
     },
     {
+      name: "Baguettes",
+      items: [
+        {
+          name: "Pollo y Bacon",
+          description: "Queso, Tomate, Lechuga y Mahonesa",
+          price: 3.5,
+        },
+        {
+          name: "Pollo",
+          description: "Queso, Tomate, Lechuga y Mahonesa",
+          price: 3.2,
+        },
+        {
+          name: "Bacon",
+          description: "Queso, Lechuga, Mahonesa",
+          price: 3,
+        },
+        {
+          name: "Lomo Adobado",
+          description: "Queso, Tomate, Lechuga, Mahonesa",
+          price: 3,
+        },
+        {
+          name: "Filete",
+          description: "Queso, Pimiento, Mahonesa",
+          price: 3.2,
+        },
+        {
+          name: "Chorizo Ibérico",
+          description: "Queso",
+          price: 3,
+        },
+        {
+          name: "Salchichón Ibérico",
+          description: "Queso",
+          price: 3,
+        },
+        {
+          name: "Jamón Serrano",
+          description: "Aceite de Oliva, Queso",
+          price: 3,
+        },
+        {
+          name: "Jamón a la Catalana",
+          price: 3.2,
+        },
+        {
+          name: "Jamón Cocido",
+          description: "Huevo, Queso, Tomate, Lechuga, Mahonesa",
+          price: 3,
+        },
+        {
+          name: "Tortilla",
+          description: "Queso, Tomate, Lechuga, Mahonesa",
+          price: 3,
+        },
+        {
+          name: "Atún",
+          description: "Queso, Tomate, Lechuga, Mahonesa",
+          price: 3.2,
+        },
+        {
+          name: "Baguette de Serranito",
+          price: 3.5,
+        },
+        {
+          name: "Serrana",
+          description: "Queso Curado Oveja, Jamón Serrano",
+          price: 5,
+        },
+      ],
+    },
+    {
       name: "Ensaladas",
       items: [
         {
