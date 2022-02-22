@@ -44,7 +44,7 @@ const palubaFutureJSON: RestaurantInfo = {
 
 const pizzeriaManolinJSON: RestaurantInfo = {
   name: "Pizzería Manolín",
-  urlName: "pizzeriaManolin",
+  urlName: "pizzeria-manolin",
   phone: "856 099 277",
   address: "C. Virgen de los Remedios, 7, 11693 Alcalá del Valle, Cádiz",
   locationUrl:
@@ -53,7 +53,7 @@ const pizzeriaManolinJSON: RestaurantInfo = {
 };
 const cerveceriaElSitioJSON: RestaurantInfo = {
   name: "Cervecería El Sitio",
-  urlName: "cerveceriaElSitio",
+  urlName: "cerveceria-el-sitio",
   phone: "956 12 66 10",
   address: "C. Virgen de los Remedios, 3, 11693 Alcalá del Valle, Cádiz",
   locationUrl:

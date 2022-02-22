@@ -1152,13 +1152,13 @@ const palubaFutureJSON: RestaurantInfo = {
 
 const pizzeriaManolinFutureJSON: RestaurantInfo = {
   name: "Pizzería Manolin",
-  urlName: "pizzeriaManolin",
+  urlName: "pizzeria-manolin",
   phone: "856 099 277",
   address: "C. Virgen de los Remedios, 7, 11693 Alcalá del Valle, Cádiz",
   locationUrl:
     "https://www.google.com/maps/place/Pizzeria+Manolin/@36.9028876,-5.1709014,15z/data=!4m12!1m6!3m5!1s0x0:0x225efb7abc22f620!2sPizzeria+Manolin!8m2!3d36.9028876!4d-5.1709014!3m4!1s0x0:0x225efb7abc22f620!8m2!3d36.9028876!4d-5.1709014",
   theme: "italian",
-  official: true,
+  official: false,
   menuDate: "Actualizada el 21 de Febrero de 2022",
   description: "Pizzas Familiares a 9,50 €",
   menu: [
@@ -1317,13 +1317,13 @@ const pizzeriaManolinFutureJSON: RestaurantInfo = {
 
 const cerveceriaElSitioFutureJSON: RestaurantInfo = {
   name: "Cervecería El Sitio",
-  urlName: "cerveceriaElSitio",
+  urlName: "cerveceria-el-sitio",
   phone: "956 12 66 10",
   address: "C. Virgen de los Remedios, 3, 11693 Alcalá del Valle, Cádiz",
   locationUrl:
     "https://www.google.com/maps/place/Cervercer%C3%ADa+El+Sitio/@36.9029977,-5.170835,15z/data=!3m1!5s0xd0d4916f2046fc1:0x1fb401da96efca51!4m12!1m6!3m5!1s0x0:0xaa583b7ce7103d67!2sCervercer%C3%ADa+El+Sitio!8m2!3d36.9029977!4d-5.170835!3m4!1s0xd0d4916f02ec7b7:0xaa583b7ce7103d67!8m2!3d36.9029977!4d-5.170835",
-  theme: "default",
-  official: true,
+  theme: "brewery",
+  official: false,
   menuDate: "Actualizada el 21 de Febrero de 2022",
   description: "",
   menu: [
@@ -1337,7 +1337,7 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
               { price: 1, unit: "Tapa" },
               { price: 4.5, unit: "Ración" },
             ],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
@@ -1347,7 +1347,7 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
               { price: 1, unit: "Tapa" },
               { price: 7, unit: "Ración" },
             ],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
@@ -1357,7 +1357,7 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
               { price: 1.2, unit: "Tapa" },
               { price: 8, unit: "Ración" },
             ],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
@@ -1367,7 +1367,7 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
               { price: 1, unit: "Tapa" },
               { price: 7, unit: "Ración" },
             ],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
@@ -1377,7 +1377,7 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
               { price: 1, unit: "Tapa" },
               { price: 7, unit: "Ración" },
             ],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
@@ -1387,7 +1387,7 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
               { price: 1, unit: "Tapa" },
               { price: 7, unit: "Ración" },
             ],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
@@ -1397,7 +1397,7 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
               { price: 1, unit: "Tapa" },
               { price: 4.5, unit: "Ración" },
             ],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
@@ -1407,7 +1407,7 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
               { price: 1.2, unit: "Tapa" },
               { price: 6, unit: "Ración" },
             ],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
@@ -1417,21 +1417,21 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
               { price: 1.2, unit: "Tapa" },
               { price: 12, unit: "Ración" },
             ],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
           name: "Pincho Gamba",
           priceByRation: {
             rationsTypes: [{ price: 1.8, unit: "Tapa" }],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
           name: "Pincho Moruno",
           priceByRation: {
             rationsTypes: [{ price: 1.8, unit: "Tapa" }],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
@@ -1441,7 +1441,7 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
               { price: 1.5, unit: "Tapa" },
               { price: 12, unit: "Ración" },
             ],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
@@ -1451,7 +1451,7 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
               { price: 1.5, unit: "Tapa" },
               { price: 12, unit: "Ración" },
             ],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
@@ -1461,7 +1461,7 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
               { price: 1.5, unit: "Tapa" },
               { price: 12, unit: "Ración" },
             ],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
@@ -1471,14 +1471,14 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
               { price: 1.5, unit: "Tapa" },
               { price: 12, unit: "Ración" },
             ],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
           name: "Mini Hamburguesa de Buey",
           priceByRation: {
             rationsTypes: [{ price: 2, unit: "Tapa" }],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
@@ -1488,7 +1488,7 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
               { price: 1.2, unit: "Tapa" },
               { price: 10, unit: "Ración" },
             ],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
@@ -1498,14 +1498,14 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
               { price: 1.5, unit: "Tapa" },
               { price: 7, unit: "Ración" },
             ],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
           name: "Caprichito",
           priceByRation: {
             rationsTypes: [{ price: 1.5, unit: "Tapa" }],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
@@ -1515,7 +1515,7 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
               { price: 1.5, unit: "Tapa" },
               { price: 7, unit: "Ración" },
             ],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
@@ -1525,7 +1525,7 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
               { price: 1.2, unit: "Tapa" },
               { price: 6, unit: "Ración" },
             ],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
@@ -1535,7 +1535,7 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
               { price: 1.5, unit: "Tapa" },
               { price: 7, unit: "Ración" },
             ],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
@@ -1545,7 +1545,7 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
               { price: 2, unit: "Tapa" },
               { price: 8, unit: "Ración" },
             ],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
         {
@@ -1555,7 +1555,7 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
               { price: 1.2, unit: "Tapa" },
               { price: 7, unit: "Ración" },
             ],
-            rationName: "",
+            rationName: "Raciones",
           },
         },
       ],
