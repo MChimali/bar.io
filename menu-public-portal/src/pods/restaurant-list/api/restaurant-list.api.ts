@@ -1,6 +1,11 @@
+import { cacheBuster } from "common/cacheBuster";
 import { RestaurantApi } from "./restaurant-list.api.model";
 
-export const getRestaurantListFromModel = async (): Promise<RestaurantApi[]> => {
-  const response = await fetch(`http://localhost:3000/restaurantList.json`);
+export const getRestaurantListFromModel = async (): Promise<
+  RestaurantApi[]
+> => {
+  const uri = cacheBuster(`http://localhost:3000/restaurantList.json`);
+
+  const response = await fetch(uri);
   return response.json();
 };
