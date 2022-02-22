@@ -1414,6 +1414,195 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
             rationName: "",
           },
         },
+        {
+          name: "Pincho Gamba",
+          priceByRation: {
+            rationsTypes: [{ price: 1.8, unit: "Tapa" }],
+            rationName: "",
+          },
+        },
+        {
+          name: "Pincho Moruno",
+          priceByRation: {
+            rationsTypes: [{ price: 1.8, unit: "Tapa" }],
+            rationName: "",
+          },
+        },
+        {
+          name: "Stick Kebab",
+          priceByRation: {
+            rationsTypes: [
+              { price: 1.5, unit: "Tapa" },
+              { price: 12, unit: "Ración" },
+            ],
+            rationName: "",
+          },
+        },
+        {
+          name: "Pollo Cajún",
+          priceByRation: {
+            rationsTypes: [
+              { price: 1.5, unit: "Tapa" },
+              { price: 12, unit: "Ración" },
+            ],
+            rationName: "",
+          },
+        },
+        {
+          name: "Bomba (Patata y Carne",
+          priceByRation: {
+            rationsTypes: [
+              { price: 1.5, unit: "Tapa" },
+              { price: 12, unit: "Ración" },
+            ],
+            rationName: "",
+          },
+        },
+        {
+          name: "Mini Hambuguesa",
+          priceByRation: {
+            rationsTypes: [
+              { price: 1.5, unit: "Tapa" },
+              { price: 12, unit: "Ración" },
+            ],
+            rationName: "",
+          },
+        },
+        {
+          name: "Mini Hamburguesa de Buey",
+          priceByRation: {
+            rationsTypes: [{ price: 2, unit: "Tapa" }],
+            rationName: "",
+          },
+        },
+        {
+          name: "Boquerón en Vinagre",
+          priceByRation: {
+            rationsTypes: [
+              { price: 1.2, unit: "Tapa" },
+              { price: 10, unit: "Ración" },
+            ],
+            rationName: "",
+          },
+        },
+        {
+          name: "Cóctel de Marisco",
+          priceByRation: {
+            rationsTypes: [
+              { price: 1.5, unit: "Tapa" },
+              { price: 7, unit: "Ración" },
+            ],
+            rationName: "",
+          },
+        },
+        {
+          name: "Caprichito",
+          priceByRation: {
+            rationsTypes: [{ price: 1.5, unit: "Tapa" }],
+            rationName: "",
+          },
+        },
+        {
+          name: "Chipirón Plancha",
+          priceByRation: {
+            rationsTypes: [
+              { price: 1.5, unit: "Tapa" },
+              { price: 7, unit: "Ración" },
+            ],
+            rationName: "",
+          },
+        },
+        {
+          name: "Cazón en Adobo",
+          priceByRation: {
+            rationsTypes: [
+              { price: 1.2, unit: "Tapa" },
+              { price: 6, unit: "Ración" },
+            ],
+            rationName: "",
+          },
+        },
+        {
+          name: "Lagartitos",
+          priceByRation: {
+            rationsTypes: [
+              { price: 1.5, unit: "Tapa" },
+              { price: 7, unit: "Ración" },
+            ],
+            rationName: "",
+          },
+        },
+        {
+          name: "Papas Arriera",
+          priceByRation: {
+            rationsTypes: [
+              { price: 2, unit: "Tapa" },
+              { price: 8, unit: "Ración" },
+            ],
+            rationName: "",
+          },
+        },
+        {
+          name: "Queso Payoyo",
+          priceByRation: {
+            rationsTypes: [
+              { price: 1.2, unit: "Tapa" },
+              { price: 7, unit: "Ración" },
+            ],
+            rationName: "",
+          },
+        },
+      ],
+    },
+    {
+      name: "Hamburguesas",
+      items: [
+        {
+          name: "Simple",
+          description: "Ketchup y Mahonesa",
+          price: 2.5,
+        },
+        {
+          name: "Con Queso",
+          description: "Queso, Ketchup y Mahonesa",
+          price: 2.6,
+        },
+        {
+          name: "Completa",
+          description:
+            "Cebolla, Lechuga, Tomate, Queso, Ketchup, Mostaza y Ensalada",
+          price: 2.7,
+        },
+        {
+          name: "Especial",
+          description: "Queso, Huevo, Bacon, Mahonesa y Ketchup",
+          price: 3,
+        },
+        {
+          name: "De Buey",
+          description: "Queso, Mahonesa y Ketchup",
+          price: 4,
+        },
+        {
+          name: "Especial de Buey",
+          description: "Queso, Bacon, Huevo, Mahonesa y Ketchup",
+          price: 4.5,
+        },
+      ],
+    },
+    {
+      name: "Perritos",
+      items: [
+        {
+          name: "Simple",
+          description: "Ketchup y Mostaza",
+          price: 2,
+        },
+        {
+          name: "Completo",
+          description: "Cebolla, Lechugar, Tomate, Ketchup y Mostaza",
+          price: 2.5,
+        },
       ],
     },
   ],
