@@ -22,4 +22,4 @@ COPY ./package-lock.json ./
 COPY ./next.config.js ./
 RUN npm ci --only=production
 
-ENTRYPOINT ["next", "start"]
+ENTRYPOINT ["next"]
