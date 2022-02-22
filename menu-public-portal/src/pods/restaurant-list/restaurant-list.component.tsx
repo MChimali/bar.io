@@ -5,15 +5,15 @@ import Typography from "@mui/material/Typography";
 import { RestaurantInfo } from "./restaurant-list.vm";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
-import PlaceIcon from "@mui/icons-material/Place";
 import EmailIcon from "@mui/icons-material/Email";
 import Button from "@mui/material/Button";
 import * as classes from "./restaurant-list.styles";
 import { ThemeProvider } from "@mui/material/styles";
 import { chooseTheme } from "core/theme";
 import { useTheme } from "@mui/material/styles";
+import { CardContentComponent } from "./components/cardContent.component";
+
+
 
 interface Props {
   restaurantList: RestaurantInfo[];
@@ -36,40 +36,14 @@ const RestaurantList: React.FC<Props> = (props) => {
       <ThemeProvider theme={chooseTheme(themeName)} key={name}>
         <div className={classes.Container}>
           <Card className={classes.cardContainer(theme)}>
-            <CardContent className={classes.cardContent}>
-              <div className={classes.rowIndent}>
-                <Typography variant="subtitle1" component="h2">
-                  {phone}
-                </Typography>
-                <a href={`tel: ${phone}`}>
-                  <PhoneEnabledIcon sx={{ color: "secondary.main" }} />
-                </a>
-              </div>
-              <div className={classes.rowIndent}>
-                <Typography variant="subtitle2" component="h2">
-                  {address}
-                </Typography>
-                <Link href={locationUrl}>
-                  <a target="_blank">
-                    <PlaceIcon sx={{ color: "secondary.main" }} />
-                  </a>
-                </Link>
-              </div>
-              <Link href={routes.restaurant(urlName)}>
-                <a className={classes.anchorDefault}>
-                  <Typography
-                    variant="h3"
-                    component="h1"
-                    className={classes.nameRestaurant(theme)}
-                  >
-                    {name}
-                  </Typography>
-                </a>
-              </Link>
-              <Typography variant="subtitle2" component="h2">
-                {description}
-              </Typography>
-            </CardContent>
+            <CardContentComponent
+              name={name}
+              address={address}
+              description={description}
+              locationUrl={locationUrl}
+              phone={phone}
+              urlName={urlName}
+            />
             <CardActions>
               <Button
                 variant="contained"

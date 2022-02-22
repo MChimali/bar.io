@@ -1,5 +1,5 @@
 import { css } from "@emotion/css";
-import { defaultTheme, varsRestaurantType } from "core/theme";
+import { defaultTheme } from "core/theme";
 import { Theme } from "@mui/material/styles";
 
 export const buttonRestaurantList = (theme: Theme) => css`
@@ -8,25 +8,6 @@ export const buttonRestaurantList = (theme: Theme) => css`
   width: ${theme.spacing(30)};
   margin-bottom: ${theme.spacing(2)};
   color: ${defaultTheme.palette.text.secondary};
-`;
-
-export const cardContent = css`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-`;
-
-export const rowIndent = css`
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
-`;
-
-export const nameRestaurant = (theme: Theme) => css`
-  margin-top: ${theme.spacing(6)};;
 `;
 
 export const Container = css`
@@ -53,11 +34,6 @@ export const cardContainer = (theme: Theme) => css`
   @media (min-width: ${defaultTheme.breakpoints.values.lg}px) {
     width: 25%;
   }
-`;
-
-export const anchorDefault = css`
-  color: inherit;
-  text-decoration: none;
 `;
 
 export const creditsContainer = css`
