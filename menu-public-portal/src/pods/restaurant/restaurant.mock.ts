@@ -1555,7 +1555,7 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
       ],
     },
     {
-      name: "Hamburguesas",
+      name: "Hamburguesas (Todas las Hamburguesas incluyen Patatas Fritas)",
       items: [
         {
           name: "Simple",
@@ -1606,7 +1606,7 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
       ],
     },
     {
-      name: "Camperos",
+      name: "Camperos (Todos los Camperos incluyen Patatas Fritas)",
       items: [
         {
           name: "Normal",
@@ -1758,7 +1758,7 @@ const cerveceriaElSitioFutureJSON: RestaurantInfo = {
       ],
     },
     {
-      name: "Carnes a la Brasa",
+      name: "Carnes a la Brasa (Pueden ir acompañadas de ensalada o patatas)",
       items: [
         {
           name: "Churrasco Pollo",
