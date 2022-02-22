@@ -1,4 +1,5 @@
 import { createTheme } from "@mui/material/styles";
+import { varsRestaurantType } from "./model";
 
 export const defaultTheme = createTheme({
   palette: {
@@ -6,7 +7,7 @@ export const defaultTheme = createTheme({
       main: "#000000",
     },
     secondary: {
-      main: "#C5B100",
+      main: varsRestaurantType.default.secondaryColor,
     },
     text: {
       primary: "#000000",
