@@ -3,32 +3,34 @@ import { connectToDBServer, disconnectFromDbServer } from 'core/servers';
 import { envConstants } from 'core/constants';
 import { mapRestaurantFromApiToModel } from 'pods/restaurant/restaurant.mappers';
 import { restaurantDbRepository } from 'dals';
-import { inputQuestions } from './questions';
+import { inputQuestion, confirmFile } from '../questions';
 
 export const run = async () => {
   try {
     await connectToDBServer(envConstants.MONGODB_URI);
 
-    const { file } = await prompt(inputQuestions);
-    const { restaurant } = require(`./restaurant-list/${file}`);
-
     // await restaurantDbRepository.createRestaurantsCollection();
 
-    const restaurantModel = await restaurantDbRepository.getRestaurantByUrlName(
-      file
-    );
+    const { file } = await prompt(inputQuestion);
+    const { answer } = await prompt(confirmFile);
 
-    if (restaurantModel) {
-      throw 'Restaurant with this name exist in data base';
-    } else {
-      await restaurantDbRepository.saveRestaurant(
-        mapRestaurantFromApiToModel(restaurant)
-      );
+    if (answer) {
+      const { restaurant } = require(`./restaurant-list/${file}`);
+      const restaurantModel =
+        await restaurantDbRepository.getRestaurantByUrlName(file);
 
-      console.log('Restaurant created:', { restaurant: file });
+      if (restaurantModel) {
+        throw 'Restaurant with this name exist in data base';
+      } else {
+        await restaurantDbRepository.saveRestaurant(
+          mapRestaurantFromApiToModel(restaurant)
+        );
+
+        console.log('Restaurant created:', { restaurant: file });
+      }
+
+      await disconnectFromDbServer();
     }
-
-    await disconnectFromDbServer();
   } catch (error) {
     console.error(error);
   }

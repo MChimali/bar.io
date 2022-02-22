@@ -3,24 +3,31 @@ import fs from 'fs';
 import { connectToDBServer, disconnectFromDbServer } from 'core/servers';
 import { envConstants } from 'core/constants';
 import { restaurantDbRepository } from 'dals';
-import { inputQuestions } from './questions';
+import { inputQuestion, confirmFile } from '../questions';
 
 export const run = async () => {
   try {
     await connectToDBServer(envConstants.MONGODB_URI);
 
-    const { file } = await prompt(inputQuestions);
+    const { file } = await prompt(inputQuestion);
+    const { answer } = await prompt(confirmFile);
 
-    const restaurant = await restaurantDbRepository.getRestaurantByUrlName(
-      file
-    );
+    if (answer) {
+      const restaurant = await restaurantDbRepository.getRestaurantByUrlName(
+        file
+      );
 
-    if (restaurant) {
-      fs.writeFileSync(`../menu-public-portal/public/${file}.json`, JSON.stringify(restaurant, null, 2));
-
-      console.log('Restaurant created:', { restaurant: file });
-    } else {
-      console.log('Restaurant not found');
+      if (restaurant) {
+        if (answer) {
+          fs.writeFileSync(
+            `../menu-public-portal/public/${file}.json`,
+            JSON.stringify(restaurant, null, 2)
+          );
+          console.log('Restaurant created:', { restaurant: file });
+        }
+      } else {
+        console.log('Restaurant not found');
+      }
     }
 
     await disconnectFromDbServer();
