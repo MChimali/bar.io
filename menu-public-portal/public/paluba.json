@@ -1,5 +1,5 @@
 {
-  "_id": "6214c87f53c4bbafecedd5fa",
+  "_id": "62150aec219dd82facdfeb42",
   "name": "Paluba II",
   "urlName": "paluba",
   "phone": "606 629 069",
@@ -364,42 +364,42 @@
       "items": [
         {
           "name": "Paluba Burguer",
-          "description": "",
+          "description": "Pan Brioche, 285 gr. de carne de Buey, Queso Cheda, Lechuga, tomate, cebolla roja a la plancha, pepinillo",
           "price": 7.8,
           "priceByRation": null,
           "unit": null
         },
         {
           "name": "Black Angus XL",
-          "description": "",
+          "description": "Pan de sésamo, 200 gr. de carne de Angus, bacon, Doble de queso Chedar, Cebolla blanca pochada con BBQ, canónigos",
           "price": 7,
           "priceByRation": null,
           "unit": null
         },
         {
           "name": "Pulled Pork",
-          "description": "",
+          "description": "Pan rústico, Pulled Pork, A elegir: (1) Aguacate, cebolla encurtida y pepinillo (2) Ensaladilla de col",
           "price": 6.5,
           "priceByRation": null,
           "unit": null
         },
         {
           "name": "Chicharron's Burguer",
-          "description": "",
+          "description": "Pan rústico, Carne picada & chicharrones, A elegir: queso semicurado o queso de cabra, Lechuga, tomate y cebolla pochada",
           "price": 5.5,
           "priceByRation": null,
           "unit": null
         },
         {
           "name": "Buey Burguer",
-          "description": "",
+          "description": "Pan de sésamo, Carne de Buey, bacon, Queso, Cebolla blanca, lechuga y tomate",
           "price": 5.5,
           "priceByRation": null,
           "unit": null
         },
         {
           "name": "Burguer completa",
-          "description": "",
+          "description": "Pan de sésamo, Carne de vacuno, Queso, Cebolla blanca, lechuga y tomate",
           "price": 4.8,
           "priceByRation": null,
           "unit": null
