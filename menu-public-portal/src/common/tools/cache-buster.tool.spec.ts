@@ -25,14 +25,14 @@ describe("common/tools/cache-buster.tool spec", () => {
       jest.useFakeTimers("modern");
       jest.setSystemTime(
         new Date(
-          "Wed Feb 23 2022 20:17:40 GMT+0100 (hora estándar de Europa central"
+          "Wed Feb 23 2022 08:17:40 GMT+0000 (hora estándar de Europa central"
         )
       );
 
       //Act
       const result = cacheBuster(uri);
       //Assert
-      expect(result).toEqual("http://localhost:3000/?cache=20221320");
+      expect(result).toEqual("http://localhost:3000/?cache=2022139");
     });
   });
 });
