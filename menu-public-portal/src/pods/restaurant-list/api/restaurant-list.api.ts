@@ -1,4 +1,4 @@
-import { cacheBuster } from "common/cacheBuster";
+import { cacheBuster } from "common/tools";
 import { RestaurantApi } from "./restaurant-list.api.model";
 
 export const getRestaurantListFromModel = async (): Promise<

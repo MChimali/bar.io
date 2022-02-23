@@ -1,5 +1,5 @@
 import { RestaurantApi } from "./restaurant.api.model";
-import { cacheBuster } from "common/cacheBuster";
+import { cacheBuster } from "common/tools";
 
 export const getRestaurantByName = async (
   restaurantName: string
