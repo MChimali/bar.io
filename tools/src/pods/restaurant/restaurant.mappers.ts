@@ -2,44 +2,65 @@ import * as model from 'dals';
 import * as apiModel from './restaurant.api-model';
 import { mapToCollection } from 'common/mappers';
 
+// Esto nos devolería del tipo
+// {
+//   Raciones: ["media ración", "ración"]
+//   Bocadillos: ['pitufo', 'barra']
+// }
+const createRationsUnits = (
+  acc: Record<string, string[]>,
+  item: apiModel.Item
+) => {
+  return {
+    ...acc,
+    [item.priceByRation.rationName]: [
+      ...new Set([
+        ...(acc[item.priceByRation.rationName] ?? []),
+        ...item.priceByRation.rationsTypes.map(
+          (rationType: apiModel.RationType) => rationType.unit
+        ),
+      ]),
+    ],
+  };
+};
+
+// pero esto no es lo que queremos como salida
+// pasamos el objeto a un array de objetos { name: key, units: rations[key] }
+// y nos devuelve
+// [
+//   {
+//     name: "Raciones",
+//     units: ["media ración", "ración"]
+//   },
+//   {
+//     name: "Bocadillos",
+//     units: ["pitufo", "barra"]
+//   }
+// ]
+
+const createRationsUnitsList = (rations: Record<string, string[]>) =>
+  Object.keys(rations).reduce((acc, key) => {
+    return [...acc, { name: key, units: rations[key] }];
+  }, []);
+
 export const reduceCategoryEntryListToRationDefinitionList = (
   category: apiModel.CategoryEntry[]
 ): model.RationDefinition[] => {
   if (Array.isArray(category)) {
     const rations = category
+      // Creo un array con los items de cada categoría
       .map((category: apiModel.CategoryEntry) => category.items)
+      // Aplanar: Aplico un reduce y pongo todos los items uno detrás de otro en un mismo array
       .reduce(
         (acc: apiModel.Item[], item: apiModel.Item[]) => [...acc, ...item],
         []
       )
+      // Filtro y me quedo solo con los objetos que contiene priceByRation
       .filter((item: apiModel.Item) => item.priceByRation)
-      .reduce((acc, item: apiModel.Item) => {
-        if (!acc[item.priceByRation.rationName]) {
-          return {
-            ...acc,
-            [item.priceByRation.rationName]:
-              item.priceByRation.rationsTypes.map(
-                (rationType: apiModel.RationType) => rationType.unit
-              ),
-          };
-        } else {
-          return {
-            ...acc,
-            [item.priceByRation.rationName]: [
-              ...new Set([
-                ...acc[item.priceByRation.rationName],
-                ...item.priceByRation.rationsTypes.map(
-                  (rationType: apiModel.RationType) => rationType.unit
-                ),
-              ]),
-            ],
-          };
-        }
-      }, {});
+      // Montamos un objeto con key como nombre de ración y value lista de units
+      .reduce(createRationsUnits, {});
 
-    return Object.keys(rations).reduce((acc, key) => {
-      return [...acc, { name: key, units: rations[key] }];
-    }, []);
+    return createRationsUnitsList(rations);
   } else return [];
 };
 
@@ -59,7 +80,9 @@ const mapFromPriceByRationToSubItemPrice = (
   priceByRation: apiModel.PriceByRation
 ): model.SubItemPrice => ({
   rationName: priceByRation.rationName,
-  rationsTypes: mapListFromRationTypeApiToRationTypeMode(priceByRation.rationsTypes),
+  rationsTypes: mapListFromRationTypeApiToRationTypeMode(
+    priceByRation.rationsTypes
+  ),
 });
 
 const mapListFromItemApiToItemModel = (item: apiModel.Item[]): model.Item[] =>
