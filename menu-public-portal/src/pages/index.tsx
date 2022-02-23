@@ -23,6 +23,7 @@ const Home: NextPage<Props> = (props) => {
   return (
     <>
       <CssBaseline />
+      <p>To remove</p>
       <RestaurantListContainer restaurantCollection={restaurantCollection} />;
     </>
   );
