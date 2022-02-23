@@ -1,14 +1,13 @@
-name: Branch Deployment workflow
+name: Production Deployment workflow
 
 on:
-  workflow_dispatch:
   push:
     branches:
-      - vnext
+      - main
 
 env:
-  HEROKU_API_KEY: ${{ secrets.DEV_HEROKU_API_KEY }}
-  IMAGE_NAME: registry.heroku.com/${{ secrets.DEV_HEROKU_APP_NAME }}/web
+  HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+  IMAGE_NAME: registry.heroku.com/${{ secrets.HEROKU_APP_NAME }}/web
 
 jobs:
   cd:
@@ -26,4 +25,4 @@ jobs:
       - name: Deploy docker image
         run: docker push ${{ env.IMAGE_NAME }}
       - name: Release
-        run: heroku container:release web -a ${{ secrets.DEV_HEROKU_APP_NAME }}
+        run: heroku container:release web -a ${{ secrets.HEROKU_APP_NAME }}
