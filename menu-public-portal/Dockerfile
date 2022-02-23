@@ -1,4 +1,3 @@
-
 # Base
 FROM node:16-alpine AS base
 RUN mkdir -p /usr/src/app
