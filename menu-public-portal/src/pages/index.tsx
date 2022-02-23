@@ -1,33 +1,30 @@
-import type { NextPage } from "next";
-import Link from "next/link";
-import Head from "next/head";
-import { routes } from "core/router";
-import Typography from '@mui/material/Typography';
+import type { GetStaticProps, NextPage } from "next";
+import { RestaurantListContainer } from "pods/restaurant-list";
+import { RestaurantInfo } from "pods/restaurant-list/restaurant-list.vm";
+import { getRestaurantList } from "pods/restaurant-list/";
+import CssBaseline from "@mui/material/CssBaseline";
+import React from "react";
 
-const Home: NextPage = () => {
+export const getStaticProps: GetStaticProps = async () => {
+  const restaurantCollection: RestaurantInfo[] = await getRestaurantList();
+
+  return {
+    props: { restaurantCollection },
+    revalidate: 600,
+  };
+};
+
+interface Props {
+  restaurantCollection: RestaurantInfo[];
+}
+
+const Home: NextPage<Props> = (props) => {
+  const { restaurantCollection } = props;
   return (
-    <div>
-      <Head>
-        <title>Tu Carta - Restaurantes</title>
-        <meta
-          name="description"
-          content="La carta de tu restaurante favorito"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <Typography variant="h5" component="h5">
-        Listado restaurantes
-        </Typography>
-
-        <Link href={routes.restaurant("papulinos")}>Papulinos</Link>
-      </main>
-
-      <footer>
-        <p>Lemoncode</p>
-      </footer>
-    </div>
+    <>
+      <CssBaseline />
+      <RestaurantListContainer restaurantCollection={restaurantCollection} />;
+    </>
   );
 };
 
