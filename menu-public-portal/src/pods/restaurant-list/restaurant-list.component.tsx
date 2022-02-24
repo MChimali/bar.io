@@ -13,7 +13,7 @@ export const RestaurantList: React.FC<Props> = (props) => {
     <main>
       <RestaurantInvitationCard />
       {restaurantList.map((restaurant) => (
-        <RestaurantCardComponent restaurant={restaurant} />
+        <RestaurantCardComponent restaurant={restaurant} key={restaurant.id}/>
       ))}
     </main>
   );

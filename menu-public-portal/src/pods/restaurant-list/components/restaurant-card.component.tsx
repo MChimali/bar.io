@@ -1,5 +1,4 @@
-import { RestaurantInfo } from "../restaurant-list.vm";
-
+import { RestaurantVm } from "../restaurant-list.vm";
 import { routes } from "core/router";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";

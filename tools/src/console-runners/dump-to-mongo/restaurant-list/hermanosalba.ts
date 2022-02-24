@@ -2,7 +2,7 @@ import { ObjectId } from 'mongodb';
 import { RestaurantInfo } from 'pods/restaurant';
 
 export const restaurant: RestaurantInfo = {
-  _id: new ObjectId(),
+  id: new ObjectId().toHexString(),
   name: 'Hermanos Alba',
   urlName: 'hermanosalba',
   phone: '951 33 18 03',

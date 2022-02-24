@@ -1,6 +1,7 @@
 import * as model from 'dals';
 import * as apiModel from './restaurant.api-model';
 import { mapToCollection } from 'common/mappers';
+import { ObjectId } from 'mongodb';
 
 // Esto nos devolería del tipo
 // {
@@ -115,7 +116,7 @@ const mapFromCategoryEntryToItemsByCategory = (
 export const mapRestaurantFromApiToModel = (
   restaurant: apiModel.RestaurantInfo
 ): model.Restaurant => ({
-  _id: restaurant._id,
+  _id: new ObjectId(restaurant.id),
   name: restaurant.name,
   urlName: restaurant.urlName,
   phone: restaurant.phone,
