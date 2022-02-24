@@ -34,18 +34,18 @@ const InfoMail: React.FC = () => {
   const theme = useTheme();
   return (
     <div className={classes.info(theme)}>
-      <a href="mailto:info@gastrobar.net" target="_blank">
+      <a href="mailto:info@gastrocarta.net" target="_blank">
         <EmailIcon className={classes.emailIcon(theme)} />
       </a>
       <Typography variant="body2" component="h2">
         Si eres el propiertario de un establecimiento puedes publicar tu carta
         de forma gratuita, ponte en contacto con nosotros en{" "}
         <a
-          href="mailto:info@gastrobar.net"
+          href="mailto:info@gastrocarta.net"
           target="_blank"
           className={classes.emailSend}
         >
-          info@gastrobar.net
+          info@gastrocarta.net
         </a>
       </Typography>
     </div>
