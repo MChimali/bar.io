@@ -5,7 +5,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
 import PlaceIcon from "@mui/icons-material/Place";
 import * as classes from "./restaurant.component.styles";
-import { RestaurantInfo, Items, PriceByRation } from "./restaurant.vm";
+import { RestaurantInfo, Item, PriceByRation } from "./restaurant.vm";
 import { AccordionSummaryStyled } from "common/components";
 import { useTheme } from "@mui/material/styles";
 import Link from "next/link";
@@ -41,7 +41,7 @@ const RationComponent: React.FC<PropsRation> = (props) => {
 };
 
 interface PropsItemsComponent {
-  items: Items[];
+  items: Item[];
 }
 export const DishesComponent: React.FC<PropsItemsComponent> = (props) => {
   const { items } = props;

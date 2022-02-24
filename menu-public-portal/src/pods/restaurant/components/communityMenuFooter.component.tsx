@@ -14,7 +14,7 @@ export const CommunityMenuFooter: React.FunctionComponent<Props> = (props) => {
       <Typography variant="body2" component="h2" className={classes.groupsIcon}>
         Esta carta ha sido creada por la comunidad, si eres el propiertario del
         restaurante puedes actualizarla de forma gratuita, ponte en contacto con
-        nosotros en <a href="#">info@gastrobar.net</a>. Fuente original pincha{" "}
+        nosotros en <a href="#">info@gastrocarta.net</a>. Fuente original pincha{" "}
         <a href={communitySourceUrl} target="_blank">
           aquí
         </a>

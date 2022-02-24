@@ -1,4 +1,4 @@
-import { RestaurantInfo } from "../restaurant-list.vm";
+import { RestaurantVm } from "../restaurant-list.vm";
 import { routes } from "core/router";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -10,13 +10,14 @@ import { useTheme } from "@mui/material/styles";
 import * as classes from "./restaurant-card.component.styles";
 
 interface Props {
-  restaurant: RestaurantInfo;
+  restaurant: RestaurantVm;
 }
 
 export const RestaurantCardComponent: React.FC<Props> = (props) => {
   const theme = useTheme();
   const { restaurant } = props;
   const {
+    id,
     name,
     address,
     description,
@@ -26,7 +27,7 @@ export const RestaurantCardComponent: React.FC<Props> = (props) => {
     theme: themeName,
   } = restaurant;
   return (
-    <ThemeProvider theme={chooseTheme(themeName)} key={name}>
+    <ThemeProvider theme={chooseTheme(themeName)} key={id}>
       <div className={classes.Container}>
         <Card className={classes.cardContainer(theme)}>
           <CardContentComponent

@@ -1,0 +1,199 @@
+{
+  "_id": "621753a0424ce904f7cb696a",
+  "name": "Estación Término",
+  "urlName": "estacion-termino",
+  "phone": "952 40 10 96",
+  "address": "Plaza del Señorío, 8, Edificio Garcia Lorca, 29730 Rincón de la Victoria, Málaga",
+  "locationUrl": "https://www.google.com/maps/place/Estaci%C3%B3n+T%C3%A9rmino+Restaurante/@36.7166232,-4.2816961,15z/data=!4m5!3m4!1s0x0:0xdfb3fd3416c42c60!8m2!3d36.7166232!4d-4.2816961",
+  "menuDate": "2022-02-15T00:00:00.000Z",
+  "communitySourceUrl": "https://www.estacion-termino.es/carta/",
+  "description": "",
+  "theme": "meat",
+  "rationsDefinitions": [],
+  "menu": [
+    {
+      "categoryName": "Entrantes",
+      "items": [
+        {
+          "name": "Sopa fría del día",
+          "description": null,
+          "price": 5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Sopa caliente del día",
+          "description": null,
+          "price": 5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Ensalada gratinada",
+          "description": "Lechuga, Queso de Cabra, Nueces y Manzana",
+          "price": 8,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Ensalada tricolor",
+          "description": "Tomate, Aguacate, Queso Mozarela",
+          "price": 8,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Ensalada tropical",
+          "description": "Lechuga, Aguacate, Piña y Melocotón, Palmito",
+          "price": 8,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Ensalada E.T",
+          "description": "Zanahoria, Manzana, Pasas, Maiz, Nueces",
+          "price": 6.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Ensalada Atapay",
+          "description": "Lechuga, Apio, Manzana, Nueces y Pollo",
+          "price": 8,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Milhojas",
+          "description": "Verduras a la plancha con Queso de Cabra",
+          "price": 9,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Croquetas Caseras",
+          "description": null,
+          "price": 8,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Camembert Frito",
+          "description": null,
+          "price": 8,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Pincho de Langostinos y Vieras",
+          "description": null,
+          "price": 9.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Langostinos Rebozados",
+          "description": null,
+          "price": 9.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Langostinos al Curry",
+          "description": null,
+          "price": 10.25,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Carnes",
+      "items": [
+        {
+          "name": "Pincho de Cordero a la Moruna",
+          "description": null,
+          "price": 10.75,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Lápices de pollo a la Pimienta Verde",
+          "description": null,
+          "price": 12.75,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Pastel de Carne con Salsa de Frambuesas",
+          "description": null,
+          "price": 11.75,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Solomillo de Cerdo al Estilo E.T",
+          "description": null,
+          "price": 13.25,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Albóndigas a la Moruna",
+          "description": null,
+          "price": 12.75,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Solomillo de Ternera",
+          "description": null,
+          "price": 20,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Codillo de Cerdo al Horno",
+          "description": null,
+          "price": 13.25,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Bobotie",
+          "description": "Pastel de Carne Sudafricano",
+          "price": 11.75,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Pescados",
+      "items": [
+        {
+          "name": "Bacalao Poché en su Pil-Pil",
+          "description": null,
+          "price": 14.25,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Filetes de Salmonete con Salsa de Hinojo",
+          "description": null,
+          "price": 14.25,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Salmón a la Pimienta Verde",
+          "description": null,
+          "price": 14.25,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    }
+  ],
+  "official": false
+}

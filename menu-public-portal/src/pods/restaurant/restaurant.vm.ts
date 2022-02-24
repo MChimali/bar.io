@@ -9,7 +9,7 @@ export interface PriceByRation {
   rationsTypes: RationType[];
 }
 
-export interface Items {
+export interface Item {
   name: string;
   description?: string;
   price?: number;
@@ -19,10 +19,11 @@ export interface Items {
 
 export interface CategoryEntry {
   name: string;
-  items: Items[];
+  items: Item[];
 }
 
 export interface RestaurantInfo {
+  id: string;
   name: string;
   urlName: string;
   phone: string;
@@ -37,6 +38,7 @@ export interface RestaurantInfo {
 }
 
 export const emptyRestaurantInfo = (): RestaurantInfo => ({
+  id: "",
   name: "",
   urlName: "",
   phone: "",

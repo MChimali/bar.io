@@ -1,0 +1,948 @@
+{
+  "_id": "6217538c424ce904f7cb6967",
+  "name": "Cervecería El Sitio",
+  "urlName": "cerveceria-el-sitio",
+  "phone": "956 12 66 10",
+  "address": "C. Virgen de los Remedios, 3, 11693 Alcalá del Valle, Cádiz",
+  "locationUrl": "https://www.google.com/maps/place/Cervercer%C3%ADa+El+Sitio/@36.9029977,-5.170835,15z/data=!3m1!5s0xd0d4916f2046fc1:0x1fb401da96efca51!4m12!1m6!3m5!1s0x0:0xaa583b7ce7103d67!2sCervercer%C3%ADa+El+Sitio!8m2!3d36.9029977!4d-5.170835!3m4!1s0xd0d4916f02ec7b7:0xaa583b7ce7103d67!8m2!3d36.9029977!4d-5.170835",
+  "menuDate": "2022-02-22T00:00:00.000Z",
+  "communitySourceUrl": "",
+  "description": "",
+  "theme": "brewery",
+  "rationsDefinitions": [
+    {
+      "name": "Raciones",
+      "units": [
+        "Tapa",
+        "Ración"
+      ]
+    }
+  ],
+  "menu": [
+    {
+      "categoryName": "Tapas y Raciones",
+      "items": [
+        {
+          "name": "Ensaladilla Rusa",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1
+              },
+              {
+                "unit": "Ración",
+                "price": 4.5
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Jamón Serrano",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1
+              },
+              {
+                "unit": "Ración",
+                "price": 7
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Chorizo Ibérico",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1.2
+              },
+              {
+                "unit": "Ración",
+                "price": 8
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Salchichón Ibérico",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1
+              },
+              {
+                "unit": "Ración",
+                "price": 7
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Morzilla Ibérico",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1
+              },
+              {
+                "unit": "Ración",
+                "price": 7
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Tortilla de Patatas",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1
+              },
+              {
+                "unit": "Ración",
+                "price": 7
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Patatas Ali-Oli",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1
+              },
+              {
+                "unit": "Ración",
+                "price": 4.5
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Picadillo de Pulpo",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1.2
+              },
+              {
+                "unit": "Ración",
+                "price": 6
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Serranito",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1.2
+              },
+              {
+                "unit": "Ración",
+                "price": 12
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Pincho Gamba",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1.8
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Pincho Moruno",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1.8
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Stick Kebab",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1.5
+              },
+              {
+                "unit": "Ración",
+                "price": 12
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Pollo Cajún",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1.5
+              },
+              {
+                "unit": "Ración",
+                "price": 12
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Bomba (Patata y Carne",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1.5
+              },
+              {
+                "unit": "Ración",
+                "price": 12
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Mini Hambuguesa",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1.5
+              },
+              {
+                "unit": "Ración",
+                "price": 12
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Mini Hamburguesa de Buey",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 2
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Boquerón en Vinagre",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1.2
+              },
+              {
+                "unit": "Ración",
+                "price": 10
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Cóctel de Marisco",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1.5
+              },
+              {
+                "unit": "Ración",
+                "price": 7
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Caprichito",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1.5
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Chipirón Plancha",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1.5
+              },
+              {
+                "unit": "Ración",
+                "price": 7
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Cazón en Adobo",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1.2
+              },
+              {
+                "unit": "Ración",
+                "price": 6
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Lagartitos",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1.5
+              },
+              {
+                "unit": "Ración",
+                "price": 7
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Papas Arriera",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 2
+              },
+              {
+                "unit": "Ración",
+                "price": 8
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Queso Payoyo",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "Tapa",
+                "price": 1.2
+              },
+              {
+                "unit": "Ración",
+                "price": 7
+              }
+            ]
+          },
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Hamburguesas (Todas las Hamburguesas incluyen Patatas Fritas)",
+      "items": [
+        {
+          "name": "Simple",
+          "description": "Ketchup y Mahonesa",
+          "price": 2.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Con Queso",
+          "description": "Queso, Ketchup y Mahonesa",
+          "price": 2.6,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Completa",
+          "description": "Cebolla, Lechuga, Tomate, Queso, Ketchup, Mostaza y Ensalada",
+          "price": 2.7,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Especial",
+          "description": "Queso, Huevo, Bacon, Mahonesa y Ketchup",
+          "price": 3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "De Buey",
+          "description": "Queso, Mahonesa y Ketchup",
+          "price": 4,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Especial de Buey",
+          "description": "Queso, Bacon, Huevo, Mahonesa y Ketchup",
+          "price": 4.5,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Perritos",
+      "items": [
+        {
+          "name": "Simple",
+          "description": "Ketchup y Mostaza",
+          "price": 2,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Completo",
+          "description": "Cebolla, Lechugar, Tomate, Ketchup y Mostaza",
+          "price": 2.5,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Camperos (Todos los Camperos incluyen Patatas Fritas)",
+      "items": [
+        {
+          "name": "Normal",
+          "description": "Queso, Jamón, Tomate, Lechuga y Mahonesa",
+          "price": 3.2,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Atún y Queso",
+          "description": "Tomate, Lechuga y Mahonesa",
+          "price": 3.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Bacon",
+          "description": "Tomate, Lechuga, Queso y Mahonesa",
+          "price": 3.2,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Serrano",
+          "description": "Jamón Serrano, Tomate, Lechuga, Queso y Mahonesa",
+          "price": 3.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Pollo y Queso",
+          "description": "Tomate, Lechuga y Mahonesa",
+          "price": 3.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Vegetal",
+          "description": "Queso, Lechuga, Tomate, Cebolla, Pimiento, Maiz, Zanahoria y Mahonesa",
+          "price": 3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Capricho",
+          "description": "Pollo, Huevo, Lechuga, Tomate, Queso, Bacon y Mahonesa",
+          "price": 3.8,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Kebab",
+          "description": "Tomate, Lechuga, Cebolla y Salsa Kebab",
+          "price": 4,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Baguettes",
+      "items": [
+        {
+          "name": "Pollo y Bacon",
+          "description": "Queso, Tomate, Lechuga y Mahonesa",
+          "price": 3.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Pollo",
+          "description": "Queso, Tomate, Lechuga y Mahonesa",
+          "price": 3.2,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Bacon",
+          "description": "Queso, Lechuga, Mahonesa",
+          "price": 3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Lomo Adobado",
+          "description": "Queso, Tomate, Lechuga, Mahonesa",
+          "price": 3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Filete",
+          "description": "Queso, Pimiento, Mahonesa",
+          "price": 3.2,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Chorizo Ibérico",
+          "description": "Queso",
+          "price": 3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Salchichón Ibérico",
+          "description": "Queso",
+          "price": 3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Jamón Serrano",
+          "description": "Aceite de Oliva, Queso",
+          "price": 3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Jamón a la Catalana",
+          "description": null,
+          "price": 3.2,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Jamón Cocido",
+          "description": "Huevo, Queso, Tomate, Lechuga, Mahonesa",
+          "price": 3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Tortilla",
+          "description": "Queso, Tomate, Lechuga, Mahonesa",
+          "price": 3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Atún",
+          "description": "Queso, Tomate, Lechuga, Mahonesa",
+          "price": 3.2,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Baguette de Serranito",
+          "description": null,
+          "price": 3.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Serrana",
+          "description": "Queso Curado Oveja, Jamón Serrano",
+          "price": 5,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Ensaladas",
+      "items": [
+        {
+          "name": "Mixta",
+          "description": "Lechuga, Tomate, Cebolla, Aceitunas, Atún",
+          "price": 4,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Casa",
+          "description": "Lechuga, Tomate, Cebolla, Aceitunas, Maiz, Zanahoria, Atún, Remolacha",
+          "price": 4.8,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Papatas Fritas",
+      "items": [
+        {
+          "name": "Normales",
+          "description": null,
+          "price": 2,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Tres salsas",
+          "description": null,
+          "price": 3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Kebab",
+          "description": null,
+          "price": 5,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Carnes a la Brasa (Pueden ir acompañadas de ensalada o patatas)",
+      "items": [
+        {
+          "name": "Churrasco Pollo",
+          "description": null,
+          "price": 7,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Churrasco Cerdo",
+          "description": null,
+          "price": 7,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Presa Húngara",
+          "description": null,
+          "price": 9,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Secreto",
+          "description": null,
+          "price": 12,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Churrasco Ibérico",
+          "description": null,
+          "price": 12,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Presa Ibérica",
+          "description": null,
+          "price": 14,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Chuletón Aguja Ternera",
+          "description": null,
+          "price": 15,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Churrasco Ternera",
+          "description": null,
+          "price": 14,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Sandwiches",
+      "items": [
+        {
+          "name": "Mixto",
+          "description": "Mantequilla, Jamón Cocido, Queso",
+          "price": 2,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Vegetal",
+          "description": "Mantequilla, Jamón, Queso, Lechuga, Tomate, Mahonesa",
+          "price": 2.7,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Bacon",
+          "description": "Mantequilla, Queso, Bacon, Lechuga, Tomate, Mahonesa",
+          "price": 2.7,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Pollo",
+          "description": "Mantequilla, Queso, Pollo, Lechuga, Tomate, Mahonesa",
+          "price": 2.8,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Pollo y Bacon",
+          "description": "Mantequilla, Queso, Pollo, Bacon, Lechuga, Tomate, Mahonesa",
+          "price": 3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Atún",
+          "description": "Mantequilla, Tomate, Lechuga, Atún",
+          "price": 2.8,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Pizzas",
+      "items": [
+        {
+          "name": "Margarita",
+          "description": "Tomate, Queso, Orégano",
+          "price": 5.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Vesubio",
+          "description": "Tomate, Queso, Jamón, Óregano",
+          "price": 5.8,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Napolitana",
+          "description": "Champiñones, Alcachofas, Jamón, Huevo, Óregano, Mozzarella",
+          "price": 6,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Choricera",
+          "description": "Champiñones, Alcachofas, Chorizo, Jamón, Huevo, Óregano, Mozzarella",
+          "price": 6,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Al Tonno",
+          "description": "Tomate, Queso, Atún, Cebolla, Orégano",
+          "price": 6,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Caprichosa",
+          "description": "Tomate, Queso, Jamón, Champiñones, Óregano",
+          "price": 6,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Amigo",
+          "description": "Tomate, Queso, Jamón, Atún, Orégano",
+          "price": 6,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Bianca",
+          "description": "Champiñones, Tomate, Queso, Bacon, Nata, Cebolla, Óregano",
+          "price": 6,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Vegetal",
+          "description": "Tomate, Queso, Maiz, Tomate Natural, Cebolla, Aceituna, Pimiento, Champiñones, Óregano",
+          "price": 6,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Barbacoa",
+          "description": "Pollo, Bacon, Cebollas, Salsa Barbacoa",
+          "price": 6,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "4 Estaciones",
+          "description": "Champiñones, Alcachofa, Jamón, Huevo, Gambas, Mejillones",
+          "price": 6,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Kebab",
+          "description": null,
+          "price": 6,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "4 Quesos",
+          "description": null,
+          "price": 6,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    }
+  ],
+  "official": false
+}

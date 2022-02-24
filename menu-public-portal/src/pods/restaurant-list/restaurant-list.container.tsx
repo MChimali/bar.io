@@ -1,9 +1,9 @@
 import * as React from "react";
 import { RestaurantList } from "./restaurant-list.component";
-import { RestaurantInfo } from "./restaurant-list.vm";
+import { RestaurantVm} from "./restaurant-list.vm";
 
 interface Props {
-  restaurantCollection: RestaurantInfo[];
+  restaurantCollection: RestaurantVm[];
 }
 
 const RestaurantListContainer: React.FC<Props> = (props) => {
