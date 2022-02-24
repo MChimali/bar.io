@@ -33,7 +33,7 @@ describe("common/tools/cache-buster.tool spec", () => {
       //Act
       const result = cacheBuster(uri);
       //Assert
-      expect(result).toEqual("http://localhost:3000/?cache=2022139");
+      expect(result).toEqual("http://localhost:3000/?cache=2022138");
     });
   });
 });
