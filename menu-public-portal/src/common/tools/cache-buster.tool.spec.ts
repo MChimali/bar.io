@@ -23,7 +23,7 @@ describe("common/tools/cache-buster.tool spec", () => {
       const uri: string = "http://localhost:3000/";
 
       jest
-        .useFakeTimers()
+        .useFakeTimers("modern")
         .setSystemTime(
           new Date(
             "Wed Feb 23 2022 08:17:40 GMT+0000 (hora estándar de Europa central"
