@@ -357,7 +357,7 @@ export const restaurant: RestaurantInfo = {
       ],
     },
     {
-      name: 'Camperos',
+      name: 'Camperos (Todos llevan incluidos lechuga, tomate, cebolla y mahonesa)',
       items: [
         {
           name: 'Normal',
