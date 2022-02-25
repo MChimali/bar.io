@@ -12,10 +12,7 @@
   "rationsDefinitions": [
     {
       "name": "Raciones",
-      "units": [
-        "Tapa",
-        "Ración"
-      ]
+      "units": ["Tapa", "Ración"]
     }
   ],
   "menu": [

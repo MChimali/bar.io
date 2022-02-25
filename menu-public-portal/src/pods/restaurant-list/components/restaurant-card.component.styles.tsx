@@ -1,6 +1,6 @@
-import { css } from "@emotion/css";
-import { Theme } from "@mui/material/styles";
-import { defaultTheme } from "core/theme";
+import { css } from '@emotion/css';
+import { Theme } from '@mui/material/styles';
+import { defaultTheme } from 'core/theme';
 
 export const Container = css`
   display: flex;

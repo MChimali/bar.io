@@ -1,13 +1,13 @@
-import { RestaurantVm } from "../restaurant-list.vm";
-import { routes } from "core/router";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import Button from "@mui/material/Button";
-import { ThemeProvider } from "@mui/material/styles";
-import { chooseTheme } from "core/theme";
-import { CardContentComponent } from "./cardContent.component";
-import { useTheme } from "@mui/material/styles";
-import * as classes from "./restaurant-card.component.styles";
+import { RestaurantVm } from '../restaurant-list.vm';
+import { routes } from 'core/router';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import Button from '@mui/material/Button';
+import { ThemeProvider } from '@mui/material/styles';
+import { chooseTheme } from 'core/theme';
+import { CardContentComponent } from './cardContent.component';
+import { useTheme } from '@mui/material/styles';
+import * as classes from './restaurant-card.component.styles';
 
 interface Props {
   restaurant: RestaurantVm;

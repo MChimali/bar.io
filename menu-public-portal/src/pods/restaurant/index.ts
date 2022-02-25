@@ -1,1 +1,1 @@
-export * from "./restaurant.container";
+export * from './restaurant.container';

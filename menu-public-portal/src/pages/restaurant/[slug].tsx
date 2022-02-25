@@ -1,9 +1,9 @@
-import React from "react";
-import { GetStaticProps, GetStaticPaths } from "next";
-import { formatSlugFromUrlParam } from "common/helpers/slug.helpers";
-import { RestaurantContainer } from "pods/restaurant";
-import { getRestaurantMenu } from "pods/restaurant/restaurant.repository";
-import { RestaurantInfo } from "pods/restaurant/restaurant.vm";
+import React from 'react';
+import { GetStaticProps, GetStaticPaths } from 'next';
+import { formatSlugFromUrlParam } from 'common/helpers/slug.helpers';
+import { RestaurantContainer } from 'pods/restaurant';
+import { getRestaurantMenu } from 'pods/restaurant/restaurant.repository';
+import { RestaurantInfo } from 'pods/restaurant/restaurant.vm';
 
 interface Props {
   menu: RestaurantInfo;
@@ -20,7 +20,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   // TODO Add error un handling
   const restaurantNameWithOutBar = slug.substring(1);
   const menu = await getRestaurantMenu(restaurantNameWithOutBar);
-  
+
   return {
     props: { slug, menu },
     revalidate: 600, // Seconds,  move this to a const or env const
@@ -30,7 +30,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: [],
-    fallback: "blocking",
+    fallback: 'blocking',
   };
 };
 

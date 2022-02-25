@@ -1,6 +1,6 @@
-import { css } from "@emotion/css";
-import { defaultTheme } from "core/theme";
-import { Theme } from "@mui/material/styles";
+import { css } from '@emotion/css';
+import { defaultTheme } from 'core/theme';
+import { Theme } from '@mui/material/styles';
 
 export const rowIndent = css`
   display: flex;
@@ -15,7 +15,7 @@ export const anchorDefault = css`
 `;
 
 export const nameRestaurant = (theme: Theme) => css`
-  margin-top: ${theme.spacing(6)};;
+  margin-top: ${theme.spacing(6)}; ;
 `;
 
 export const cardContent = css`
@@ -25,5 +25,3 @@ export const cardContent = css`
   align-items: center;
   width: 90%;
 `;
-
-

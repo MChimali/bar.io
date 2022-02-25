@@ -1,23 +1,23 @@
-import { createTheme } from "@mui/material/styles";
-import { varsRestaurantType } from "./model";
+import { createTheme } from '@mui/material/styles';
+import { varsRestaurantType } from './model';
 
 export const fishTheme = createTheme({
   palette: {
     primary: {
-      main: "#0D0043",
+      main: '#0D0043',
     },
     secondary: {
       main: varsRestaurantType.fish.secondaryColor,
     },
     text: {
-      primary: "#232323",
-      secondary: "#FFFFFF",
+      primary: '#232323',
+      secondary: '#FFFFFF',
     },
   },
   typography: {
-    fontFamily: "Dosis",
+    fontFamily: 'Dosis',
     h3: {
-      borderBottom: "3px solid #35A7CB",
+      borderBottom: '3px solid #35A7CB',
     },
   },
 });

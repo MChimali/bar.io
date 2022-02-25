@@ -1,1 +1,1 @@
-export * from "./accordion-styled";
+export * from './accordion-styled';

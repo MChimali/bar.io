@@ -1,7 +1,7 @@
 {
   "name": "bar.io",
   "scripts": {
-    "prettier:format": "prettier --write \"{,!(*.\\node_modules|*.\\.next)/**/}*.{js,ts,tsx}\""
+    "prettier:format": "prettier --write . \"!**/*.{js,jsx,vue}\""
   },
   "husky": {
     "hooks": {

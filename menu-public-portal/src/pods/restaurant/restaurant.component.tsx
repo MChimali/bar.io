@@ -1,18 +1,18 @@
-import { Typography } from "@mui/material";
-import React from "react";
-import Accordion from "@mui/material/Accordion";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
-import PlaceIcon from "@mui/icons-material/Place";
-import * as classes from "./restaurant.component.styles";
-import { RestaurantInfo, Item, PriceByRation } from "./restaurant.vm";
-import { AccordionSummaryStyled } from "common/components";
-import { useTheme } from "@mui/material/styles";
-import Link from "next/link";
-import { CommunityMenuFooter } from "./components/communityMenuFooter.component";
-import { OfficialMenuFooter } from "./components/officialMenuFooter.component";
-import { CommunityMenuHeader } from "./components/communityMenuHeader.component";
-import { OfficialMenuHeader } from "./components/officialMenuHeader.component";
+import { Typography } from '@mui/material';
+import React from 'react';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
+import PlaceIcon from '@mui/icons-material/Place';
+import * as classes from './restaurant.component.styles';
+import { RestaurantInfo, Item, PriceByRation } from './restaurant.vm';
+import { AccordionSummaryStyled } from 'common/components';
+import { useTheme } from '@mui/material/styles';
+import Link from 'next/link';
+import { CommunityMenuFooter } from './components/communityMenuFooter.component';
+import { OfficialMenuFooter } from './components/officialMenuFooter.component';
+import { CommunityMenuHeader } from './components/communityMenuHeader.component';
+import { OfficialMenuHeader } from './components/officialMenuHeader.component';
 
 interface PropsRation {
   ration: PriceByRation;
@@ -52,7 +52,7 @@ export const DishesComponent: React.FC<PropsItemsComponent> = (props) => {
       {items.map((item) => (
         <div className={classes.dishContainer(theme)} key={item.name}>
           <div className={classes.fullWidth(theme)}>
-            <Typography variant="subtitle1" sx={{ fontWeight: "bold" }}>
+            <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>
               {item.name}
             </Typography>
             {item.description ? (
@@ -110,7 +110,7 @@ export const RestaurantComponent: React.FC<Props> = (props) => {
             {phone}
           </Typography>
           <a href={`tel: ${phone}`}>
-            <PhoneEnabledIcon sx={{ color: "secondary.main" }} />
+            <PhoneEnabledIcon sx={{ color: 'secondary.main' }} />
           </a>
         </div>
         <div className={classes.rowIndent}>
@@ -123,7 +123,7 @@ export const RestaurantComponent: React.FC<Props> = (props) => {
           </Typography>
           <Link href={locationUrl}>
             <a target="_blank">
-              <PlaceIcon sx={{ color: "secondary.main" }} />
+              <PlaceIcon sx={{ color: 'secondary.main' }} />
             </a>
           </Link>
         </div>
