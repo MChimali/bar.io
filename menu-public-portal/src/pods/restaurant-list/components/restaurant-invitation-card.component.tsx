@@ -1,8 +1,8 @@
-import Link from "next/link";
-import { useTheme } from "@mui/material/styles";
-import Typography from "@mui/material/Typography";
-import EmailIcon from "@mui/icons-material/Email";
-import * as classes from "./restaurant-invitation-card.component.styles";
+import Link from 'next/link';
+import { useTheme } from '@mui/material/styles';
+import Typography from '@mui/material/Typography';
+import EmailIcon from '@mui/icons-material/Email';
+import * as classes from './restaurant-invitation-card.component.styles';
 
 const AboutUs: React.FC = () => {
   const theme = useTheme();
@@ -39,7 +39,7 @@ const InfoMail: React.FC = () => {
       </a>
       <Typography variant="body2" component="h2">
         Si eres el propiertario de un establecimiento puedes publicar tu carta
-        de forma gratuita, ponte en contacto con nosotros en{" "}
+        de forma gratuita, ponte en contacto con nosotros en{' '}
         <a
           href="mailto:info@gastrocarta.net"
           target="_blank"
@@ -60,4 +60,3 @@ export const RestaurantInvitationCard: React.FC = () => {
     </div>
   );
 };
-

@@ -1,9 +1,9 @@
-import type { GetStaticProps, NextPage } from "next";
-import { RestaurantListContainer } from "pods/restaurant-list";
-import { RestaurantVm } from "pods/restaurant-list/restaurant-list.vm";
-import { getRestaurantList } from "pods/restaurant-list/";
-import CssBaseline from "@mui/material/CssBaseline";
-import React from "react";
+import type { GetStaticProps, NextPage } from 'next';
+import { RestaurantListContainer } from 'pods/restaurant-list';
+import { RestaurantVm } from 'pods/restaurant-list/restaurant-list.vm';
+import { getRestaurantList } from 'pods/restaurant-list/';
+import CssBaseline from '@mui/material/CssBaseline';
+import React from 'react';
 
 export const getStaticProps: GetStaticProps = async () => {
   const restaurantCollection: RestaurantVm[] = await getRestaurantList();

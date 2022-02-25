@@ -10,7 +10,8 @@ export const restaurant: RestaurantInfo = {
   locationUrl:
     'https://www.google.com/maps/place/Restaurante+Hermanos+Alba/@36.7199358,-4.3637038,15z/data=!4m2!3m1!1s0x0:0x20b21ada1121ce03?sa=X&ved=2ahUKEwj_8pDWyff1AhUkSvEDHeBgAOEQ_BJ6BAhOEAU',
   menuDate: new Date('2022-02-14'),
-  communitySourceUrl: 'https://www.hermanosalba.com/_files/ugd/e7dd90_9fa99b00428b4754a7ff716eccc73fa3.pdf',
+  communitySourceUrl:
+    'https://www.hermanosalba.com/_files/ugd/e7dd90_9fa99b00428b4754a7ff716eccc73fa3.pdf',
   official: false,
   description: 'La tradición de nuestra bahía',
   theme: 'fish',

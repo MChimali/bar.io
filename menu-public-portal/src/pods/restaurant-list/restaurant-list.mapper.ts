@@ -1,6 +1,6 @@
-import * as api from "./api/restaurant-list.api.model";
-import * as viewModel from "./restaurant-list.vm";
-import { mapToCollection } from "common/mappers";
+import * as api from './api/restaurant-list.api.model';
+import * as viewModel from './restaurant-list.vm';
+import { mapToCollection } from 'common/mappers';
 
 export const mapRestaurantListfromApiToVm = (
   restaurantList: api.RestaurantApi[]

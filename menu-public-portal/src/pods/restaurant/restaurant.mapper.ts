@@ -1,13 +1,13 @@
-import * as restaurantApi from "./api/restaurant.api.model";
-import * as restaurantVm from "./restaurant.vm";
-import { mapToCollection } from "common/mappers";
-import { emptyRestaurantInfo } from "./restaurant.vm";
+import * as restaurantApi from './api/restaurant.api.model';
+import * as restaurantVm from './restaurant.vm';
+import { mapToCollection } from 'common/mappers';
+import { emptyRestaurantInfo } from './restaurant.vm';
 
 export const mapDatefromApiToModel = (date: string): string => {
   const dateToDateFormat = new Date(date);
   const day = dateToDateFormat.getDate();
   const year = dateToDateFormat.getUTCFullYear();
-  const month = dateToDateFormat.toLocaleString("es-ES", { month: "long" });
+  const month = dateToDateFormat.toLocaleString('es-ES', { month: 'long' });
 
   return `Actualizada el ${day} de ${month} de ${year}`;
 };

@@ -1,2 +1,2 @@
-export * from "./restaurant.api.model";
-export * from "./restaurant.api";
+export * from './restaurant.api.model';
+export * from './restaurant.api';

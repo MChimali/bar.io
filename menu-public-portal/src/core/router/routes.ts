@@ -4,6 +4,6 @@ export interface Routes {
 }
 
 export const routes: Routes = {
-  root: "/",
+  root: '/',
   restaurant: (slug: string) => `/restaurant/${slug}`,
 };

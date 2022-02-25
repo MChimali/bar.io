@@ -1,8 +1,8 @@
-import { formatSlugFromUrlParam } from "./slug.helpers";
+import { formatSlugFromUrlParam } from './slug.helpers';
 
-describe("common/helpers/slug.helpers specs", () => {
-  describe("formatSlugFromUrlParam", () => {
-    it("should return empty string when it feeds param equals undefined", () => {
+describe('common/helpers/slug.helpers specs', () => {
+  describe('formatSlugFromUrlParam', () => {
+    it('should return empty string when it feeds param equals undefined', () => {
       // Arrange
       const param: string = undefined;
 
@@ -10,10 +10,10 @@ describe("common/helpers/slug.helpers specs", () => {
       const result = formatSlugFromUrlParam(param);
 
       // Assert
-      expect(result).toEqual("");
+      expect(result).toEqual('');
     });
 
-    it("should return empty string when it feeds param equals null", () => {
+    it('should return empty string when it feeds param equals null', () => {
       // Arrange
       const param: string = null;
 
@@ -21,40 +21,40 @@ describe("common/helpers/slug.helpers specs", () => {
       const result = formatSlugFromUrlParam(param);
 
       // Assert
-      expect(result).toEqual("");
+      expect(result).toEqual('');
     });
 
-    it("should return empty string when it feeds param equals empty string", () => {
+    it('should return empty string when it feeds param equals empty string', () => {
       // Arrange
-      const param: string = "";
+      const param: string = '';
 
       // Act
       const result = formatSlugFromUrlParam(param);
 
       // Assert
-      expect(result).toEqual("");
+      expect(result).toEqual('');
     });
 
     it('should return formatted param when it feeds param equals "0"', () => {
       // Arrange
-      const param: string = "0";
+      const param: string = '0';
 
       // Act
       const result = formatSlugFromUrlParam(param);
 
       // Assert
-      expect(result).toEqual("/0");
+      expect(result).toEqual('/0');
     });
 
     it('should return formatted param when it feeds param equals "test"', () => {
       // Arrange
-      const param: string = "test";
+      const param: string = 'test';
 
       // Act
       const result = formatSlugFromUrlParam(param);
 
       // Assert
-      expect(result).toEqual("/test");
+      expect(result).toEqual('/test');
     });
   });
 });
