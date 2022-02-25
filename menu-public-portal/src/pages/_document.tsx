@@ -1,10 +1,19 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import { renderStatic } from 'core/ssr';
+import createEmotionServer from '@emotion/server/create-instance';
+import { cache, CacheProvider, ssrStyleIds } from 'core/ssr';
 
 export default class AppDocument extends Document {
   static async getInitialProps(ctx) {
-    const page = ctx.renderPage();
-    const { css, ids } = await renderStatic(page.html);
+    const { extractCritical } = createEmotionServer(cache);
+    const page = ctx.renderPage({
+      enhanceApp: (App) => (props) =>
+        (
+          <CacheProvider>
+            <App {...props} />
+          </CacheProvider>
+        ),
+    });
+    const { css, ids } = extractCritical(page.html);
     const initialProps = await Document.getInitialProps(ctx);
 
     return {
@@ -13,7 +22,8 @@ export default class AppDocument extends Document {
         <>
           {initialProps.styles}
           <style
-            data-emotion={`emotion-css ${ids.join(' ')}`}
+            id={ssrStyleIds.emotion}
+            data-emotion={ids.join(' ')}
             dangerouslySetInnerHTML={{ __html: css }}
           />
         </>
