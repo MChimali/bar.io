@@ -1,0 +1,16 @@
+{
+  "name": "bar.io",
+  "scripts": {
+    "prettier:format": "prettier --write \"{,!(*.\\node_modules|*.\\.next)/**/}*.{js,ts,tsx}\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "prettier": "^2.5.1",
+    "pretty-quick": "^3.1.3"
+  }
+}
