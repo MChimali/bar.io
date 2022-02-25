@@ -1,4 +1,4 @@
-import { ThemeName } from "core/theme";
+import { ThemeName } from 'core/theme';
 
 export interface RationType {
   unit: string;
@@ -38,16 +38,16 @@ export interface RestaurantInfo {
 }
 
 export const emptyRestaurantInfo = (): RestaurantInfo => ({
-  id: "",
-  name: "",
-  urlName: "",
-  phone: "",
-  address: "",
-  locationUrl: "",
-  menuDate: "",
-  communitySourceUrl: "",
+  id: '',
+  name: '',
+  urlName: '',
+  phone: '',
+  address: '',
+  locationUrl: '',
+  menuDate: '',
+  communitySourceUrl: '',
   official: false,
-  description: "",
-  theme: "default",
+  description: '',
+  theme: 'default',
   menu: [],
 });

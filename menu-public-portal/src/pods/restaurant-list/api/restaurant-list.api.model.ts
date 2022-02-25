@@ -1,4 +1,4 @@
-import { ThemeName } from "core/theme";
+import { ThemeName } from 'core/theme';
 
 export interface RestaurantApi {
   _id: string;

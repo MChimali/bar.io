@@ -1,11 +1,11 @@
-import Link from "next/link";
-import CardContent from "@mui/material/CardContent";
-import { routes } from "core/router";
-import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
-import PlaceIcon from "@mui/icons-material/Place";
-import Typography from "@mui/material/Typography";
-import { useTheme } from "@mui/material/styles";
-import * as classes from "./cardContent.component.styles";
+import Link from 'next/link';
+import CardContent from '@mui/material/CardContent';
+import { routes } from 'core/router';
+import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
+import PlaceIcon from '@mui/icons-material/Place';
+import Typography from '@mui/material/Typography';
+import { useTheme } from '@mui/material/styles';
+import * as classes from './cardContent.component.styles';
 
 interface locationCardProps {
   address: string;
@@ -21,7 +21,7 @@ const LocationCard: React.FC<locationCardProps> = (props) => {
       </Typography>
       <Link href={locationUrl}>
         <a target="_blank">
-          <PlaceIcon sx={{ color: "secondary.main" }} />
+          <PlaceIcon sx={{ color: 'secondary.main' }} />
         </a>
       </Link>
     </div>
@@ -40,7 +40,7 @@ const PhoneCard: React.FC<phoneCardProps> = (props) => {
         {phone}
       </Typography>
       <a href={`tel: ${phone}`}>
-        <PhoneEnabledIcon sx={{ color: "secondary.main" }} />
+        <PhoneEnabledIcon sx={{ color: 'secondary.main' }} />
       </a>
     </div>
   );
@@ -119,5 +119,3 @@ export const CardContentComponent: React.FC<PropsCardContent> = (props) => {
     </CardContent>
   );
 };
-
-
