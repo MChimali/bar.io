@@ -23,7 +23,7 @@ export interface CategoryEntry {
   items: Item[];
 }
 
-export interface RestaurantInfo {
+export interface RestaurantApiModel {
   id: string;
   name: string;
   urlName: string;

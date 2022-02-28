@@ -3,6 +3,7 @@
 /mongo-data
 
 node_modules
+.env
 
 # compiled output
 /dist

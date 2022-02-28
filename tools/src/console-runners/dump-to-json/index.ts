@@ -2,7 +2,7 @@ import { prompt } from 'inquirer';
 import fs from 'fs';
 import { connectToDBServer, disconnectFromDbServer } from 'core/servers';
 import { envConstants } from 'core/constants';
-import { restaurantDbRepository } from 'dals';
+import { restaurantRepository } from 'dals';
 import { inputQuestion, confirmFile } from '../questions';
 
 export const run = async () => {
@@ -13,7 +13,7 @@ export const run = async () => {
     const { answer } = await prompt(confirmFile);
 
     if (answer) {
-      const restaurant = await restaurantDbRepository.getRestaurantByUrlName(
+      const restaurant = await restaurantRepository.getRestaurantByUrlName(
         file
       );
 

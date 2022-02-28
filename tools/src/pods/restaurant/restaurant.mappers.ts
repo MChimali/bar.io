@@ -113,8 +113,8 @@ const mapFromCategoryEntryToItemsByCategory = (
   };
 };
 
-export const mapRestaurantFromApiToModel = (
-  restaurant: apiModel.RestaurantInfo
+export const mapRestaurantFromApiModelToModel = (
+  restaurant: apiModel.RestaurantApiModel
 ): model.Restaurant => ({
   _id: new ObjectId(restaurant.id),
   name: restaurant.name,
@@ -130,5 +130,77 @@ export const mapRestaurantFromApiToModel = (
     restaurant.menu
   ),
   menu: mapListFromCategoryEntryToItemsByCategory(restaurant.menu),
+  official: restaurant.official,
+});
+
+// Mapper from Model to ApiModel
+const mapListFromRationTypeApiToRationTypeModel = (
+  rationType: model.RationType[]
+): apiModel.RationType[] =>
+  mapToCollection(rationType, mapFromRationTypeModelToRationTypeApiModel);
+
+const mapFromRationTypeModelToRationTypeApiModel = (
+  rationType: model.RationType
+): apiModel.RationType => ({
+  unit: rationType.unit,
+  price: rationType.price,
+});
+
+const mapFromSubItemPriceToPriceByRation = (
+  priceByRation: model.SubItemPrice
+): apiModel.PriceByRation => ({
+  rationName: priceByRation.rationName,
+  rationsTypes: mapListFromRationTypeApiToRationTypeModel(
+    priceByRation.rationsTypes
+  ),
+});
+
+const mapListFromItemModelToItemApi = (item: model.Item[]): apiModel.Item[] =>
+  mapToCollection(item, mapFromItemModelToItemModelApi);
+
+const mapFromItemModelToItemModelApi = (item: model.Item): apiModel.Item => ({
+  name: item.name,
+  description: item.description,
+  price: item.price ? item.price : null,
+  priceByRation: item.priceByRation
+    ? mapFromSubItemPriceToPriceByRation(item.priceByRation)
+    : null,
+  unit: item.unit ? item.unit : null,
+});
+
+const mapListFromItemsCategoryToCategoryEntry = (
+  category: model.ItemsByCategory[]
+): apiModel.CategoryEntry[] =>
+  mapToCollection(category, mapFromItemsByCategoryToCategoryEntry);
+
+const mapFromItemsByCategoryToCategoryEntry = (
+  category: model.ItemsByCategory
+): apiModel.CategoryEntry => {
+  return {
+    name: category.categoryName,
+    items: mapListFromItemModelToItemApi(category.items),
+  };
+};
+
+// Todo: Test to mapRestaurantFromModeToApiModel
+export const mapRestaurantListFromModelToApiModel = (
+  restaurant: model.Restaurant[]
+): apiModel.RestaurantApiModel[] =>
+  mapToCollection(restaurant, mapRestaurantFromModelToApiModel);
+
+export const mapRestaurantFromModelToApiModel = (
+  restaurant: model.Restaurant
+): apiModel.RestaurantApiModel => ({
+  id: restaurant._id.toHexString(),
+  name: restaurant.name,
+  urlName: restaurant.urlName,
+  phone: restaurant.phone,
+  address: restaurant.address,
+  locationUrl: restaurant.locationUrl,
+  menuDate: restaurant.menuDate,
+  communitySourceUrl: restaurant.communitySourceUrl,
+  description: restaurant.description,
+  theme: restaurant.theme,
+  menu: mapListFromItemsCategoryToCategoryEntry(restaurant.menu),
   official: restaurant.official,
 });

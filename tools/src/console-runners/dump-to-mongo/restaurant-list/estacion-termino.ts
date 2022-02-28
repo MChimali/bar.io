@@ -1,7 +1,7 @@
 import { ObjectId } from 'mongodb';
-import { RestaurantInfo } from 'pods/restaurant';
+import { RestaurantApiModel } from 'pods/restaurant';
 
-export const restaurant: RestaurantInfo = {
+export const restaurant: RestaurantApiModel = {
   id: new ObjectId().toHexString(),
   name: 'Estación Término',
   urlName: 'estacion-termino',

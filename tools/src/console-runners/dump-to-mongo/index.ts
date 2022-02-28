@@ -1,8 +1,8 @@
 import { prompt } from 'inquirer';
 import { connectToDBServer, disconnectFromDbServer } from 'core/servers';
 import { envConstants } from 'core/constants';
-import { mapRestaurantFromApiToModel } from 'pods/restaurant/restaurant.mappers';
-import { restaurantDbRepository } from 'dals';
+import { mapRestaurantFromApiModelToModel } from 'pods/restaurant/restaurant.mappers';
+import { restaurantRepository } from 'dals';
 import { inputQuestion, confirmFile } from '../questions';
 
 export const run = async () => {
@@ -16,14 +16,15 @@ export const run = async () => {
 
     if (answer) {
       const { restaurant } = require(`./restaurant-list/${file}`);
-      const restaurantModel =
-        await restaurantDbRepository.getRestaurantByUrlName(file);
+      const restaurantModel = await restaurantRepository.getRestaurantByUrlName(
+        file
+      );
 
       if (restaurantModel) {
         throw 'Restaurant with this name exist in data base';
       } else {
-        await restaurantDbRepository.saveRestaurant(
-          mapRestaurantFromApiToModel(restaurant)
+        await restaurantRepository.saveRestaurant(
+          mapRestaurantFromApiModelToModel(restaurant)
         );
 
         console.log('Restaurant created:', { restaurant: file });
