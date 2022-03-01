@@ -43,7 +43,7 @@ RUN mkdir -p /etc/profile.d/ \
  && chmod a+x /etc/profile.d/heroku-exec.sh \
  && rm /bin/sh \
  && ln -s /bin/bash /bin/sh \
- && ln -s /usr/bin/python3 /usr/bin/python \
+ && ln -s /usr/bin/python3 /usr/bin/python
 # <=>
 
 CMD sed -i -e 's|PORT|'"$PORT"'|g' /etc/nginx/conf.d/default.conf && \
