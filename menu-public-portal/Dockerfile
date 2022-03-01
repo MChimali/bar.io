@@ -47,6 +47,7 @@ RUN mkdir -p /etc/profile.d/ \
  && ln -s /usr/bin/python3 /usr/bin/python
 # <=>
 
-CMD sed -i -e 's|PORT|'"$PORT"'|g' /etc/nginx/conf.d/default.conf && \
+CMD bash /etc/profile.d/heroku-exec.sh && \
+  sed -i -e 's|PORT|'"$PORT"'|g' /etc/nginx/conf.d/default.conf && \
   pm2 start "node_modules/next/dist/bin/next" --name "bar.io" --env production -- start ./ -p $INTERNAL_PORT && \
   nginx -g 'daemon off;'
