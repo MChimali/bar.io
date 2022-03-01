@@ -201,5 +201,200 @@ export const restaurant: RestaurantInfo = {
         },
       ],
     },
+    {
+      name: 'Pizzas',
+      items: [
+        {
+          name: 'Margarita',
+          description: 'tomate, queso',
+          price: 5.5,
+        },
+        {
+          name: 'Cibolle',
+          description: 'tomate, queso, cebolla',
+          price: 6,
+        },
+        {
+          name: 'Andaluza',
+          description: 'tomate, queso, jamón serrano, pimiento morrón, aceitunas negras',
+          price: 8.5,
+        },
+        {
+          name: 'Vesubio',
+          description: 'tomate, queso, jamón',
+          price: 6,
+        },
+        {
+          name: 'Caprichosa',
+          description: 'tomate, queso, jamón, champiñones',
+          price: 6.5,
+        },
+        {
+          name: 'Opera',
+          description: 'tomate, queso, bacon, cebolla',
+          price: 6.5,
+        },
+        {
+          name: 'Aeponno',
+          description: 'tomate, queso, atún, aceitunas',
+          price: 6.5,
+        },
+        {
+          name: 'Napolitana',
+          description: 'tomate, queso, anchoas, aceitunas',
+          price: 6.5,
+        },
+        {
+          name: 'Amigo',
+          description: 'tomate, queso, atún, jamón',
+          price: 6.5,
+        },
+        {
+          name: 'Pescador',
+          description: 'tomate, queso, jamón, atún, cebolla',
+          price: 6.5,
+        },
+        {
+          name: 'Fugazzeta',
+          description: 'tomate, queso, fuchagazza (salsa de cebolla)',
+          price: 7,
+        },
+        {
+          name: 'Al ajo',
+          description: 'tomate natural, queso, ajo',
+          price: 7,
+        },
+        {
+          name: 'Argentina',
+          description: 'tomate, queso, pimiento morrón, aceitunas negras',
+          price: 7,
+        },
+        {
+          name: 'Bussola',
+          description: 'tomate, queso, fugazza, pollo',
+          price: 7.5,
+        },
+        {
+          name: 'Vegetariana',
+          description: 'tomate, queso, champiñones, cebolla, pimiento, aceitunas',
+          price: 7.5,
+        },
+        {
+          name: 'Escandinava',
+          description: 'tomate, queso, salchichas, jamón',
+          price: 7.5,
+        },
+        {
+          name: 'Rossini',
+          description: 'tomate, queso, jamón, bacon, pimientos, cebolla',
+          price: 7.5,
+        },
+        {
+          name: 'Caleña',
+          description: 'tomate, queso, jamón, palmito',
+          price: 7.5,
+        },
+        {
+          name: 'Lorena',
+          description: 'tomate, queso, champiñones, gambas, cebolla',
+          price: 7.5,
+        },
+        {
+          name: 'Maite',
+          description: 'tomate, queso, jamón, pollo, pimientos',
+          price: 7.5,
+        },
+        {
+          name: 'Italiana',
+          description: 'tomate, queso, bacon, fugazza (salsa de cebolla)',
+          price: 7.5,
+        },
+        {
+          name: 'Siciliana',
+          description: 'tomate, queso, roquefort, anchoas, alcaparras',
+          price: 7.5,
+        },
+        {
+          name: 'Caribe',
+          description: 'tomate, queso, jamón, piña, salsa rosa',
+          price: 7.5,
+        },
+        {
+          name: 'Luigi',
+          description: 'tomate, queso, jamón, champiñones, atún, gambas',
+          price: 8,
+        },
+        {
+          name: 'Capricornio',
+          description: 'tomate, queso, jamón, champiñones, anchoas, aceitunas',
+          price: 8,
+        },
+        {
+          name: 'Cuatro estaciones',
+          description: 'tomate, queso, jamón, gambas, mejillones, cebolla',
+          price: 8,
+        },
+        {
+          name: 'Roquefort',
+          description: 'tomate, queso, roquefort, aceitunas negras',
+          price: 8,
+        },
+        {
+          name: 'Danesa',
+          description: 'tomate, queso, salmón, caviar',
+          price: 8.5,
+        },
+        {
+          name: 'Campera',
+          description: 'tomate, queso, huevo, alcaparras, bacon',
+          price: 8.5,
+        },
+        {
+          name: 'Super Maite',
+          description: 'tomate, queso, pollo, huevo, maíz',
+          price: 8.5,
+        },
+        {
+          name: 'Mediterranea',
+          description: 'tomate, queso, atún, mejillones, gambas, anchoas',
+          price: 8.5,
+        },
+        {
+          name: 'Fredes',
+          description: 'tomate, queso, caviar, huevo, pimiento morrón',
+          price: 8.5,
+        },
+        {
+          name: 'Noruega',
+          description: 'tomate, queso, salmón, aceitunas negras',
+          price: 8.5,
+        },
+        {
+          name: 'Boloñesa',
+          description: 'tomate, queso, salsa boloñesa (carne de ternera)',
+          price: 8.5,
+        },
+        {
+          name: 'Cuatro Quesos',
+          description: 'tomate, queso havarti, parmesano, roquefort, edam',
+          price: 8.5,
+        },
+        {
+          name: 'Peperoni',
+          description: 'tomate, queso, peperoni, cebolla, aceitunas negras',
+          price: 8.5,
+        },
+        {
+          name: 'Cántabra',
+          description: 'tomate, queso, alcachofas, anchoas, pimiento morrón',
+          price: 8.5,
+        },
+        {
+          name: 'Barbacoa',
+          description: 'tomate, queso, bacon, carne de ternera, salsa barbacoa',
+          price: 8.5,
+        },
+      ]
+    },
   ],
 };
