@@ -10,7 +10,7 @@ export const mapRestaurantListfromApiToVm = (
 const mapRestaurantfromApiToVm = (
   restaurant: api.RestaurantApi
 ): viewModel.RestaurantVm => ({
-  id: restaurant._id,
+  id: restaurant.id,
   name: restaurant.name,
   urlName: restaurant.urlName,
   phone: restaurant.phone,

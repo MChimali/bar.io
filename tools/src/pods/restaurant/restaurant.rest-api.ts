@@ -33,10 +33,12 @@ restaurantApi
   // Use this endpoint to bring us an especific restaurant
   // http://localhost:3001/api/restaurant/5
   // where 5 is the restaurant id
-  .get('/:id', async (req, res, next) => {
+  .get('/:urlName', async (req, res, next) => {
     try {
-      const { id } = req.params;
-      const restaurant = await restaurantRepository.getRestaurant(id);
+      const { urlName } = req.params;
+      const restaurant = await restaurantRepository.getRestaurantByUrlName(
+        urlName
+      );
       res.send(mapRestaurantFromModelToApiModel(restaurant));
     } catch (error) {
       next(error);
@@ -47,12 +49,20 @@ restaurantApi
   // and use a JSON as Restaurant Model
   .post('/', async (req, res, next) => {
     try {
-      const restaurant = mapRestaurantFromApiModelToModel(req.body);
-      // TODO: Mirar si el restaurante ya está en BBDD
-      const newRestaurant = await restaurantRepository.saveRestaurant(
-        restaurant
+      const { urlName } = req.body;
+      const restaurantModel = await restaurantRepository.getRestaurantByUrlName(
+        urlName
       );
-      res.status(201).send(newRestaurant);
+
+      if (restaurantModel) {
+        throw 'Restaurant with this name exist in data base';
+      } else {
+        const restaurant = mapRestaurantFromApiModelToModel(req.body);
+        const newRestaurant = await restaurantRepository.saveRestaurant(
+          restaurant
+        );
+        res.status(201).send(newRestaurant);
+      }
     } catch (error) {
       next(error);
     }
@@ -63,9 +73,12 @@ restaurantApi
   .put('/:id', async (req, res, next) => {
     try {
       const { id } = req.params;
-      const restaurant = req.body;
-      await restaurantRepository.saveRestaurant({ ...restaurant, id });
-      res.sendStatus(204).send('Restaurant modify');
+      const restaurantModel = mapRestaurantFromApiModelToModel({
+        ...req.body,
+        id,
+      });
+      await restaurantRepository.saveRestaurant(restaurantModel);
+      res.sendStatus(204);
     } catch (error) {
       next(error);
     }

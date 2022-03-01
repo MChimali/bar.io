@@ -23,7 +23,7 @@ export interface CategoryEntry {
 }
 
 export interface RestaurantApi {
-  _id: string;
+  id: string;
   name: string;
   urlName: string;
   phone: string;

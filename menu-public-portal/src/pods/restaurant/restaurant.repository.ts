@@ -6,6 +6,5 @@ export const getRestaurantMenu = async (
   restaurantName: string
 ): Promise<RestaurantInfo> => {
   const restaurant = await getRestaurantByName(restaurantName);
-
   return mapFromRestaurantApiToRestaurantVm(restaurant);
 };

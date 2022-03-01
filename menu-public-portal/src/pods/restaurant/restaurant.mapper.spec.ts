@@ -30,7 +30,7 @@ describe('restaurant.mapper', () => {
     it('should return mepped restaurant when it feeds a restaurant to map', () => {
       // Arrange
       const restaurant: restaurantApi.RestaurantApi = {
-        _id: 'test-id',
+        id: 'test-id',
         name: 'test-name',
         urlName: 'test-urlName',
         phone: 'test-phone',

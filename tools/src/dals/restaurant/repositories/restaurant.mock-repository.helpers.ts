@@ -23,7 +23,7 @@ export const paginateRestaurantList = (
   } else return [];
 };
 
-export const insertRestaurant = async (restaurant) => {
+export const insertRestaurant = async (restaurant: Restaurant) => {
   const _id = new ObjectId();
   const newRestaurant = {
     ...restaurant,
