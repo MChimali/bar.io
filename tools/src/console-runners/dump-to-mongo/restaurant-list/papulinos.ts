@@ -16,7 +16,7 @@ export const restaurant: RestaurantApiModel = {
   theme: 'meat',
   menu: [
     {
-      name: 'Ensaladas',
+      categoryName: 'Ensaladas',
       items: [
         {
           name: 'De la Casa',
@@ -51,7 +51,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Entrantes',
+      categoryName: 'Entrantes',
       items: [
         {
           name: 'Porra de la Casa',
@@ -73,7 +73,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Entrantes a la Brasa',
+      categoryName: 'Entrantes a la Brasa',
       items: [
         {
           name: 'Chorizo Jalapeño (picante)',
@@ -175,7 +175,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Tostas a la Brasa',
+      categoryName: 'Tostas a la Brasa',
       items: [
         {
           name: 'Tosta al Pil-Pil',
@@ -189,7 +189,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Guarnición',
+      categoryName: 'Guarnición',
       items: [
         {
           name: 'Patata Asada',
@@ -198,7 +198,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Salsas Adicionales',
+      categoryName: 'Salsas Adicionales',
       items: [
         {
           name: 'A la Pimienta',
@@ -223,7 +223,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Carnes a la Brasa',
+      categoryName: 'Carnes a la Brasa',
       items: [
         {
           name: 'Costilla de Cerdo',
@@ -321,7 +321,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Pescados a la Brasa',
+      categoryName: 'Pescados a la Brasa',
       items: [
         {
           name: 'Chuleta de Atún (Ventresca)',
@@ -338,7 +338,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Hamburguesas a la Brasa',
+      categoryName: 'Hamburguesas a la Brasa',
       items: [
         {
           name: 'Filete de Hamburguesa',
@@ -384,7 +384,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Sugerencias',
+      categoryName: 'Sugerencias',
       items: [
         {
           name: 'Pinchito de Cordero',

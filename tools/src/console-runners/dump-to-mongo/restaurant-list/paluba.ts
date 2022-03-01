@@ -17,7 +17,7 @@ export const restaurant: RestaurantApiModel = {
   description: 'Cervecería & Urban Food',
   menu: [
     {
-      name: 'Cervezas',
+      categoryName: 'Cervezas',
       items: [
         {
           name: 'Estrella Galicia Barril',
@@ -59,7 +59,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Cervezas cero alcohol',
+      categoryName: 'Cervezas cero alcohol',
       items: [
         {
           name: 'Estrella Galicia 0,0%',
@@ -83,7 +83,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Tapas frías',
+      categoryName: 'Tapas frías',
       items: [
         {
           name: 'Ensaladilla',
@@ -116,7 +116,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Tapas Calientes',
+      categoryName: 'Tapas Calientes',
       items: [
         {
           name: 'Carrillá Ibérica',
@@ -150,7 +150,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Montaditos',
+      categoryName: 'Montaditos',
       items: [
         {
           name: 'Palometa',
@@ -175,7 +175,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Ensaladas',
+      categoryName: 'Ensaladas',
       items: [
         {
           name: 'Ensalada Mixta',
@@ -191,7 +191,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Entrantes',
+      categoryName: 'Entrantes',
       items: [
         {
           name: 'Nachos Mexicanos',
@@ -236,7 +236,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Platos',
+      categoryName: 'Platos',
       items: [
         {
           name: 'Costilla BBQ',
@@ -275,7 +275,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Burguers',
+      categoryName: 'Burguers',
       items: [
         {
           name: 'Paluba Burguer',
@@ -316,7 +316,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Sandwiches',
+      categoryName: 'Sandwiches',
       items: [
         {
           name: 'Sandwich Paluba',
@@ -338,7 +338,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Viva México 🇲🇽',
+      categoryName: 'Viva México 🇲🇽',
       items: [
         {
           name: 'Tacos de lagarto ibérico',
@@ -372,7 +372,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Más México',
+      categoryName: 'Más México',
       items: [
         {
           name: 'Fajita de pollo',
@@ -395,7 +395,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Quesadillas',
+      categoryName: 'Quesadillas',
       items: [
         {
           name: 'Quesadilla de carne',
@@ -416,7 +416,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: "Hot Dog's",
+      categoryName: "Hot Dog's",
       items: [
         {
           name: 'Hot Dog XL',
@@ -426,7 +426,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Postres',
+      categoryName: 'Postres',
       items: [
         {
           name: 'Arroz con leche',

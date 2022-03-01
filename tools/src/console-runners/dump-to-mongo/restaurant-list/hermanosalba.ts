@@ -17,7 +17,7 @@ export const restaurant: RestaurantApiModel = {
   theme: 'fish',
   menu: [
     {
-      name: 'Entrantes',
+      categoryName: 'Entrantes',
       items: [
         {
           name: 'Anchoa 0,0 limpia en case sobre tosta de pan cristal y tomate (unidad)',
@@ -50,7 +50,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Mariscos',
+      categoryName: 'Mariscos',
       items: [
         {
           name: 'Conchas finas naturales o al Pil-Pil',
@@ -110,7 +110,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Pescados',
+      categoryName: 'Pescados',
       items: [
         {
           name: 'Boquerón vitoriano frito o al limón',

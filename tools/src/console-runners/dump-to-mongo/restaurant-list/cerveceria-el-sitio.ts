@@ -16,7 +16,7 @@ export const restaurant: RestaurantApiModel = {
   theme: 'brewery',
   menu: [
     {
-      name: 'Tapas y Raciones',
+      categoryName: 'Tapas y Raciones',
       items: [
         {
           name: 'Ensaladilla Rusa',
@@ -249,7 +249,8 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Hamburguesas (Todas las Hamburguesas incluyen Patatas Fritas)',
+      categoryName:
+        'Hamburguesas (Todas las Hamburguesas incluyen Patatas Fritas)',
       items: [
         {
           name: 'Simple',
@@ -285,7 +286,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Perritos',
+      categoryName: 'Perritos',
       items: [
         {
           name: 'Simple',
@@ -300,7 +301,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Camperos (Todos los Camperos incluyen Patatas Fritas)',
+      categoryName: 'Camperos (Todos los Camperos incluyen Patatas Fritas)',
       items: [
         {
           name: 'Normal',
@@ -346,7 +347,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Baguettes',
+      categoryName: 'Baguettes',
       items: [
         {
           name: 'Pollo y Bacon',
@@ -419,7 +420,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Ensaladas',
+      categoryName: 'Ensaladas',
       items: [
         {
           name: 'Mixta',
@@ -435,7 +436,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Papatas Fritas',
+      categoryName: 'Papatas Fritas',
       items: [
         {
           name: 'Normales',
@@ -452,7 +453,8 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Carnes a la Brasa (Pueden ir acompañadas de ensalada o patatas)',
+      categoryName:
+        'Carnes a la Brasa (Pueden ir acompañadas de ensalada o patatas)',
       items: [
         {
           name: 'Churrasco Pollo',
@@ -489,7 +491,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Sandwiches',
+      categoryName: 'Sandwiches',
       items: [
         {
           name: 'Mixto',
@@ -525,7 +527,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Pizzas',
+      categoryName: 'Pizzas',
       items: [
         {
           name: 'Margarita',

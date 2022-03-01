@@ -16,7 +16,7 @@ export const restaurant: RestaurantApiModel = {
   theme: 'italian',
   menu: [
     {
-      name: 'Baguettes',
+      categoryName: 'Baguettes',
       items: [
         {
           name: 'Pollo',
@@ -73,7 +73,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Pizzas',
+      categoryName: 'Pizzas',
       items: [
         {
           name: 'Capricho Francis',
@@ -157,7 +157,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name: 'Bebidas',
+      categoryName: 'Bebidas',
       items: [
         {
           name: 'Refrescos, Cervezas',
