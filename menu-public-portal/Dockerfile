@@ -40,9 +40,9 @@ RUN npm i pm2 -g
 RUN apk add --no-cache --update python3 bash curl openssh iproute2
 RUN rm /bin/sh \
  && ln -s /bin/bash /bin/sh \
- && mkdir -p /etc/profile.d/ \
- && printf '#!/usr/bin/env bash\n\nset +o posix\n\n[ -z "$SSH_CLIENT" ] && source <(curl --fail --retry 7 -sSL "$HEROKU_EXEC_URL")\n' > /etc/profile.d/heroku-exec.sh \
- && chmod +x /etc/profile.d/heroku-exec.sh \
+ && mkdir -p /app/profile.d/ \
+ && printf '#!/usr/bin/env bash\n\nset +o posix\n\n[ -z "$SSH_CLIENT" ] && source <(curl --fail --retry 3 -sSL "$HEROKU_EXEC_URL")\n' > /app/profile.d/heroku-exec.sh \
+ && chmod a+x /app/profile.d/heroku-exec.sh \
  && ln -s /usr/bin/python3 /usr/bin/python
 # <=>
 
