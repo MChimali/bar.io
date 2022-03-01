@@ -13,7 +13,7 @@ export const restaurant: RestaurantInfo = {
   official: false,
   description: '',
   menuDate: new Date('2022-02-24'),
-  theme: 'default',
+  theme: 'italian',
   menu: [
     {
       name: 'Bebidas',
