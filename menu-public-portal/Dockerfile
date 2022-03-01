@@ -39,9 +39,10 @@ RUN npm i pm2 -g
 ## https://stackoverflow.com/questions/46652928/shell-into-a-docker-container-running-on-a-heroku-dyno-how
 RUN apk add --no-cache --update python3 bash curl openssh iproute2
 RUN mkdir -p /etc/profile.d/ \
- && printf '#!/usr/bin/env bash\n\nset +o posix\n\n[ -z "${SSH_CLIENT// *}" ] && source <(curl --fail --retry 3 -sSL "$HEROKU_EXEC_URL")\n' > /etc/profile.d/heroku-exec.sh \
+ && printf '#!/usr/bin/env bash\n\nset +o posix\n\n[ -z $SSH_CLIENT" ] && source <(curl --fail --retry 3 -sSL "$HEROKU_EXEC_URL")\n' > /etc/profile.d/heroku-exec.sh \
  && chmod a+x /etc/profile.d/heroku-exec.sh \
  && rm /bin/sh \
+ && rm /usr/bin/python \
  && ln -s /bin/bash /bin/sh \
  && ln -s /usr/bin/python3 /usr/bin/python
 # <=>
