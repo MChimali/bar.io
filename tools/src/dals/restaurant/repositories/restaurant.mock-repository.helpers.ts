@@ -2,7 +2,6 @@ import { Restaurant, emptyRestaurant } from '../restaurant.model';
 import { db } from '../../mock-data';
 import { ObjectId } from 'mongodb';
 
-// TODO Test all functions
 export const paginateRestaurantList = (
   restaurantList: Restaurant[],
   page: number,
