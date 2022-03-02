@@ -15,7 +15,7 @@ export const mockRepository: RestaurantRepository = {
   getRestaurant: async (id: string) =>
     db.restaurants.find((restaurant) => restaurant._id.toHexString() === id),
   saveRestaurant: async (restaurant: Restaurant) =>
-    Boolean(restaurant._id)
+    db.restaurants.some((r) => r._id === restaurant._id)
       ? updateRestaurant(restaurant)
       : insertRestaurant(restaurant),
   deleteRestaurant: async (id: string) => {

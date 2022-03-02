@@ -1,6 +1,7 @@
 import { prompt } from 'inquirer';
 
 const consoleRunnerList = [
+  'initial-seed',
   'dump-to-mongo',
   'dump-to-json',
   'restaurant-list-to-json',
