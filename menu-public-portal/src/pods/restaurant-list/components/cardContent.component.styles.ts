@@ -1,5 +1,4 @@
 import { css } from '@emotion/css';
-import { defaultTheme } from 'core/theme';
 import { Theme } from '@mui/material/styles';
 
 export const rowIndent = css`
