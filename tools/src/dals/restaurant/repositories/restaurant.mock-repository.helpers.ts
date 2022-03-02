@@ -1,4 +1,4 @@
-import { Restaurant } from '../restaurant.model';
+import { Restaurant, emptyRestaurant } from '../restaurant.model';
 import { db } from '../../mock-data';
 import { ObjectId } from 'mongodb';
 
@@ -24,21 +24,25 @@ export const paginateRestaurantList = (
 };
 
 export const insertRestaurant = async (restaurant: Restaurant) => {
-  const _id = new ObjectId();
-  const newRestaurant = {
-    ...restaurant,
-    _id,
-  };
+  if (restaurant !== undefined && restaurant !== null) {
+    const _id = new ObjectId();
+    const newRestaurant = {
+      ...restaurant,
+      _id,
+    };
 
-  db.restaurants = [...db.restaurants, newRestaurant];
-  return newRestaurant;
+    db.restaurants = [...db.restaurants, newRestaurant];
+    return newRestaurant;
+  } else return emptyRestaurant();
 };
 
 export const updateRestaurant = async (updateRestaurant: Restaurant) => {
-  db.restaurants = db.restaurants.map((restaurant) =>
-    restaurant._id.toHexString() === updateRestaurant._id.toHexString()
-      ? { ...restaurant, ...updateRestaurant }
-      : restaurant
-  );
-  return updateRestaurant;
+  if (updateRestaurant !== undefined && updateRestaurant !== null) {
+    db.restaurants = db.restaurants.map((restaurant) =>
+      restaurant._id.toHexString() === updateRestaurant._id.toHexString()
+        ? { ...restaurant, ...updateRestaurant }
+        : restaurant
+    );
+    return updateRestaurant;
+  } else return emptyRestaurant();
 };

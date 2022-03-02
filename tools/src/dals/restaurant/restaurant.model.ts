@@ -43,3 +43,19 @@ export interface Restaurant {
   rationsDefinitions: RationDefinition[];
   menu: ItemsByCategory[];
 }
+
+export const emptyRestaurant = (): Restaurant => ({
+  _id: new ObjectId('621f1b4786a654dc6ec08f4f'),
+  name: '',
+  urlName: '',
+  phone: '',
+  address: '',
+  locationUrl: '',
+  menuDate: new Date('2022-03-02'),
+  communitySourceUrl: '',
+  official: false,
+  description: '',
+  theme: 'default',
+  rationsDefinitions: [],
+  menu: [],
+});
