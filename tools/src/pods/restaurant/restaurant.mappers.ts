@@ -182,7 +182,6 @@ const mapFromItemsByCategoryToCategoryEntry = (
   };
 };
 
-// Todo: Test to mapRestaurantFromModeToApiModel
 export const mapRestaurantListFromModelToApiModel = (
   restaurant: model.Restaurant[]
 ): apiModel.RestaurantApiModel[] =>
