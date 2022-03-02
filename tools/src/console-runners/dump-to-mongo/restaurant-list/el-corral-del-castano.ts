@@ -181,6 +181,129 @@ export const restaurant: RestaurantInfo = {
           description: 'Vegetales de temporada y queso de cabra',
           price: 11
         },
+        {
+          name: 'Pizza de ternera',
+          description: 'bacon y 4 quesos',
+          price: 12
+        },
+        {
+          name: 'Pizza de atún',
+          description: 'pimiento, aceituna negra y queso',
+          price: 12
+        },
+      ],
+    },
+    {
+      name: 'De la Almadraba',
+      items: [
+        {
+          name: 'Solomillo de atún de almadraba en aceite',
+          price: 9.6
+        },
+        {
+          name: 'Pan cristal',
+          description: 'atún ahumado de almadraba y aguacate',
+          price: 8
+        },
+        {
+          name: 'Pan cristal',
+          description: 'lomito de salmón ahumado y aguacate',
+          price: 8
+        },
+        {
+          name: 'Lomo de atún de almadraba en manteca',
+          price: 9.6
+        },
+        {
+          name: 'Lomitos de salmón',
+          description: 'ahumado con salsa fresca de eneldo',
+          price: 9.6
+        },
+        {
+          name: 'Tomate aliñao',
+          description: 'con ventresca de atún de almadraba en escabeche',
+          price: 9.6
+        },
+      ],
+    },
+    {
+      name: 'Nuestras especialidades',
+      items: [
+        {
+          name: 'Codillo braseado en su jugo',
+          price: 14.6
+        },
+        {
+          name: 'Paletilla de cordero segureño al perfume de romero',
+          price: 21
+        },
+        {
+          name: 'Carrillera de ibérico',
+          description: 'con castañas, piñones y ciruelas en salsa de vino tinto',
+          price: 14,
+        },
+        {
+          name: 'Secreto ibérico',
+          price: 13.5,
+        },
+        {
+          name: 'Lomo de vaca rubia gallega',
+          price: 23,
+        },
+        {
+          name: 'Lomo de salmón sobre nido de tallarines',
+          price: 13.5,
+        },
+        {
+          name: 'Bacalao confitado con verduras salteadas',
+          price: 13.5,
+        },
+        {
+          name: 'Taco de lomo confitado con muselina de ajo',
+          price: 11.6,
+        },
+        {
+          name: 'Brocheta de pollo al curry',
+          price: 12,
+        },
+        {
+          name: 'Servicio de pan',
+          price: 1,
+        },
+      ],
+    },
+    {
+      name: 'Nuestros momento más dulce, postres artesanos',
+      items: [
+        {
+          name: 'Canutillos rellenos de crema',
+          price: 5.4
+        },
+        {
+          name: 'Flan de piñones y dátiles',
+          description: 'con bizcocho borracho de ron miel',
+          price: 5.4
+        },
+        {
+          name: 'Profiteroles bañados de chocolate templado',
+          price: 5.4
+        },
+        {
+          name: 'Tarta de manzana y canela',
+          price: 5.4
+        },
+        {
+          name: 'Coulant de chocolate negro',
+          price: 5.4
+        },
+        {
+          name: 'Mármol de fresa y chocolate blanco',
+          price: 5.4
+        },
+        {
+          name: 'Tarta de queso',
+          price: 5.4
+        },
       ],
     },
   ],
