@@ -1,9 +1,5 @@
 {
   "name": "bar.io",
-  "scripts": {
-    "prettier:format": "prettier --write . \"!**/*.{js,ts,tsx}\"",
-    "prepare": "husky install"
-  },
   "devDependencies": {
     "husky": "^7.0.0",
     "prettier": "^2.5.1",

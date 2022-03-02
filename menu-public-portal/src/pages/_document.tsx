@@ -19,7 +19,6 @@ export default class AppDocument extends Document {
       });
     const initialProps = await Document.getInitialProps(ctx);
     const { css, ids } = extractCritical(initialProps.html);
-    console.log({ ids });
 
     return {
       ...initialProps,
