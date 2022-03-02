@@ -13,7 +13,7 @@ export const restaurant: RestaurantInfo = {
   official: false,
   description: '',
   menuDate: new Date('2022-03-02'),
-  theme: 'tapas',
+  theme: 'meat',
   menu: [
     {
       name: 'Para calentar piensa en frio',
