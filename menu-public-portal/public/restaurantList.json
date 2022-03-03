@@ -68,5 +68,15 @@
     "locationUrl": "https://www.google.com/maps/place/Pizzeria+Fredes/@36.7155113,-4.3122821,15z/data=!4m12!1m6!3m5!1s0x0:0xc152c1fe6fd58219!2sPizzeria+Fredes!8m2!3d36.7155113!4d-4.3122821!3m4!1s0x0:0xc152c1fe6fd58219!8m2!3d36.7155113!4d-4.3122821",
     "description": "Desde 1993",
     "theme": "italian"
+  },
+  {
+    "_id": "621e537257d99d654e60f97d",
+    "name": "Supermac",
+    "urlName": "supermac",
+    "phone": "641 047 027 / 951 38 14 91",
+    "address": "C/ Mar, 29 (detrás del colegio SAFA ICET)",
+    "locationUrl": "https://www.google.com/maps/place/Supermac/@36.7195404,-4.3589943,15z/data=!4m12!1m6!3m5!1s0x0:0x64499bc9b66ba3a8!2sSupermac!8m2!3d36.7195404!4d-4.3589943!3m4!1s0x0:0x64499bc9b66ba3a8!8m2!3d36.7195404!4d-4.3589943",
+    "description": "",
+    "theme": "italian"
   }
 ]
