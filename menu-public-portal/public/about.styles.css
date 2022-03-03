@@ -1,0 +1,71 @@
+:root {
+  font-size: 10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 1.4rem;
+  color: #232323;
+}
+
+header.about-us-container {
+  width: 67.2%;
+  height: 25vw;
+  margin-top: 6.4vw;
+  display: block;
+  font-variant-caps: normal;
+}
+
+h2.about-us-header {
+  font-size: 5vw;
+  font-weight: 400;
+  text-align: right;
+}
+
+hr.about-us-underline {
+  width: 67.2vw;
+  border-top: 0.08vw solid #00a825;
+  border-radius: 0.02vw;
+}
+
+main.main-container {
+  width: 87.5vw;
+  margin: 0 6.25vw;
+}
+
+div.team-member-title-container {
+  width: 67.2vw;
+  margin-left: 32.8vw;
+}
+
+h3.team-member-name {
+  font-size: 4.375vw;
+  color: #232323;
+}
+
+h4.team-member-role {
+  font-size: 3.75vw;
+  color: #00a825;
+}
+
+p.about-us-description,
+p.team-member-description {
+  font-size: 4.375vw;
+  color: #232323;
+  margin-bottom: 16vw;
+}
+
+img.team-member-avatar {
+  width: 100%;
+  margin: 6.4vw 0;
+}
+
+hr.team-member-overline {
+  margin-bottom: 2.4vw;
+  border-top: 0.08vw solid #00a825;
+  border-radius: 0.02vw;
+}
