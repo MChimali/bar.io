@@ -8,7 +8,7 @@ const AboutUs: React.FC = () => {
   const theme = useTheme();
   return (
     <div className={classes.credits(theme)}>
-      <Link href="#">
+      <Link href="about.html">
         <a target="_blank" className={classes.anchor}>
           <Typography
             variant="caption"
