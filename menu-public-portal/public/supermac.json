@@ -1,5 +1,5 @@
 {
-  "_id": "621e537257d99d654e60f97d",
+  "_id": "6220a5f0a55bc7db2e43bb65",
   "name": "Supermac",
   "urlName": "supermac",
   "phone": "641 047 027 / 951 38 14 91",
@@ -12,10 +12,7 @@
   "rationsDefinitions": [
     {
       "name": "Raciones",
-      "units": [
-        "1/2 ración",
-        "entera"
-      ]
+      "units": ["1/2 ración", "entera"]
     }
   ],
   "menu": [
@@ -367,7 +364,7 @@
       ]
     },
     {
-      "categoryName": "Pizzas inrediente extra 0.90 €",
+      "categoryName": "Pizzas (cada ingrediente extra 0.99 € adicionales)",
       "items": [
         {
           "name": "Margarita",
