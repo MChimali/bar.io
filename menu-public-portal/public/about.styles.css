@@ -12,11 +12,18 @@
   color: #232323;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 6.25vw;
+}
+
 header.about-us-container {
   width: 67.2%;
-  height: 25vw;
+  height: 10vw;
   margin-top: 6.4vw;
-  display: block;
   font-variant-caps: normal;
 }
 
@@ -33,8 +40,12 @@ hr.about-us-underline {
 }
 
 main.main-container {
-  width: 87.5vw;
-  margin: 0 6.25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 div.team-member-title-container {
@@ -68,4 +79,59 @@ hr.team-member-overline {
   margin-bottom: 2.4vw;
   border-top: 0.08vw solid #00a825;
   border-radius: 0.02vw;
+}
+
+@media (min-width: 550px) {
+  p.about-us-description,
+  p.team-member-description {
+    font-size: 2.5vw;
+  }
+}
+
+@media (min-width: 850px) {
+  p.about-us-description,
+  p.team-member-description {
+    font-size: 1.5vw;
+    margin-bottom: 4rem;
+  }
+  main.main-container {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  main.main-container {
+    width: 50%;
+  }
+  p.about-us-description,
+  p.team-member-description {
+    font-size: 1vw;
+  }
+  h2.about-us-header {
+    font-size: 3vw;
+  }
+  h3.team-member-name {
+    font-size: 2.375vw;
+  }
+  h4.team-member-role {
+    font-size: 1.75vw;
+  }
+  header.about-us-container {
+    height: 10vh;
+  }
+  img.team-member-avatar {
+    width: 100%;
+    margin: 3.4vw 0;
+  }
+  
+}
+
+@media (min-width: 1550px) {
+  main.main-container {
+    width: 30%;
+  }
+  p.about-us-description,
+  p.team-member-description {
+    font-size: 1vw;
+  }
 }
