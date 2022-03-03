@@ -70,13 +70,23 @@
     "urlName": "pizzeria-manolin"
   },
   {
-    "_id": "6220a5f0a55bc7db2e43bb65",
-    "name": "Supermac",
-    "urlName": "supermac",
-    "phone": "641 047 027 / 951 38 14 91",
+    "_id": "621f64b0fa81f733553a6cdf",
     "address": "C/ Mar, 29 (detrás del colegio SAFA ICET)",
-    "locationUrl": "https://www.google.com/maps/place/Supermac/@36.7195404,-4.3589943,15z/data=!4m12!1m6!3m5!1s0x0:0x64499bc9b66ba3a8!2sSupermac!8m2!3d36.7195404!4d-4.3589943!3m4!1s0x0:0x64499bc9b66ba3a8!8m2!3d36.7195404!4d-4.3589943",
     "description": "",
-    "theme": "italian"
+    "locationUrl": "https://www.google.com/maps/place/Supermac/@36.7195404,-4.3589943,15z/data=!4m12!1m6!3m5!1s0x0:0x64499bc9b66ba3a8!2sSupermac!8m2!3d36.7195404!4d-4.3589943!3m4!1s0x0:0x64499bc9b66ba3a8!8m2!3d36.7195404!4d-4.3589943",
+    "name": "Supermac",
+    "phone": "641 047 027 / 951 38 14 91",
+    "theme": "italian",
+    "urlName": "supermac"
+  },
+  {
+    "_id": "621faae7ed46b9318eade2fa",
+    "name": "El Corral del Castaño",
+    "urlName": "el-corral-del-castano",
+    "phone": "958 76 34 14",
+    "address": "Plaza del Calvario 16 Capileira",
+    "locationUrl": "https://www.google.com/maps/place/El+Corral+del+Casta%C3%B1o/@36.9619382,-3.3597789,15z/data=!4m12!1m6!3m5!1s0x0:0xaec1f84a65e41f10!2sEl+Corral+del+Casta%C3%B1o!8m2!3d36.9619382!4d-3.3597789!3m4!1s0x0:0xaec1f84a65e41f10!8m2!3d36.9619382!4d-3.3597789",
+    "description": "",
+    "theme": "meat"
   }
 ]
