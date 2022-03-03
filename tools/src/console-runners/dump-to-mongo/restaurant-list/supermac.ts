@@ -255,7 +255,7 @@ export const restaurant: RestaurantInfo = {
       ],
     },
     {
-      name: 'Pizzas inrediente extra 0.90 €',
+      name: 'Pizzas (cada ingrediente extra 0.99 € adicionales)',
       items: [
         {
           name: 'Margarita',
