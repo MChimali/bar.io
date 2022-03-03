@@ -1,0 +1,617 @@
+{
+  "_id": "6220a5f0a55bc7db2e43bb65",
+  "name": "Supermac",
+  "urlName": "supermac",
+  "phone": "641 047 027 / 951 38 14 91",
+  "address": "C/ Mar, 29 (detrás del colegio SAFA ICET)",
+  "locationUrl": "https://www.google.com/maps/place/Supermac/@36.7195404,-4.3589943,15z/data=!4m12!1m6!3m5!1s0x0:0x64499bc9b66ba3a8!2sSupermac!8m2!3d36.7195404!4d-4.3589943!3m4!1s0x0:0x64499bc9b66ba3a8!8m2!3d36.7195404!4d-4.3589943",
+  "menuDate": "2022-02-24T00:00:00.000Z",
+  "communitySourceUrl": "",
+  "description": "",
+  "theme": "italian",
+  "rationsDefinitions": [
+    {
+      "name": "Raciones",
+      "units": ["1/2 ración", "entera"]
+    }
+  ],
+  "menu": [
+    {
+      "categoryName": "Bebidas",
+      "items": [
+        {
+          "name": "Cocacola",
+          "description": null,
+          "price": 1.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Cocacola Light",
+          "description": null,
+          "price": 1.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Cocacola Zero",
+          "description": null,
+          "price": 1.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Cocacola Zero Zero",
+          "description": null,
+          "price": 1.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Fanta naranja/limón",
+          "description": null,
+          "price": 1.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Nestéa",
+          "description": null,
+          "price": 1.7,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Aquarius naranja/limón",
+          "description": null,
+          "price": 1.7,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "7UP",
+          "description": null,
+          "price": 1.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Tónica",
+          "description": null,
+          "price": 1.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Agua",
+          "description": null,
+          "price": 1.3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Caña estrella Galicia",
+          "description": null,
+          "price": 1.2,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Lata C. Victoria",
+          "description": null,
+          "price": 1.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Lata C. Estrella Galicia",
+          "description": null,
+          "price": 1.8,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Estrella Galicia 1/3",
+          "description": null,
+          "price": 1.8,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Red Vintage",
+          "description": null,
+          "price": 2.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Reserva 1960",
+          "description": null,
+          "price": 2.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Tinto de Verano",
+          "description": null,
+          "price": 1.8,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Zumos",
+          "description": null,
+          "price": 1.3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Monster Verde",
+          "description": null,
+          "price": 1.8,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Monster Juici (mango loco)",
+          "description": null,
+          "price": 1.8,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Para picar",
+      "items": [
+        {
+          "name": "Patata fritas",
+          "description": null,
+          "price": 3.2,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Patata deluxe",
+          "description": null,
+          "price": 3.8,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Patata Bravas o alioli",
+          "description": null,
+          "price": 3.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Alitas BBQ",
+          "description": null,
+          "price": 3.9,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Alitas estilo kentuky",
+          "description": null,
+          "price": 3.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Aros de cebolla",
+          "description": null,
+          "price": 3.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Palitos de Mozzarela",
+          "description": null,
+          "price": 3.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Croquetas (pollo o jamón)",
+          "description": null,
+          "price": null,
+          "priceByRation": {
+            "rationName": "Raciones",
+            "rationsTypes": [
+              {
+                "unit": "1/2 ración",
+                "price": 4
+              },
+              {
+                "unit": "entera",
+                "price": 8
+              }
+            ]
+          },
+          "unit": null
+        },
+        {
+          "name": "Patatas Supermac",
+          "description": "salsa yogur, bacon, queso gratinado",
+          "price": 5.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Patatas nueva era",
+          "description": "salsa bbq, salsa cheddar, bacon",
+          "price": 5.6,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Patatas kebab",
+          "description": "yogur, kebab, queso gratinado",
+          "price": 5.6,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Ensaladas",
+      "items": [
+        {
+          "name": "de la hulerta",
+          "description": "lechuga, tomate, cebolla, zanahoria, maiz, atún, aceitunas",
+          "price": 6,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Malpica",
+          "description": "lechuga, frutos secos, queso de cabra, pañuelo crujiente, salsa de frambuesas",
+          "price": 6.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Cesar",
+          "description": "lechuga, tomate, pollo empanado, picatostes, parmesano, salsa cesar",
+          "price": 6.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Turca",
+          "description": "lechuga, tomate, cebolla, kebab de pollo, salsa yogur",
+          "price": 6.5,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Especialidades",
+      "items": [
+        {
+          "name": "Rollo kebab de pollo",
+          "description": "lechuga, tomate, cebolla y salsa de yogur",
+          "price": 4.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Rollo kebab solo carne y salsa",
+          "description": "",
+          "price": 5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Hamburguesa amy",
+          "description": "carne de buey, lechuga, tomate, cebolla caramelo, queso cabra y salsa frambuesa",
+          "price": 5.1,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Hamburguesa supermac",
+          "description": "lechuga, tomate, cebolla, doble carne de vacuno, queso cheddar, pepinillo y salsa supermac",
+          "price": 5.2,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Hamburguesa gold",
+          "description": "cane de buey, lechuga, tomate, cebolla caramelo, bañada en cheddar y bacon",
+          "price": 6.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Hamburguesa crispy",
+          "description": "pollo crujiente, lechuga, tomate y mahonesa",
+          "price": 4.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "New York Burguer",
+          "description": "hamburguesa de buey, lechuga, tomate, cebolla, pepinillos, aros de cebolla y salsa BBQ",
+          "price": 4.9,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Hamburguesa Vegana",
+          "description": "de berenjena, lechuga, tomate, cebolla y mahonesa y vegana",
+          "price": 5.2,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Alvarosky",
+          "description": "carne de buey, lechuga, tomate, cebolla plancha, mezcla de cuatro quesos",
+          "price": 5.95,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Sabrosa",
+          "description": "carne a la parrilla, lechuga, tomate, cebolla, pepinillo, mahonesa",
+          "price": 4.9,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Pizzas (cada ingrediente extra 0.99 € adicionales)",
+      "items": [
+        {
+          "name": "Margarita",
+          "description": "tomate y mozzarella",
+          "price": 5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Proscciuto",
+          "description": "tomate, mozzarella y jamón cocido",
+          "price": 6,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Atún",
+          "description": "tomate, mozzarella y atún",
+          "price": 6.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Carbonara",
+          "description": "tomate, mozzarella, bacon, nata y cebolla",
+          "price": 6.95,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Julia",
+          "description": "pollo asado, jamón cocido y cebolla",
+          "price": 6.95,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Toscana",
+          "description": "tomate, mozzarella, jamón cocido, pepperonni y champiñones",
+          "price": 6.95,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Kebab",
+          "description": "tomate, mozzarella, carne de kebab de pollo y yogur",
+          "price": 6.95,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Barbacoa",
+          "description": "tomate, mozzarella, bacon, carne picada y salsa bbq",
+          "price": 6.95,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Cuatro Quesos",
+          "description": "tomate, mozzarella, parmesano, queso azul y cheddar",
+          "price": 6.95,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Marinera",
+          "description": "tomate, mozzarella, atún, anchoa y aceituna negra",
+          "price": 7.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Al gusto",
+          "description": "tomate, mozzarella, + 2 ingredientes",
+          "price": 6.5,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Los originales de Supermac",
+      "items": [
+        {
+          "name": "Camperazo",
+          "description": "pollo, bacon, huevo, serrano, queso y mahonesa",
+          "price": 4.9,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Mónica",
+          "description": "pollo, queso cheddar y salsa de curry",
+          "price": 4.7,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Sagitario",
+          "description": "solomillo, queso y mahonesa",
+          "price": 5.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Ángel",
+          "description": "tortilla de patatas y alioli",
+          "price": 4.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Bea",
+          "description": "lomo en manteca",
+          "price": 4.7,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Guille",
+          "description": "pollo asado, alioli",
+          "price": 4.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Baguette Nezor",
+          "description": "pollo, bacon, queso, jamón cocido, tortilla francesa y mahonesa",
+          "price": 4.9,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Camperos (Todos llevan incluidos lechuga, tomate, cebolla y mahonesa)",
+      "items": [
+        {
+          "name": "Normal",
+          "description": "jamón cocido y queso",
+          "price": 3.7,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "De Pollo",
+          "description": null,
+          "price": 4,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "De Atún",
+          "description": null,
+          "price": 3.9,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Especial",
+          "description": "pollo, jamón cocido y queso",
+          "price": 4.2,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Pepito de pollo o cerdo",
+          "description": null,
+          "price": 3.9,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Serranito",
+          "description": "cerdo o pollo, pimiento y serrano",
+          "price": 4.2,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Pinchito de pollo",
+          "description": null,
+          "price": 4.2,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Hamburguesas y Perritos (Todos llevan incluidos lechuga, tomate, cebolla, ketchup y mostaza)",
+      "items": [
+        {
+          "name": "Hamburguesa Clásica (pollo o cerdo)",
+          "description": null,
+          "price": 3.3,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Hamburguesa con queso",
+          "description": null,
+          "price": 3.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Hamburguesa con bacon y huevo",
+          "description": null,
+          "price": 4.2,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Perrito clásico",
+          "description": null,
+          "price": 3.2,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Perrito con bacon y huevo",
+          "description": null,
+          "price": 3.9,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    },
+    {
+      "categoryName": "Postres",
+      "items": [
+        {
+          "name": "Tarta de queso casera",
+          "description": null,
+          "price": 4.5,
+          "priceByRation": null,
+          "unit": null
+        },
+        {
+          "name": "Tata kinder",
+          "description": null,
+          "price": 4.5,
+          "priceByRation": null,
+          "unit": null
+        }
+      ]
+    }
+  ],
+  "official": false
+}
