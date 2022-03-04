@@ -61,6 +61,7 @@ h3.team-member-name {
 h4.team-member-role {
   font-size: 3.75vw;
   color: #00a825;
+  margin-bottom: 4vh;
 }
 
 p.about-us-description,
@@ -123,7 +124,6 @@ hr.team-member-overline {
     width: 100%;
     margin: 3.4vw 0;
   }
-  
 }
 
 @media (min-width: 1550px) {
