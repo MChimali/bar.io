@@ -13,7 +13,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const fields = resturantUrlName.map(
     (urlName) =>
       ({
-        loc: `${envConstants.SITE_URL}${urlName}`,
+        loc: `${envConstants.SITE_URL}/restaurant/${urlName}`,
         lastmod: new Date().toISOString(),
         changefreq: 'weekly',
         priority: 0.7,
