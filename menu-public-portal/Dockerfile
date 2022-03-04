@@ -30,6 +30,7 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Replace PORT for Nextjs server on nginx.conf
 ENV INTERNAL_PORT=3000
+RUN sed -i -e 's|INTERNAL_PORT|'"$INTERNAL_PORT"'|g' /etc/nginx/conf.d/default.conf
 
 # Run docker-entrypoint.sh from base image (enable heroku ps:exec command)
 # Replace PORT variable by $PORT provided by Heroku on each Heroku start
