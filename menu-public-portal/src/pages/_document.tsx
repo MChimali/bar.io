@@ -37,7 +37,9 @@ export default class AppDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+          <link rel="icon" type="image/png" href="/favicon/favicon.png" />
+        </Head>
         <body>
           <Main />
           <NextScript />
