@@ -8,5 +8,5 @@ export const getRestaurantListFromModel = async (): Promise<
     `${envConstants.BASE_API_URL}/restaurant`
   ).then((response) => response.json());
 
-  return restaurantList as RestaurantApi[];
+  return restaurantList;
 };
