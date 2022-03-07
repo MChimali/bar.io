@@ -2,6 +2,8 @@
 FROM node:16-alpine AS base
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
+ARG SITE_URL
+ENV SITE_URL=$SITE_URL
 
 # Build
 FROM base AS build-app
@@ -19,6 +21,7 @@ COPY --from=build-app /usr/src/app/public ./public
 COPY ./package.json ./
 COPY ./package-lock.json ./
 COPY ./next.config.js ./
+COPY ./sitemap.config.js ./
 RUN npm ci --only=production
 
 FROM nasdan/heroku-pm2-nginx

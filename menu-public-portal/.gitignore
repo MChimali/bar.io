@@ -37,3 +37,6 @@ yarn-error.log*
 *.tsbuildinfo
 
 dist
+public/robots.txt
+public/sitemap.xml
+public/sitemap-0.xml

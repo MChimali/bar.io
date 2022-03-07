@@ -24,17 +24,17 @@ export const restaurant: RestaurantInfo = {
         },
         {
           name: 'Nuestro lomo de orza de siempre',
-          price: 9.60,
+          price: 9.6,
         },
         {
           name: 'Medallón de foie-gras',
           description: 'micuit casero, galés de frutos rojos',
-          price: 14.50,
+          price: 14.5,
         },
         {
           name: 'Tabla de quesos',
           description: 'artesanos de la Alpujarra',
-          price: 13.50,
+          price: 13.5,
         },
       ],
     },
@@ -77,11 +77,11 @@ export const restaurant: RestaurantInfo = {
       items: [
         {
           name: 'Croquetas de mi abuela',
-          price: 9.60,
+          price: 9.6,
         },
         {
           name: 'Albóndigas en salsa de almendras y azafrán',
-          price: 9.60,
+          price: 9.6,
         },
         {
           name: 'Costillas en orza',
@@ -114,47 +114,49 @@ export const restaurant: RestaurantInfo = {
       items: [
         {
           name: 'Praliné de morcilla',
-          description: 'con crema de  manzana, tostada, piñones, pimiento caramelizado y lecho de alga wadame',
-          price: 9
+          description:
+            'con crema de  manzana, tostada, piñones, pimiento caramelizado y lecho de alga wadame',
+          price: 9,
         },
         {
           name: 'Tosta de chicharrones',
           description: 'con pimientos y queso',
-          price: 8
+          price: 8,
         },
         {
           name: 'Cuscús-tabulé',
           description: 'con salmorejo, sobre crema de hummus',
-          price: 8
+          price: 8,
         },
         {
           name: 'Piononos de rabo de toro',
           description: 'y boletus ocn muselina de mango caramelizado',
-          price: 9.6
+          price: 9.6,
         },
         {
           name: 'Deliciosa pastela moruna',
-          price: 9.6
+          price: 9.6,
         },
         {
           name: 'Croquetas de rabo de toro',
           description: 'y alioli de chocolate',
-          price: 9.6
+          price: 9.6,
         },
         {
           name: 'Berejena mazárabe',
           description: 'hortalizas caramelizadas y queso de cabra',
-          price: 8
+          price: 8,
         },
         {
           name: 'Tataki de salmorejo',
-          description: 'crujiente de jamón, lomo atún ahumado y caviar de tomate',
-          price: 9.6
+          description:
+            'crujiente de jamón, lomo atún ahumado y caviar de tomate',
+          price: 9.6,
         },
         {
           name: 'Caviar nacarii 10 gr',
           description: ' lomito de salmón ahumado, mantequilla y aguacate',
-          price: 24
+          price: 24,
         },
       ],
     },
@@ -164,32 +166,32 @@ export const restaurant: RestaurantInfo = {
         {
           name: 'Pizza Prosciuto',
           description: 'Salsa de tomate, jamón cocido y queso',
-          price: 8
+          price: 8,
         },
         {
           name: 'Pizza Funghi',
           description: 'Salsa de tomate, jamón cocido, chanpiñones y queso',
-          price: 10
+          price: 10,
         },
         {
           name: 'Pizza Nevada',
           description: 'Nata, bacon, cebolla y queso',
-          price: 11
+          price: 11,
         },
         {
           name: 'Pizza Andaluza',
           description: 'Vegetales de temporada y queso de cabra',
-          price: 11
+          price: 11,
         },
         {
           name: 'Pizza de ternera',
           description: 'bacon y 4 quesos',
-          price: 12
+          price: 12,
         },
         {
           name: 'Pizza de atún',
           description: 'pimiento, aceituna negra y queso',
-          price: 12
+          price: 12,
         },
       ],
     },
@@ -198,31 +200,31 @@ export const restaurant: RestaurantInfo = {
       items: [
         {
           name: 'Solomillo de atún de almadraba en aceite',
-          price: 9.6
+          price: 9.6,
         },
         {
           name: 'Pan cristal',
           description: 'atún ahumado de almadraba y aguacate',
-          price: 8
+          price: 8,
         },
         {
           name: 'Pan cristal',
           description: 'lomito de salmón ahumado y aguacate',
-          price: 8
+          price: 8,
         },
         {
           name: 'Lomo de atún de almadraba en manteca',
-          price: 9.6
+          price: 9.6,
         },
         {
           name: 'Lomitos de salmón',
           description: 'ahumado con salsa fresca de eneldo',
-          price: 9.6
+          price: 9.6,
         },
         {
           name: 'Tomate aliñao',
           description: 'con ventresca de atún de almadraba en escabeche',
-          price: 9.6
+          price: 9.6,
         },
       ],
     },
@@ -231,15 +233,16 @@ export const restaurant: RestaurantInfo = {
       items: [
         {
           name: 'Codillo braseado en su jugo',
-          price: 14.6
+          price: 14.6,
         },
         {
           name: 'Paletilla de cordero segureño al perfume de romero',
-          price: 21
+          price: 21,
         },
         {
           name: 'Carrillera de ibérico',
-          description: 'con castañas, piñones y ciruelas en salsa de vino tinto',
+          description:
+            'con castañas, piñones y ciruelas en salsa de vino tinto',
           price: 14,
         },
         {
@@ -277,32 +280,32 @@ export const restaurant: RestaurantInfo = {
       items: [
         {
           name: 'Canutillos rellenos de crema',
-          price: 5.4
+          price: 5.4,
         },
         {
           name: 'Flan de piñones y dátiles',
           description: 'con bizcocho borracho de ron miel',
-          price: 5.4
+          price: 5.4,
         },
         {
           name: 'Profiteroles bañados de chocolate templado',
-          price: 5.4
+          price: 5.4,
         },
         {
           name: 'Tarta de manzana y canela',
-          price: 5.4
+          price: 5.4,
         },
         {
           name: 'Coulant de chocolate negro',
-          price: 5.4
+          price: 5.4,
         },
         {
           name: 'Mármol de fresa y chocolate blanco',
-          price: 5.4
+          price: 5.4,
         },
         {
           name: 'Tarta de queso',
-          price: 5.4
+          price: 5.4,
         },
       ],
     },
