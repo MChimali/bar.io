@@ -33,12 +33,10 @@ restaurantApi
   // Use this endpoint to bring us an especific restaurant
   // http://localhost:3001/api/restaurant/5
   // where 5 is the restaurant id
-  .get('/:urlName', async (req, res, next) => {
+  .get('/:id', async (req, res, next) => {
     try {
-      const { urlName } = req.params;
-      const restaurant = await restaurantRepository.getRestaurantByUrlName(
-        urlName
-      );
+      const { id } = req.params;
+      const restaurant = await restaurantRepository.getRestaurant(id);
       res.send(mapRestaurantFromModelToApiModel(restaurant));
     } catch (error) {
       next(error);
