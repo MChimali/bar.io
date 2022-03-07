@@ -1,3 +1,4 @@
+import React from 'react';
 import type { AppProps } from 'next/app';
 import '@fontsource/dosis/400.css';
 import '@fontsource/dosis/500.css';
