@@ -1,3 +1,4 @@
+import { Definition } from 'typescript-json-schema';
 import { ObjectId } from 'mongodb';
 import { RestaurantTheme } from 'common-app/models';
 
@@ -44,3 +45,16 @@ export interface Restaurant {
   menu: ItemsByCategory[];
 }
 
+// https://docs.mongodb.com/manual/reference/operator/query/type/#available-types
+export const mapRestaurantJsonSchemaToMongoJsonSchema = (
+  schema: Definition
+) => ({
+  ...schema,
+  properties: {
+    ...schema.properties,
+    _id: { bsonType: 'objectId' },
+    menuDate: {
+      bsonType: 'date',
+    },
+  },
+});

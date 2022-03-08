@@ -1,7 +1,10 @@
 import fs from 'fs';
 import { Question, QuestionCollection } from 'inquirer';
 
-const versions = fs.readdirSync(`${__dirname}/versions`).map(fileName => fileName.replace('.ts', ''));
+const versions = fs
+  .readdirSync(`${__dirname}/versions`)
+  .map((fileName) => fileName.replace('.ts', ''));
+
 export const mongoDBQuestions: Question[] = [
   {
     name: 'connectionString',
