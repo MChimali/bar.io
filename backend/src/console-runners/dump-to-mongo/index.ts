@@ -3,20 +3,18 @@ import { connectToDBServer, disconnectFromDbServer } from 'core/servers';
 import { envConstants } from 'core/constants';
 import { mapRestaurantFromApiModelToModel } from 'pods/restaurant/restaurant.mappers';
 import { restaurantRepository } from 'dals';
-import { inputQuestion, confirmFile } from '../questions';
+import { inputQuestion, confirmFile } from './questions';
 
 export const run = async () => {
   try {
     await connectToDBServer(envConstants.MONGODB_URI);
-
-    // await restaurantDbRepository.createRestaurantsCollection();
 
     const { file } = await prompt(inputQuestion);
     const { answer } = await prompt(confirmFile);
 
     if (answer) {
       const { restaurant } = require(`./restaurant-list/${file}`);
-      const restaurantModel = await restaurantRepository.getRestaurantByUrlName(
+      const restaurantModel = await restaurantRepository.existsRestaurantByUrlName(
         file
       );
 

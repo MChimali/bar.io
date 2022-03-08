@@ -9,6 +9,7 @@ node_modules
 /dist
 /tmp
 /out-tsc
+/public
 # Only exists if Bazel was run
 /bazel-out
 

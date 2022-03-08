@@ -31,8 +31,8 @@ restaurantApi
   })
 
   // Use this endpoint to bring us an especific restaurant
-  // http://localhost:3001/api/restaurant/5
-  // where 5 is the restaurant id
+  // http://localhost:3001/api/restaurant/papulinos
+  // where papulinos is the restaurant urlName
   .get('/:urlName', async (req, res, next) => {
     try {
       const { urlName } = req.params;
@@ -50,12 +50,11 @@ restaurantApi
   .post('/', async (req, res, next) => {
     try {
       const { urlName } = req.body;
-      const restaurantModel = await restaurantRepository.getRestaurantByUrlName(
-        urlName
-      );
+      const restaurantModel =
+        await restaurantRepository.existsRestaurantByUrlName(urlName);
 
       if (restaurantModel) {
-        throw 'Restaurant with this name exist in data base';
+        res.status(409);
       } else {
         const restaurant = mapRestaurantFromApiModelToModel(req.body);
         const newRestaurant = await restaurantRepository.saveRestaurant(
@@ -89,8 +88,8 @@ restaurantApi
   .delete('/:id', async (req, res, next) => {
     try {
       const { id } = req.params;
-      await restaurantRepository.deleteRestaurant(id);
-      res.send(`Restaurant with id: ${id} deleted`);
+      const ok = await restaurantRepository.deleteRestaurant(id);
+      res.sendStatus(ok ? 204 : 404);
     } catch (error) {
       next(error);
     }

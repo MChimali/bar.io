@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   expenses-store-db:
-    container_name: bario-tools-container
+    container_name: bario-container
     image: mongo:5
     ports:
       - '27017:27017'

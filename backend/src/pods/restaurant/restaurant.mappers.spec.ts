@@ -39,7 +39,7 @@ describe('restaurant.mapper', () => {
       // Arrange
       const data: apiModel.CategoryEntry[] = [
         {
-          categoryName: 'category-test',
+          name: 'category-test',
           items: [
             {
               name: 'item-test',
@@ -58,7 +58,7 @@ describe('restaurant.mapper', () => {
       // Arrange
       const data: apiModel.CategoryEntry[] = [
         {
-          categoryName: 'category-test',
+          name: 'category-test',
           items: [
             {
               name: 'item-test',
@@ -91,7 +91,7 @@ describe('restaurant.mapper', () => {
     // Arrange
     const data: apiModel.CategoryEntry[] = [
       {
-        categoryName: 'category-test',
+        name: 'category-test',
         items: [
           {
             name: 'item-test',
@@ -127,7 +127,7 @@ describe('restaurant.mapper', () => {
     // Arrange
     const data: apiModel.CategoryEntry[] = [
       {
-        categoryName: 'category-test',
+        name: 'category-test',
         items: [
           {
             name: 'item-test1',
@@ -247,7 +247,7 @@ describe('restaurant.mapper', () => {
           theme: 'default',
           menu: [
             {
-              categoryName: 'category-test',
+              name: 'category-test',
               items: [
                 {
                   name: 'item-test1',

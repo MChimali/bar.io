@@ -4,14 +4,13 @@
       "@babel/preset-env",
       {
         "targets": {
-          "node": "14"
+          "node": "16"
         }
       }
     ],
     "@babel/preset-typescript"
   ],
   "plugins": [
-    "@babel/plugin-proposal-optional-chaining",
     [
       "module-resolver",
       {
@@ -29,9 +28,9 @@
   "env": {
     "development": {
       "sourceMaps": "inline"
+    },
+    "production": {
+      "ignore": ["**/*.spec.ts", "./src/console-runners"]
     }
-  },
-  "production": {
-    "ignore": ["**/*.spec.ts", "./src/console-runners"]
   }
 }

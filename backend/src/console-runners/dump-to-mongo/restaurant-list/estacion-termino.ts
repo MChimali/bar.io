@@ -17,7 +17,7 @@ export const restaurant: RestaurantApiModel = {
   description: '',
   menu: [
     {
-      categoryName: 'Entrantes',
+      name: 'Entrantes',
       items: [
         {
           name: 'Sopa fría del día',
@@ -80,7 +80,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      categoryName: 'Carnes',
+      name: 'Carnes',
       items: [
         {
           name: 'Pincho de Cordero a la Moruna',
@@ -118,7 +118,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      categoryName: 'Pescados',
+      name: 'Pescados',
       items: [
         {
           name: 'Bacalao Poché en su Pil-Pil',

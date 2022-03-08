@@ -16,7 +16,7 @@ export const restaurant: RestaurantApiModel = {
   theme: 'italian',
   menu: [
     {
-      categoryName: 'Bebidas',
+      name: 'Bebidas',
       items: [
         {
           name: 'Cocacola',
@@ -101,7 +101,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      categoryName: 'Para picar',
+      name: 'Para picar',
       items: [
         {
           name: 'Patata fritas',
@@ -165,7 +165,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      categoryName: 'Ensaladas',
+      name: 'Ensaladas',
       items: [
         {
           name: 'de la hulerta',
@@ -193,7 +193,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      categoryName: 'Especialidades',
+      name: 'Especialidades',
       items: [
         {
           name: 'Rollo kebab de pollo',
@@ -255,7 +255,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      categoryName: 'Pizzas inrediente extra 0.90 €',
+      name: 'Pizzas inrediente extra 0.90 €',
       items: [
         {
           name: 'Margarita',
@@ -316,7 +316,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      categoryName: 'Los originales de Supermac',
+      name: 'Los originales de Supermac',
       items: [
         {
           name: 'Camperazo',
@@ -357,7 +357,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      categoryName:
+      name:
         'Camperos (Todos llevan incluidos lechuga, tomate, cebolla y mahonesa)',
       items: [
         {
@@ -394,7 +394,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      categoryName:
+      name:
         'Hamburguesas y Perritos (Todos llevan incluidos lechuga, tomate, cebolla, ketchup y mostaza)',
       items: [
         {
@@ -420,7 +420,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      categoryName: 'Postres',
+      name: 'Postres',
       items: [
         {
           name: 'Tarta de queso casera',

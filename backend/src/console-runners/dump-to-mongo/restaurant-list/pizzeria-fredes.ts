@@ -16,7 +16,7 @@ export const restaurant: RestaurantApiModel = {
   description: 'Desde 1993',
   menu: [
     {
-      categoryName: 'Refrescos',
+      name: 'Refrescos',
       items: [
         {
           name: 'Pepsi',
@@ -57,7 +57,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      categoryName: 'Cervezas',
+      name: 'Cervezas',
       items: [
         {
           name: 'Tubo de cerveza',
@@ -95,7 +95,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      categoryName: 'Patatas',
+      name: 'Patatas',
       items: [
         {
           name: 'Patatas de luxe',
@@ -112,7 +112,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      categoryName: 'Nuestras sugerencias',
+      name: 'Nuestras sugerencias',
       items: [
         {
           name: 'Provoleta',
@@ -137,7 +137,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      categoryName: 'Hamburguesas y perritos',
+      name: 'Hamburguesas y perritos',
       items: [
         {
           name: 'Hamburguesa simple',
@@ -172,7 +172,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      categoryName: 'Camperos',
+      name: 'Camperos',
       items: [
         {
           name: 'Pollo',
@@ -202,7 +202,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      categoryName: 'Pizzas',
+      name: 'Pizzas',
       items: [
         {
           name: 'Margarita',

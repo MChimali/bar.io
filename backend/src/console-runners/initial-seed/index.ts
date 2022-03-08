@@ -5,7 +5,7 @@ import { connectToDBServer, disconnectFromDbServer } from 'core/servers';
 import { envConstants } from 'core/constants';
 import { mapRestaurantFromApiModelToModel } from 'pods/restaurant/restaurant.mappers';
 import { restaurantRepository } from 'dals';
-import { confirmFile } from '../questions';
+import { confirmFile } from './questions';
 
 export const run = async () => {
   try {

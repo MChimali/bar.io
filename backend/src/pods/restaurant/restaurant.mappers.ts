@@ -108,7 +108,7 @@ const mapFromCategoryEntryToItemsByCategory = (
   category: apiModel.CategoryEntry
 ): model.ItemsByCategory => {
   return {
-    categoryName: category.categoryName,
+    categoryName: category.name,
     items: mapListFromItemApiToItemModel(category.items),
   };
 };
@@ -177,7 +177,7 @@ const mapFromItemsByCategoryToCategoryEntry = (
   category: model.ItemsByCategory
 ): apiModel.CategoryEntry => {
   return {
-    categoryName: category.categoryName,
+    name: category.categoryName,
     items: mapListFromItemModelToItemApi(category.items),
   };
 };
