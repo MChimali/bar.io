@@ -1,4 +1,3 @@
-import { execPath } from 'process';
 import * as restaurantApi from './api/restaurant.api.model';
 import {
   mapDatefromApiToModel,
@@ -43,7 +42,7 @@ describe('restaurant.mapper', () => {
         theme: 'default',
         menu: [
           {
-            categoryName: 'test-categoryName',
+            name: 'test-categoryName',
             items: [
               {
                 name: 'test-name',

@@ -18,7 +18,7 @@ export interface Item {
 }
 
 export interface CategoryEntry {
-  categoryName: string;
+  name: string;
   items: Item[];
 }
 

@@ -57,7 +57,7 @@ const mapListFromCategoryEntryApitoCategoryEntryVm = (
 const mapFromCategoryEntryApitoCategoryEntryVm = (
   category: restaurantApi.CategoryEntry
 ): restaurantVm.CategoryEntry => ({
-  name: category.categoryName,
+  name: category.name,
   items: mapListFromItemsApiToItemsVm(category.items),
 });
 
