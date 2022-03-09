@@ -2,6 +2,8 @@
 FROM node:16-alpine AS base
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
+ARG SITE_URL
+ENV SITE_URL=$SITE_URL
 
 # Build
 FROM base AS build-app
@@ -19,19 +21,25 @@ COPY --from=build-app /usr/src/app/public ./public
 COPY ./package.json ./
 COPY ./package-lock.json ./
 COPY ./next.config.js ./
+COPY ./sitemap.config.js ./
 RUN npm ci --only=production
 
-FROM nginx:stable-alpine
+FROM nasdan/heroku-pm2-nginx
 ENV NODE_ENV=production
 COPY --from=release /usr/src/app ./
+
+# Copy the nginx.conf template
 COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Replace PORT for Nextjs server on nginx.conf
 ENV INTERNAL_PORT=3000
 RUN sed -i -e 's|INTERNAL_PORT|'"$INTERNAL_PORT"'|g' /etc/nginx/conf.d/default.conf
 
-RUN apk add nodejs --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community && \
-  apk add npm --repository=http://dl-cdn.alpinelinux.org/alpine/edge/main
-RUN npm i pm2 -g
-
-CMD sed -i -e 's|PORT|'"$PORT"'|g' /etc/nginx/conf.d/default.conf && \
+# Run docker-entrypoint.sh from base image (enable heroku ps:exec command)
+# Replace PORT variable by $PORT provided by Heroku on each Heroku start
+# Run pm2 Nextjs server entry point
+# Run nginx
+CMD bash docker-entrypoint.sh && \
+  sed -i -e 's|PORT|'"$PORT"'|g' /etc/nginx/conf.d/default.conf && \
   pm2 start "node_modules/next/dist/bin/next" --name "bar.io" --env production -- start ./ -p $INTERNAL_PORT && \
   nginx -g 'daemon off;'

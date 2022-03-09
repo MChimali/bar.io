@@ -21,7 +21,7 @@ jobs:
       - name: Login heroku
         run: heroku container:login
       - name: Build docker image
-        run: docker build -t ${{ env.IMAGE_NAME }} .
+        run: docker build --build-arg SITE_URL=${{secrets.SITE_URL}} -t ${{ env.IMAGE_NAME }} .
       - name: Deploy docker image
         run: docker push ${{ env.IMAGE_NAME }}
       - name: Release
