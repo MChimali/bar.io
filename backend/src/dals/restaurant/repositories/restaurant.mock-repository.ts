@@ -29,7 +29,7 @@ export const insertRestaurant = async (restaurant: Restaurant) => {
 
 export const updateRestaurant = async (updateRestaurant: Restaurant) => {
   db.restaurants = db.restaurants.map((restaurant) =>
-    restaurant._id.toHexString() === updateRestaurant._id.toHexString()
+    restaurant.urlName === updateRestaurant.urlName
       ? { ...restaurant, ...updateRestaurant }
       : restaurant
   );
@@ -44,9 +44,7 @@ export const mockRepository: RestaurantRepository = {
   existsRestaurantByUrlName: async (urlName: string) =>
     db.restaurants.some((r) => r.urlName === urlName),
   saveRestaurant: async (restaurant: Restaurant) =>
-    db.restaurants.some(
-      (r) => r._id.toHexString() === restaurant._id.toHexString()
-    )
+    db.restaurants.some((r) => r.urlName === restaurant.urlName)
       ? updateRestaurant(restaurant)
       : insertRestaurant(restaurant),
   deleteRestaurant: async (id: string) => {

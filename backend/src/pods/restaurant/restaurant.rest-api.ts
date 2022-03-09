@@ -54,13 +54,13 @@ restaurantApi
         await restaurantRepository.existsRestaurantByUrlName(urlName);
 
       if (restaurantModel) {
-        res.status(409);
+        res.sendStatus(400);
       } else {
         const restaurant = mapRestaurantFromApiModelToModel(req.body);
-        const newRestaurant = await restaurantRepository.saveRestaurant(
+        await restaurantRepository.saveRestaurant(
           restaurant
         );
-        res.status(201).send(newRestaurant);
+        res.sendStatus(201);
       }
     } catch (error) {
       next(error);
@@ -69,12 +69,12 @@ restaurantApi
   // Use this endpoint to modify a restaurant
   // http://localhost:3001/api/restaurant/
   // and use a JSON as Restaurant Model
-  .put('/:id', async (req, res, next) => {
+  .put('/:urlName', async (req, res, next) => {
     try {
-      const { id } = req.params;
+      const { urlName } = req.params;
       const restaurantModel = mapRestaurantFromApiModelToModel({
         ...req.body,
-        id,
+        urlName,
       });
       await restaurantRepository.saveRestaurant(restaurantModel);
       res.sendStatus(204);
