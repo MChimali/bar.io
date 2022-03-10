@@ -1,8 +1,7 @@
-import { ObjectId } from 'mongodb';
 import { RestaurantApiModel } from 'pods/restaurant';
 
 export const restaurant: RestaurantApiModel = {
-  id: new ObjectId().toHexString(),
+  id: undefined,
   name: 'Hermanos Alba',
   urlName: 'hermanosalba',
   phone: '951 33 18 03',

@@ -1,8 +1,7 @@
-import { ObjectId } from 'mongodb';
 import { RestaurantApiModel } from 'pods/restaurant';
 
 export const restaurant: RestaurantApiModel = {
-  id: new ObjectId().toHexString(),
+  id: undefined,
   name: 'Supermac',
   urlName: 'supermac',
   phone: '641 047 027 / 951 38 14 91',
@@ -357,8 +356,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name:
-        'Camperos (Todos llevan incluidos lechuga, tomate, cebolla y mahonesa)',
+      name: 'Camperos (Todos llevan incluidos lechuga, tomate, cebolla y mahonesa)',
       items: [
         {
           name: 'Normal',
@@ -394,8 +392,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name:
-        'Hamburguesas y Perritos (Todos llevan incluidos lechuga, tomate, cebolla, ketchup y mostaza)',
+      name: 'Hamburguesas y Perritos (Todos llevan incluidos lechuga, tomate, cebolla, ketchup y mostaza)',
       items: [
         {
           name: 'Hamburguesa Clásica (pollo o cerdo)',
