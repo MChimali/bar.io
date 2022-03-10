@@ -15,7 +15,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - run: |
+      - name: Save restaurant list
+        run: |
           npm install
           npm run start:prod-runner -- ${{ secrets.DEV_MONGODB_URI }}
   backend-cd:
