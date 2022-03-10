@@ -1,5 +1,5 @@
 {
-  "name": "tools",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,7 +12,7 @@
     "prestart:console-runners": "npm run prestart",
     "start:console-runners": "run-p type-check:watch console-runners start:local-db",
     "console-runners": "nodemon --no-stdin --exec babel-node -r dotenv/config --extensions \".ts\" src/console-runners/index.ts",
-    "start:local-db": "docker-compose -f ../docker-compose.yml up -d",
+    "start:local-db": "docker-compose up -d",
     "build": "run-p -l type-check build:prod",
     "build:prod": "npm run clean && cross-env NODE_ENV=production babel src -d dist --extensions \".ts\"",
     "clean": "rimraf dist",

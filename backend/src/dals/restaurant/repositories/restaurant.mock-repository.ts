@@ -47,9 +47,9 @@ export const mockRepository: RestaurantRepository = {
     db.restaurants.some((r) => r.urlName === restaurant.urlName)
       ? updateRestaurant(restaurant)
       : insertRestaurant(restaurant),
-  deleteRestaurant: async (id: string) => {
+  deleteRestaurant: async (urlName: string) => {
     db.restaurants = db.restaurants.filter(
-      (restaurant) => restaurant._id.toHexString() !== id
+      (restaurant) => restaurant.urlName !== urlName
     );
     return true;
   },

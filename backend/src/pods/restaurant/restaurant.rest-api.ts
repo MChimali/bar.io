@@ -57,9 +57,7 @@ restaurantApi
         res.sendStatus(400);
       } else {
         const restaurant = mapRestaurantFromApiModelToModel(req.body);
-        await restaurantRepository.saveRestaurant(
-          restaurant
-        );
+        await restaurantRepository.saveRestaurant(restaurant);
         res.sendStatus(201);
       }
     } catch (error) {
@@ -85,10 +83,10 @@ restaurantApi
   // Use this endpoint to delete a restaurant
   // you must specify the restaurant id
   // http://localhost:3001/api/restaurant/<id Restaurant>
-  .delete('/:id', async (req, res, next) => {
+  .delete('/:urlName', async (req, res, next) => {
     try {
-      const { id } = req.params;
-      const ok = await restaurantRepository.deleteRestaurant(id);
+      const { urlName } = req.params;
+      const ok = await restaurantRepository.deleteRestaurant(urlName);
       res.sendStatus(ok ? 204 : 404);
     } catch (error) {
       next(error);
