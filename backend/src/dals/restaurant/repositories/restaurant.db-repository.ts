@@ -68,7 +68,7 @@ export const dbRepository: RestaurantRepository = {
   },
   deleteRestaurant: async (urlName: string): Promise<boolean> => {
     await getRestaurantContext().deleteOne({
-      _id: new ObjectId(urlName),
+      urlName: urlName,
     });
     return true;
   },
