@@ -3,7 +3,8 @@
   "scripts": {
     "postinstall": "run-p -l backend:install menu:install",
     "backend:install": "cd backend && npm install",
-    "menu:install": "cd menu-public-portal && npm install"
+    "menu:install": "cd menu-public-portal && npm install",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "husky": "^7.0.0",
