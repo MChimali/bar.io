@@ -14,17 +14,20 @@ export const run = async (connectionString: string) => {
       const {
         restaurant,
       } = require(`../restaurant-list/${restaurantNames[item]}`);
-      const modelRestaurant = mapRestaurantFromApiModelToModel(restaurant);
-      await restaurantRepository.saveRestaurant({
-        ...modelRestaurant,
-        // _id: undefined,
-      });
+      let modelRestaurant = mapRestaurantFromApiModelToModel(restaurant);
+      // const exists = await restaurantRepository.existsRestaurantByUrlName(
+      //   modelRestaurant.urlName
+      // );
+      // modelRestaurant = exists
+      //   ? { ...modelRestaurant, _id: undefined }
+      //   : modelRestaurant;
+      await restaurantRepository.saveRestaurant(modelRestaurant);
       console.log(`${restaurantNames[item]} is saved`);
     }
 
     await disconnectFromDbServer();
   } catch (error) {
     console.error(error);
-    process.exit(0);
+    process.exit(1);
   }
 };
