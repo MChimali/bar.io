@@ -5,7 +5,8 @@ import { restaurantRepository } from 'dals';
 
 export const run = async (connectionString: string) => {
   try {
-    await connectToDBServer(connectionString);
+    const mongoURI = connectionString || process.argv[8];
+    await connectToDBServer(mongoURI);
 
     const restaurantNames = fs.readdirSync(`${__dirname}/../restaurant-list`);
 
