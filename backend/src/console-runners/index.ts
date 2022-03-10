@@ -2,7 +2,7 @@ import { prompt } from 'inquirer';
 import { envConstants } from 'core/constants';
 import { mongoDBQuestions } from './questions';
 
-const consoleRunnerList = ['initial-seed', 'dump-to-mongo'];
+const consoleRunnerList = ['save-restaurant-list', 'save-restaurant'];
 
 (async () => {
   const mongoDbFields = await prompt(mongoDBQuestions);

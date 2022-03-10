@@ -12,7 +12,7 @@ export const run = async (connectionString: string) => {
     const { answer } = await prompt(confirmFile);
 
     if (answer) {
-      const { restaurant } = require(`./restaurant-list/${file}`);
+      const { restaurant } = require(`../restaurant-list/${file}`);
       const restaurantModel =
         await restaurantRepository.existsRestaurantByUrlName(file);
 

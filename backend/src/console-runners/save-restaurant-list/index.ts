@@ -1,4 +1,3 @@
-import { prompt } from 'inquirer';
 import fs from 'fs';
 import { connectToDBServer, disconnectFromDbServer } from 'core/servers';
 import { mapRestaurantFromApiModelToModel } from 'pods/restaurant/restaurant.mappers';
@@ -8,14 +7,12 @@ export const run = async (connectionString: string) => {
   try {
     await connectToDBServer(connectionString);
 
-    const restaurantNames = fs.readdirSync(
-      `${__dirname}/../dump-to-mongo/restaurant-list`
-    );
+    const restaurantNames = fs.readdirSync(`${__dirname}/../restaurant-list`);
 
     for (const item in restaurantNames) {
       const {
         restaurant,
-      } = require(`../dump-to-mongo/restaurant-list/${restaurantNames[item]}`);
+      } = require(`../restaurant-list/${restaurantNames[item]}`);
       await restaurantRepository.saveRestaurant(
         mapRestaurantFromApiModelToModel(restaurant)
       );
