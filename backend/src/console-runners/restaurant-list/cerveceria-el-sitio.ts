@@ -248,8 +248,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name:
-        'Hamburguesas (Todas las Hamburguesas incluyen Patatas Fritas)',
+      name: 'Hamburguesas (Todas las Hamburguesas incluyen Patatas Fritas)',
       items: [
         {
           name: 'Simple',
@@ -452,8 +451,7 @@ export const restaurant: RestaurantApiModel = {
       ],
     },
     {
-      name:
-        'Carnes a la Brasa (Pueden ir acompañadas de ensalada o patatas)',
+      name: 'Carnes a la Brasa (Pueden ir acompañadas de ensalada o patatas)',
       items: [
         {
           name: 'Churrasco Pollo',

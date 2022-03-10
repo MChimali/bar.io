@@ -1,9 +1,16 @@
 import { prompt } from 'inquirer';
+import { envConstants } from 'core/constants';
+import { mongoDBQuestions } from './questions';
 
-const consoleRunnerList = ['initial-seed', 'dump-to-mongo'];
+const consoleRunnerList = ['save-restaurant-list', 'save-restaurant'];
 
 (async () => {
+  const mongoDbFields = await prompt(mongoDBQuestions);
+  const connectionString = Boolean(mongoDbFields.connectionString)
+    ? mongoDbFields.connectionString
+    : envConstants.MONGODB_URI;
   let exit = false;
+
   while (!exit) {
     const { consoleRunner } = await prompt([
       {
@@ -16,7 +23,7 @@ const consoleRunnerList = ['initial-seed', 'dump-to-mongo'];
 
     if (consoleRunner !== 'exit') {
       const { run } = require(`./${consoleRunner}`);
-      await run();
+      await run(connectionString);
     } else {
       exit = true;
     }
