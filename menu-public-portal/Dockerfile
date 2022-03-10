@@ -3,13 +3,15 @@ FROM node:16-alpine AS base
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 ARG SITE_URL
-ENV SITE_URL=$SITE_URL
+ARG BASE_API_URL
 
 # Build
 FROM base AS build-app
 COPY ./ ./
 RUN npm ci
 ENV NODE_ENV=production
+ENV SITE_URL=$SITE_URL
+ENV BASE_API_URL=$BASE_API_URL
 RUN npm run build
 
 # Release
@@ -26,6 +28,8 @@ RUN npm ci --only=production
 
 FROM nasdan/heroku-pm2-nginx
 ENV NODE_ENV=production
+ENV SITE_URL=$SITE_URL
+ENV BASE_API_URL=$BASE_API_URL
 COPY --from=release /usr/src/app ./
 
 # Copy the nginx.conf template
