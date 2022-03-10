@@ -14,7 +14,7 @@ RUN npm run build
 FROM base AS release
 ENV NODE_ENV=production
 ENV STATIC_FILES_PATH=./public
-COPY --from=build-back /usr/src/app/dist ./
+COPY --from=build-app /usr/src/app/dist ./
 
 COPY ./package.json ./
 COPY ./package-lock.json ./
