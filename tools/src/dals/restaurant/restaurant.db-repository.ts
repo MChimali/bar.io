@@ -48,49 +48,4 @@ export const restaurantDbRepository = {
       throw error;
     }
   },
-  createRestaurantsCollection: async () => {
-    try {
-      const db = getDBInstance();
-      const collections = await db
-        .listCollections({ name: 'restaurants' }, { nameOnly: true })
-        .toArray();
-      if (collections.length === 0) {
-        const validator = createSchemaValidator();
-        await db.createCollection('restaurants', {
-          validationLevel: 'strict',
-          validator,
-        });
-      }
-    } catch (error) {
-      throw error;
-    }
-  },
-};
-
-const createSchemaValidator = () => {
-  const settings: PartialArgs = {
-    required: true,
-    ref: false,
-  };
-
-  const compilerOptions: CompilerOptions = {
-    strictNullChecks: true,
-  };
-
-  const models = getProgramFromFiles(
-    [resolve(`${__dirname}/restaurant.model.ts`)],
-    compilerOptions
-  );
-
-  const schema = generateSchema(models, 'Restaurant', settings);
-
-  const { $schema, definitions, ...jsonSchema } = schema;
-
-  const jsonSchemaString = JSON.stringify(jsonSchema);
-
-  const validator = {
-    $jsonSchema: JSON.parse(jsonSchemaString.replace('"type":', '"bsonType":')),
-  };
-
-  return validator;
 };

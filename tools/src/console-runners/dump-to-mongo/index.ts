@@ -9,8 +9,6 @@ export const run = async () => {
   try {
     await connectToDBServer(envConstants.MONGODB_URI);
 
-    // await restaurantDbRepository.createRestaurantsCollection();
-
     const { file } = await prompt(inputQuestion);
     const { answer } = await prompt(confirmFile);
 
