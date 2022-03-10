@@ -15,12 +15,12 @@ export const run = async (connectionString: string) => {
         restaurant,
       } = require(`../restaurant-list/${restaurantNames[item]}`);
       let modelRestaurant = mapRestaurantFromApiModelToModel(restaurant);
-      // const exists = await restaurantRepository.existsRestaurantByUrlName(
-      //   modelRestaurant.urlName
-      // );
-      // modelRestaurant = exists
-      //   ? { ...modelRestaurant, _id: undefined }
-      //   : modelRestaurant;
+      const exists = await restaurantRepository.existsRestaurantByUrlName(
+        modelRestaurant.urlName
+      );
+      modelRestaurant = exists
+        ? { ...modelRestaurant, _id: undefined }
+        : modelRestaurant;
       await restaurantRepository.saveRestaurant(modelRestaurant);
       console.log(`${restaurantNames[item]} is saved`);
     }
