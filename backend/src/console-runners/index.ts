@@ -1,10 +1,6 @@
 import { prompt } from 'inquirer';
 
-const consoleRunnerList = [
-  'initial-seed',
-  'dump-to-mongo',
-  'migrations',
-];
+const consoleRunnerList = ['initial-seed', 'dump-to-mongo'];
 
 (async () => {
   let exit = false;
