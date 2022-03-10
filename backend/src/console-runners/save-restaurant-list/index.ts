@@ -24,10 +24,9 @@ export const run = async (connectionString: string) => {
       await restaurantRepository.saveRestaurant(modelRestaurant);
       console.log(`${restaurantNames[item]} is saved`);
     }
-
     await disconnectFromDbServer();
   } catch (error) {
     console.error(error);
-    process.exit(1);
+    await disconnectFromDbServer();
   }
 };
