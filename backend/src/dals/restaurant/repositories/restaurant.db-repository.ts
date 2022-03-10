@@ -59,19 +59,17 @@ export const dbRepository: RestaurantRepository = {
   saveRestaurant: async (restaurant: Restaurant): Promise<Restaurant> => {
     const { value } = await getRestaurantContext().findOneAndUpdate(
       {
-        _id: restaurant._id,
+        urlName: restaurant.urlName,
       },
       { $set: restaurant },
       { upsert: true, returnDocument: 'after' }
     );
     return value;
   },
-  deleteRestaurant: async (id: string): Promise<boolean> => {
+  deleteRestaurant: async (urlName: string): Promise<boolean> => {
     await getRestaurantContext().deleteOne({
-      _id: new ObjectId(id),
+      _id: new ObjectId(urlName),
     });
     return true;
   },
 };
-
-
