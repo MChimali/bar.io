@@ -1,11 +1,3 @@
-import { resolve } from 'path';
-import { getDBInstance } from 'core/servers';
-import {
-  CompilerOptions,
-  generateSchema,
-  getProgramFromFiles,
-  PartialArgs,
-} from 'typescript-json-schema';
 import { getRestaurantContext } from './restaurant.context';
 import * as model from './restaurant.model';
 
