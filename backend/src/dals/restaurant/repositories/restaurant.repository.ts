@@ -6,5 +6,4 @@ export interface RestaurantRepository {
   existsRestaurantByUrlName: (urlName: string) => Promise<boolean>;
   saveRestaurant: (restaurant: Restaurant) => Promise<Restaurant>;
   deleteRestaurant: (id: string) => Promise<boolean>;
-  createRestaurantsCollection?: () => Promise<void>;
 }
