@@ -5,7 +5,8 @@ import { restaurantRepository } from 'dals';
 
 export const run = async (connectionString: string) => {
   try {
-    await connectToDBServer(connectionString);
+    const mongoURI = connectionString || process.argv[8];
+    await connectToDBServer(mongoURI);
 
     const restaurantNames = fs.readdirSync(`${__dirname}/../restaurant-list`);
 
@@ -13,14 +14,19 @@ export const run = async (connectionString: string) => {
       const {
         restaurant,
       } = require(`../restaurant-list/${restaurantNames[item]}`);
-      await restaurantRepository.saveRestaurant(
-        mapRestaurantFromApiModelToModel(restaurant)
+      let modelRestaurant = mapRestaurantFromApiModelToModel(restaurant);
+      const exists = await restaurantRepository.existsRestaurantByUrlName(
+        modelRestaurant.urlName
       );
+      modelRestaurant = exists
+        ? { ...modelRestaurant, _id: undefined }
+        : modelRestaurant;
+      await restaurantRepository.saveRestaurant(modelRestaurant);
       console.log(`${restaurantNames[item]} is saved`);
     }
-
     await disconnectFromDbServer();
   } catch (error) {
     console.error(error);
+    await disconnectFromDbServer();
   }
 };

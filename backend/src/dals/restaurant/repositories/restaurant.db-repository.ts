@@ -62,7 +62,7 @@ export const dbRepository: RestaurantRepository = {
         urlName: restaurant.urlName,
       },
       { $set: restaurant },
-      { upsert: true, returnDocument: 'after' }
+      { upsert: true, returnDocument: 'after', ignoreUndefined: true }
     );
     return value;
   },

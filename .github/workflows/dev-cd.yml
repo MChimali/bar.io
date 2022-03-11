@@ -6,24 +6,58 @@ on:
     branches:
       - vnext
 
-env:
-  HEROKU_API_KEY: ${{ secrets.DEV_HEROKU_API_KEY }}
-  IMAGE_NAME: registry.heroku.com/${{ secrets.DEV_HEROKU_APP_NAME }}/web
-
 jobs:
-  cd:
+  save-restaurant-list:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: menu-public-portal
+        working-directory: backend
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+      - name: Save restaurant list
+        run: |
+          npm install
+          npm run start:prod-runner -- ${{ secrets.DEV_MONGODB_URI }}
+
+  backend-cd:
+    runs-on: ubuntu-latest
+    needs: [save-restaurant-list]
+    defaults:
+      run:
+        working-directory: backend
+    env:
+      HEROKU_API_KEY: ${{ secrets.DEV_BACKEND_HEROKU_API_KEY }}
+      IMAGE_NAME: registry.heroku.com/${{ secrets.DEV_BACKEND_HEROKU_APP_NAME }}/web
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
       - name: Login heroku
         run: heroku container:login
       - name: Build docker image
-        run: docker build --build-arg SITE_URL=${{secrets.DEV_SITE_URL}} -t ${{ env.IMAGE_NAME }} .
+        run: docker build -t ${{ env.IMAGE_NAME }} .
       - name: Deploy docker image
         run: docker push ${{ env.IMAGE_NAME }}
       - name: Release
-        run: heroku container:release web -a ${{ secrets.DEV_HEROKU_APP_NAME }}
+        run: heroku container:release web -a ${{ secrets.DEV_BACKEND_HEROKU_APP_NAME }}
+
+  menu-public-portal-cd:
+    runs-on: ubuntu-latest
+    needs: [backend-cd]
+    defaults:
+      run:
+        working-directory: menu-public-portal
+    env:
+      HEROKU_API_KEY: ${{ secrets.DEV_PORTAL_HEROKU_API_KEY }}
+      IMAGE_NAME: registry.heroku.com/${{ secrets.DEV_PORTAL_HEROKU_APP_NAME }}/web
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Login heroku
+        run: heroku container:login
+      - name: Build docker image
+        run: docker build --build-arg SITE_URL=${{secrets.DEV_SITE_URL}} --build-arg BASE_API_URL=${{secrets.DEV_BASE_API_URL}} -t ${{ env.IMAGE_NAME }} .
+      - name: Deploy docker image
+        run: docker push ${{ env.IMAGE_NAME }}
+      - name: Release
+        run: heroku container:release web -a ${{ secrets.DEV_PORTAL_HEROKU_APP_NAME }}
