@@ -47,5 +47,5 @@ RUN sed -i -e 's|INTERNAL_PORT|'"$INTERNAL_PORT"'|g' /etc/nginx/conf.d/default.c
 # Run nginx
 CMD bash docker-entrypoint.sh && \
   sed -i -e 's|PORT|'"$PORT"'|g' /etc/nginx/conf.d/default.conf && \
-  pm2 start "node_modules/next/dist/bin/next" --name "bar.io" --env production -- start ./ -p $INTERNAL_PORT && \
+  pm2 start "node_modules/next/dist/bin/next" --name "bar.io" --env production -i max -- start ./ -p $INTERNAL_PORT && \
   nginx -g 'daemon off;'

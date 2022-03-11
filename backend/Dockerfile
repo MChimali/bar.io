@@ -38,5 +38,5 @@ RUN sed -i -e 's|INTERNAL_PORT|'"$INTERNAL_PORT"'|g' /etc/nginx/conf.d/default.c
 # Run nginx
 CMD bash docker-entrypoint.sh && \
   sed -i -e 's|PORT|'"$PORT"'|g' /etc/nginx/conf.d/default.conf && \
-  pm2 start ./index.js --name "bar.io-api" --env production  && \
+  pm2 start ./index.js --name "bar.io-api" --env production -i max  && \
   nginx -g 'daemon off;'
