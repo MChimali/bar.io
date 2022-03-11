@@ -1,9 +1,10 @@
-import { ThemeName } from 'core/theme';
+import { RestaurantTheme } from 'common-app/models';
 
 export interface RationType {
   unit: string;
   price: number;
 }
+
 export interface PriceByRation {
   rationName: string;
   rationsTypes: RationType[];
@@ -22,17 +23,17 @@ export interface CategoryEntry {
   items: Item[];
 }
 
-export interface RestaurantApi {
+export interface RestaurantApiModel {
   id: string;
   name: string;
   urlName: string;
   phone: string;
   address: string;
   locationUrl: string;
-  menuDate: string;
+  menuDate: Date;
   communitySourceUrl: string;
   official: boolean;
   description: string;
-  theme: ThemeName;
+  theme: RestaurantTheme;
   menu: CategoryEntry[];
 }

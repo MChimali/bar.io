@@ -1,7 +1,7 @@
 import { ThemeName } from 'core/theme';
 
 export interface RestaurantApi {
-  _id: string;
+  id: string;
   name: string;
   urlName: string;
   phone: string;

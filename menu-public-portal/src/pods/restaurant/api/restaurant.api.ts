@@ -1,7 +1,11 @@
 import { RestaurantApi } from './restaurant.api.model';
+import { envConstants } from 'common/constants';
 
 export const getRestaurantByName = async (
   restaurantName: string
 ): Promise<RestaurantApi> => {
-  return require(`../../../../public/${restaurantName}.json`);
+  const restaurant = await fetch(
+    `${envConstants.BASE_API_URL}/restaurant/${restaurantName}`
+  ).then((response) => response.json());
+  return restaurant as RestaurantApi;
 };

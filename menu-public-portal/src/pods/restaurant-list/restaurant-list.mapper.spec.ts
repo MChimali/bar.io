@@ -26,7 +26,7 @@ describe('restaurant-list.mapper', () => {
       // Arrange
       const restaurantList: api.RestaurantApi[] = [
         {
-          _id: '6214cc374dc76f8accaed60b',
+          id: '6214cc374dc76f8accaed60b',
           name: 'restaurant-name-test',
           urlName: 'restaurant-urlName-test',
           phone: 'restaurant-phone-test',
@@ -57,7 +57,7 @@ describe('restaurant-list.mapper', () => {
       // Arrange
       const restaurantList: api.RestaurantApi[] = [
         {
-          _id: '6214cc374dc76f8accaed60b',
+          id: '6214cc374dc76f8accaed60b',
           name: 'restaurant-name-test',
           urlName: 'restaurant-urlName-test',
           phone: 'restaurant-phone-test',
@@ -67,7 +67,7 @@ describe('restaurant-list.mapper', () => {
           theme: 'default',
         } as api.RestaurantApi,
         {
-          _id: '6214cd8e92d3a4f5966ecf31',
+          id: '6214cd8e92d3a4f5966ecf31',
           name: 'restaurant-name-test',
           urlName: 'restaurant-urlName-test',
           phone: 'restaurant-phone-test',

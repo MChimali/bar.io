@@ -1,4 +1,3 @@
-import { execPath } from 'process';
 import * as restaurantApi from './api/restaurant.api.model';
 import {
   mapDatefromApiToModel,
@@ -30,7 +29,7 @@ describe('restaurant.mapper', () => {
     it('should return mepped restaurant when it feeds a restaurant to map', () => {
       // Arrange
       const restaurant: restaurantApi.RestaurantApi = {
-        _id: 'test-id',
+        id: 'test-id',
         name: 'test-name',
         urlName: 'test-urlName',
         phone: 'test-phone',
@@ -43,7 +42,7 @@ describe('restaurant.mapper', () => {
         theme: 'default',
         menu: [
           {
-            categoryName: 'test-categoryName',
+            name: 'test-categoryName',
             items: [
               {
                 name: 'test-name',

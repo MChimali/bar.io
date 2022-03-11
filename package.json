@@ -1,9 +1,10 @@
 {
   "name": "bar.io",
   "scripts": {
-    "postinstall": "run-p -l tools:install menu:install",
-    "tools:install": "cd tools && npm install",
-    "menu:install": "cd menu-public-portal && npm install"
+    "postinstall": "run-p -l backend:install menu:install",
+    "backend:install": "cd backend && npm install",
+    "menu:install": "cd menu-public-portal && npm install",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "husky": "^7.0.0",
