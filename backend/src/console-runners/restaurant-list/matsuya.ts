@@ -482,10 +482,10 @@ export const restaurant: RestaurantApiModel = {
           price: 14.50,
           description: `Sopa miso, Ensalada y Mini rollo
           sushi(6)
-          plato a elegir:
+          Plato a elegir:
            - Teriyaki de pollo y arroz
-           - salmón y arroz,
-          Postre: helado de té, Mochi,
+           - Salmón y arroz,
+          Postre: Helado de té, Mochi,
            Café o Té Japonés`
         },
         {
