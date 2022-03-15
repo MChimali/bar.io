@@ -485,7 +485,7 @@ export const restaurant: RestaurantApiModel = {
           plato a elegir:
            - Teriyaki de pollo y arroz
            - salmón y arroz,
-           Postre: helado de té, Mochi,
+          Postre: helado de té, Mochi,
            Café o Té Japonés`
         },
         {
