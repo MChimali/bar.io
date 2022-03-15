@@ -56,7 +56,9 @@ export const DishesComponent: React.FC<PropsItemsComponent> = (props) => {
               {item.name}
             </Typography>
             {item.description ? (
-              <Typography>{item.description}</Typography>
+              <Typography className={classes.dishDescription}>
+                {item.description}
+              </Typography>
             ) : null}
             {item.priceByRation ? (
               <RationComponent ration={item.priceByRation} />

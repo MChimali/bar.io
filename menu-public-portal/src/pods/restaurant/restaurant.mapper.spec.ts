@@ -74,7 +74,7 @@ describe('restaurant.mapper', () => {
             items: [
               {
                 name: 'test-name',
-                description: undefined,
+                description: null,
                 price: 2,
                 priceByRation: null,
                 unit: null,

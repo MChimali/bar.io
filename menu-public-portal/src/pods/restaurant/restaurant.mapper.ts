@@ -41,7 +41,7 @@ const mapFromItemsApiToItemsVm = (
   item: restaurantApi.Item
 ): restaurantVm.Item => ({
   name: item.name,
-  description: item.description,
+  description: item.description ? item.description : null,
   price: item.price ? item.price : null,
   priceByRation: item.priceByRation
     ? mapFromPriceByRationApiToPriceByRationVm(item.priceByRation)
