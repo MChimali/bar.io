@@ -485,8 +485,7 @@ export const restaurant: RestaurantApiModel = {
           Plato a elegir:
            - Teriyaki de pollo y arroz
            - Salmón y arroz,
-          Postre: Helado de té, Mochi,
-           Café o Té Japonés`,
+          Postre: Helado de té, Mochi, Café o Té Japonés`,
         },
         {
           name: 'Menú Pareja',
@@ -497,13 +496,12 @@ export const restaurant: RestaurantApiModel = {
           Tempura langostino
           Tallarines frito con gambas
           Ternera mongolia
-          Postre: Helado de té, Mochi,
-          Café o Té Japonés`,
+          Postre: Helado de té, Mochi, Café o Té Japonés`,
         },
         {
           name: 'Menú del Día (A+B+C) Solo por medio día',
           price: 9.5,
-          description: `A. Plato: Sopa, ensalada y Mini rollo
+          description: `A. Plato: Sopa, Ensalada y Mini rollo
           B. Plato a elegir:
             * Maki y sushi mixto (12)
             * Maki mixto (14)
@@ -511,8 +509,7 @@ export const restaurant: RestaurantApiModel = {
             * Teriyaki de pollo y arroz
             * Percado blanco y tallarines
             * Verdura mixta y arroz
-          C. Postre: Helado, Flan,
-           Café o Té Japonés`,
+          C. Postre: Helado, Flan, Café o Té Japonés`,
         },
       ],
     },
