@@ -8,9 +8,9 @@ export const restaurant: RestaurantApiModel = {
   address: 'Av. Pío Baroja, 10, 29017 Málaga',
   locationUrl:
     'https://www.google.com/maps/place/Restaurante+Japon%C3%A9s+-+MATSUYA+JAPON%C3%89S/@36.7202471,-4.3640262,15z/data=!3m1!5s0xd725836e42489f5:0xe05bc4167222c644!4m12!1m6!3m5!1s0x0:0x2e488a598c96b84c!2sRestaurante+Japon%C3%A9s+-+MATSUYA+JAPON%C3%89S!8m2!3d36.7202471!4d-4.3640262!3m4!1s0x0:0x2e488a598c96b84c!8m2!3d36.7202471!4d-4.3640262',
-  communitySourceUrl: 'Restaurante Japones',
+  communitySourceUrl: '',
   official: false,
-  description: '',
+  description: 'Restaurante Japones',
   menuDate: new Date('2022-03-14'),
   theme: 'asian',
   menu: [
