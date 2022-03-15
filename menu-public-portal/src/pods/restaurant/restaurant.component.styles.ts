@@ -106,6 +106,10 @@ export const dishContainer = (theme: Theme) => css`
   row-gap: ${theme.spacing(2)};
 `;
 
+export const dishDescription = css`
+  white-space: pre-line;
+`;
+
 export const rationContainer = (theme: Theme) => css`
   display: flex;
   flex-direction: row;
