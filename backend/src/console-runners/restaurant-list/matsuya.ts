@@ -721,7 +721,7 @@ export const restaurant: RestaurantApiModel = {
           price: 2,
         },
         {
-          name: 'Agua MIneral 1/2L',
+          name: 'Agua Mineral 1/2L',
           price: 1.70
         },
         {
