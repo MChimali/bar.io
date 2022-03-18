@@ -47,7 +47,17 @@ const mapFromItemsApiToItemsVm = (
     ? mapFromPriceByRationApiToPriceByRationVm(item.priceByRation)
     : null,
   unit: item.unit ? item.unit : null,
+  allergenIconsUrl: item.allergenCollection
+    ? mapAllergenCollectionToAllergenIconsUrl(item.allergenCollection)
+    : null,
 });
+
+const mapAllergenCollectionToAllergenIconsUrl = (
+  allergenCollection: restaurantApi.AllergenEnum[]
+): string[] => allergenCollection.map(AllergenToimageUrl);
+
+const AllergenToimageUrl = (allergen) =>
+  `/allergen-icons/wepb-low/${allergen}.webp`;
 
 const mapListFromCategoryEntryApitoCategoryEntryVm = (
   category: restaurantApi.CategoryEntry[]

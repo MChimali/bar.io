@@ -15,6 +15,7 @@ export interface Item {
   price?: number;
   priceByRation?: PriceByRation;
   unit?: string;
+  allergenIconsUrl?: string[];
 }
 
 export interface CategoryEntry {

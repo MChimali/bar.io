@@ -13,6 +13,8 @@ import { CommunityMenuFooter } from './components/communityMenuFooter.component'
 import { OfficialMenuFooter } from './components/officialMenuFooter.component';
 import { CommunityMenuHeader } from './components/communityMenuHeader.component';
 import { OfficialMenuHeader } from './components/officialMenuHeader.component';
+import Image from 'next/image';
+import logo from './justo.jpg';
 
 interface PropsRation {
   ration: PriceByRation;
@@ -63,6 +65,12 @@ export const DishesComponent: React.FC<PropsItemsComponent> = (props) => {
             {item.priceByRation ? (
               <RationComponent ration={item.priceByRation} />
             ) : null}
+            <Image
+              src="/allergen-icons/webp-low/Apio.webp"
+              height={25}
+              width={25}
+              alt=""
+            />
           </div>
           {item.price ? (
             <div className={classes.dishPrice(theme)}>
