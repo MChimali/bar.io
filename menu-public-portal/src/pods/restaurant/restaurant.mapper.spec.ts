@@ -139,7 +139,7 @@ describe('restaurant.mapper', () => {
         name: 'burguer',
         allergenCollection: [],
       };
-      const urlMapper = jest.spyOn(mappers, 'AllergenToimageUrl');
+      const urlMapper = jest.spyOn(mappers, 'AllergenToURLobject');
       // Act
       const result: restaurantVm.Item = mapFromItemsApiToItemsVm(item);
       // Assert
@@ -161,7 +161,7 @@ describe('restaurant.mapper', () => {
         name: 'burguer',
         allergenCollection: ['lactosa', 'altramuces'],
       };
-      const urlMapper = jest.spyOn(mappers, 'AllergenToimageUrl');
+      const urlMapper = jest.spyOn(mappers, 'AllergenToURLobject');
       // Act
       const result: restaurantVm.Item = mapFromItemsApiToItemsVm(item);
       // Assert
@@ -172,8 +172,14 @@ describe('restaurant.mapper', () => {
         priceByRation: null,
         unit: null,
         allergenIconsUrl: [
-          '/allergen-icons/webp/lactosa.webp',
-          '/allergen-icons/webp/altramuces.webp',
+          {
+            name: 'lactosa',
+            iconUrl: '/allergen-icons/webp/lactosa.webp',
+          },
+          {
+            name: 'altramuces',
+            iconUrl: '/allergen-icons/webp/altramuces.webp',
+          },
         ],
       });
       expect(urlMapper).toHaveBeenCalledTimes(2);

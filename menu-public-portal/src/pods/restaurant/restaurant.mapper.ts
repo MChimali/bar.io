@@ -63,10 +63,6 @@ const mapAllergenCollectionToAllergenIconsUrl = (
     ? allergenCollection.map(AllergenToURLobject)
     : [];
 
-export const AllergenToimageUrl = (allergen) => {
-  return `/allergen-icons/webp/${allergen.replace(/\s/g, '')}.webp`;
-};
-
 export const AllergenToURLobject = (allergen): AllergenInfo =>
   urlIconsWebp.find((item) => item.name === allergen);
 
