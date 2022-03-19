@@ -29,14 +29,13 @@ export const db: DB = {
               description:
                 'Pan Brioche, 285 gr. de carne de Buey, Queso Chedar, Lechuga, tomate, cebolla roja a la plancha, pepinillo',
               price: 7.8,
-              allergenCollection: ['gluten', 'lactosa', 'mostaza'],
+              allergenCollection: [],
             },
             {
               name: 'Black Angus XL',
               description:
                 'Pan de sésamo, 200 gr. de carne de Angus, bacon, Doble de queso Chedar, Cebolla blanca pochada con BBQ, canónigos',
               price: 7,
-              allergenCollection: ['gluten', 'lactosa', 'sesamo', 'mostaza'],
             },
             {
               name: 'Pulled Pork',

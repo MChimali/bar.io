@@ -20,18 +20,26 @@ interface PropsAllergens {
 }
 
 const AllergensComponent: React.FC<PropsAllergens> = (props) => {
-  const theme = useTheme();
   const { urlAllergenList } = props;
 
   return (
     <>
-      <div className={classes.allergensContainer}>
-        {urlAllergenList.map((url) => (
-          <div className={classes.allergenImage}>
-            <Image src={url} height={35} width={35} />
-          </div>
-        ))}
-      </div>
+      {urlAllergenList.length > 0 ? (
+        <div className={classes.allergensContainer}>
+          {urlAllergenList.map((url) => (
+            <div className={classes.allergenImage}>
+              <Image src={url} height={35} width={35} />
+            </div>
+          ))}
+        </div>
+      ) : (
+        <Typography
+          variant="subtitle1"
+          sx={{ color: 'green', marginTop: '0.25rem' }}
+        >
+          Este plato no contiene ningún alérgeno
+        </Typography>
+      )}
     </>
   );
 };
@@ -87,8 +95,14 @@ export const DishesComponent: React.FC<PropsItemsComponent> = (props) => {
             ) : null}
             {item.allergenIconsUrl ? (
               <AllergensComponent urlAllergenList={item.allergenIconsUrl} />
-            ) : null}
-            {console.log('justoazo', item.allergenIconsUrl[0])}
+            ) : (
+              <Typography
+                variant="subtitle1"
+                sx={{ color: 'red', marginTop: '0.25rem' }}
+              >
+                Alérgenos no disponibles
+              </Typography>
+            )}
           </div>
           {item.price ? (
             <div className={classes.dishPrice(theme)}>
