@@ -5,7 +5,10 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 import PlaceIcon from '@mui/icons-material/Place';
 import * as classes from './restaurant.component.styles';
-import { AllergenInfo } from '../../../public/allergen-icons/allergen-icons.list';
+import {
+  AllergenInfo,
+  urlIconsPng,
+} from '../../../public/allergen-icons/allergen-icons.list';
 import { RestaurantInfo, Item, PriceByRation } from './restaurant.vm';
 import {
   AccordionSummaryStyled,
@@ -23,15 +26,20 @@ interface PropsAllergens {
   urlAllergenList: AllergenInfo[];
 }
 
-/* const AllergensLengend: React.FC = () => {
+const AllergensLengend: React.FC = () => {
   return (
     <>
       <div className={classes.allergenLegendBox}>
-      {urlIconsPng}
+        {urlIconsPng.map((item) => (
+          <div className={classes.legendItem}>
+            <Image src={item.iconUrl} height={120} width={120} />
+            <Typography style={{ fontSize: '0.9rem' }}>{item.name}</Typography>
+          </div>
+        ))}
       </div>
     </>
   );
-}; */
+};
 
 const AllergensComponent: React.FC<PropsAllergens> = (props) => {
   const { urlAllergenList } = props;
@@ -216,7 +224,7 @@ export const RestaurantComponent: React.FC<Props> = (props) => {
             <Typography>Lista de Alérgenos</Typography>
           </AllergenSummaryStyled>
           <AccordionDetails>
-            <div>hola</div>
+            <AllergensLengend />
           </AccordionDetails>
         </Accordion>
       </div>

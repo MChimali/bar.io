@@ -17,6 +17,13 @@ export const allergenImage = css`
   padding-right: 0.2rem;
 `;
 
+export const legendItem = css`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.6rem;
+`;
+
 export const accordion = css`
   margin-top: 1rem;
   @media (min-width: ${defaultTheme.breakpoints.values.sm}px) {
@@ -92,10 +99,9 @@ export const typographyHeader = css`
 `;
 
 export const allergenLegendBox = css`
-  display: 'flex';
-  justify-content: 'space-between';
-  align-items: 'stretch';
-  align-content: 'stretch';
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 export const rowIndent = css`
