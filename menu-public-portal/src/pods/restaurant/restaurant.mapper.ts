@@ -57,7 +57,7 @@ const mapAllergenCollectionToAllergenIconsUrl = (
 ): string[] => allergenCollection.map(AllergenToimageUrl);
 
 const AllergenToimageUrl = (allergen) => {
-  return `/allergen-icons/webp-low/${allergen.replace(/\s/g, '')}.webp`;
+  return `/allergen-icons/webp/${allergen.replace(/\s/g, '')}.webp`;
 };
 
 const mapListFromCategoryEntryApitoCategoryEntryVm = (
