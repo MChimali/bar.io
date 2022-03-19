@@ -37,7 +37,7 @@ const mapListFromItemsApiToItemsVm = (
   items: restaurantApi.Item[]
 ): restaurantVm.Item[] => mapToCollection(items, mapFromItemsApiToItemsVm);
 
-const mapFromItemsApiToItemsVm = (
+export const mapFromItemsApiToItemsVm = (
   item: restaurantApi.Item
 ): restaurantVm.Item => ({
   name: item.name,
@@ -54,9 +54,12 @@ const mapFromItemsApiToItemsVm = (
 
 const mapAllergenCollectionToAllergenIconsUrl = (
   allergenCollection: restaurantApi.AllergenEnum[]
-): string[] => allergenCollection.map(AllergenToimageUrl);
+): string[] =>
+  allergenCollection.length > 0
+    ? allergenCollection.map(AllergenToimageUrl)
+    : [];
 
-const AllergenToimageUrl = (allergen) => {
+export const AllergenToimageUrl = (allergen) => {
   return `/allergen-icons/webp/${allergen.replace(/\s/g, '')}.webp`;
 };
 

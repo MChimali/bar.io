@@ -2,7 +2,9 @@ import * as restaurantApi from './api/restaurant.api.model';
 import {
   mapDatefromApiToModel,
   mapFromRestaurantApiToRestaurantVm,
+  mapFromItemsApiToItemsVm,
 } from './restaurant.mapper';
+import * as mappers from './restaurant.mapper';
 import * as restaurantVm from './restaurant.vm';
 import { emptyRestaurantInfo } from './restaurant.vm';
 
@@ -78,6 +80,7 @@ describe('restaurant.mapper', () => {
                 price: 2,
                 priceByRation: null,
                 unit: null,
+                allergenIconsUrl: null,
               },
             ],
           },
@@ -109,6 +112,71 @@ describe('restaurant.mapper', () => {
       const result: string = mapDatefromApiToModel(date);
       // Assert
       expect(result).toEqual('Actualizada el 14 de febrero de 2022');
+    });
+  });
+  describe('mapFromItemsApiToItemsVm', () => {
+    it('should return mapped Item with null property allergenIconsUrl when it feeds no allergenCollection', () => {
+      // Arrange
+      const item: restaurantApi.Item = {
+        name: 'burguer',
+      };
+      // Act
+      const result: restaurantVm.Item = mapFromItemsApiToItemsVm(item);
+      // Assert
+      expect(result).toEqual({
+        name: 'burguer',
+        description: null,
+        price: null,
+        priceByRation: null,
+        unit: null,
+        allergenIconsUrl: null,
+      });
+    });
+
+    it('should return mapped item with empty array in allergenIconsUrl when it feeds empty allergenCollection list', () => {
+      // Arrange
+      const item: restaurantApi.Item = {
+        name: 'burguer',
+        allergenCollection: [],
+      };
+      const urlMapper = jest.spyOn(mappers, 'AllergenToimageUrl');
+      // Act
+      const result: restaurantVm.Item = mapFromItemsApiToItemsVm(item);
+      // Assert
+      expect(result).toEqual({
+        name: 'burguer',
+        description: null,
+        price: null,
+        priceByRation: null,
+        unit: null,
+        allergenIconsUrl: [],
+      });
+      expect(urlMapper).not.toHaveBeenCalled();
+    });
+
+    it('should return mapped item with array of strings at allergenIconsUrl when it feeds allergenCollection list ', () => {
+      // Arrange
+
+      const item: restaurantApi.Item = {
+        name: 'burguer',
+        allergenCollection: ['lactosa', 'altramuces'],
+      };
+      const urlMapper = jest.spyOn(mappers, 'AllergenToimageUrl');
+      // Act
+      const result: restaurantVm.Item = mapFromItemsApiToItemsVm(item);
+      // Assert
+      expect(result).toEqual({
+        name: 'burguer',
+        description: null,
+        price: null,
+        priceByRation: null,
+        unit: null,
+        allergenIconsUrl: [
+          '/allergen-icons/webp/lactosa.webp',
+          '/allergen-icons/webp/altramuces.webp',
+        ],
+      });
+      expect(urlMapper).toHaveBeenCalledTimes(2);
     });
   });
 });
