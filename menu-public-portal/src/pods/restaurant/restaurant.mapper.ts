@@ -56,8 +56,9 @@ const mapAllergenCollectionToAllergenIconsUrl = (
   allergenCollection: restaurantApi.AllergenEnum[]
 ): string[] => allergenCollection.map(AllergenToimageUrl);
 
-const AllergenToimageUrl = (allergen) =>
-  `/allergen-icons/wepb-low/${allergen}.webp`;
+const AllergenToimageUrl = (allergen) => {
+  return `/allergen-icons/webp-high/${allergen.replace(/\s/g, '')}.webp`;
+};
 
 const mapListFromCategoryEntryApitoCategoryEntryVm = (
   category: restaurantApi.CategoryEntry[]

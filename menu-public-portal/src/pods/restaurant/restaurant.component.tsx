@@ -14,7 +14,27 @@ import { OfficialMenuFooter } from './components/officialMenuFooter.component';
 import { CommunityMenuHeader } from './components/communityMenuHeader.component';
 import { OfficialMenuHeader } from './components/officialMenuHeader.component';
 import Image from 'next/image';
-import logo from './justo.jpg';
+
+interface PropsAllergens {
+  urlAllergenList: string[];
+}
+
+const AllergensComponent: React.FC<PropsAllergens> = (props) => {
+  const theme = useTheme();
+  const { urlAllergenList } = props;
+
+  return (
+    <>
+      <div className={classes.allergensContainer}>
+        {urlAllergenList.map((url) => (
+          <div className={classes.allergenImage}>
+            <Image src={url} height={35} width={35} />
+          </div>
+        ))}
+      </div>
+    </>
+  );
+};
 
 interface PropsRation {
   ration: PriceByRation;
@@ -65,12 +85,10 @@ export const DishesComponent: React.FC<PropsItemsComponent> = (props) => {
             {item.priceByRation ? (
               <RationComponent ration={item.priceByRation} />
             ) : null}
-            <Image
-              src="/allergen-icons/webp-low/Apio.webp"
-              height={25}
-              width={25}
-              alt=""
-            />
+            {item.allergenIconsUrl ? (
+              <AllergensComponent urlAllergenList={item.allergenIconsUrl} />
+            ) : null}
+            {console.log('justoazo', item.allergenIconsUrl[0])}
           </div>
           {item.price ? (
             <div className={classes.dishPrice(theme)}>

@@ -25,40 +25,46 @@ export const db: DB = {
           categoryName: 'Burguers',
           items: [
             {
-              name: 'Paluba Burguer',
+              name: 'Paluba salchicha',
               description:
-                'Pan Brioche, 285 gr. de carne de Buey, Queso Cheda, Lechuga, tomate, cebolla roja a la plancha, pepinillo',
+                'Pan Brioche, 285 gr. de carne de Buey, Queso Chedar, Lechuga, tomate, cebolla roja a la plancha, pepinillo',
               price: 7.8,
+              allergenCollection: ['gluten', 'lactosa', 'mostaza'],
             },
             {
               name: 'Black Angus XL',
               description:
                 'Pan de sésamo, 200 gr. de carne de Angus, bacon, Doble de queso Chedar, Cebolla blanca pochada con BBQ, canónigos',
               price: 7,
+              allergenCollection: ['gluten', 'lactosa', 'sesamo', 'mostaza'],
             },
             {
               name: 'Pulled Pork',
               description:
                 'Pan rústico, Pulled Pork, A elegir: (1) Aguacate, cebolla encurtida y pepinillo (2) Ensaladilla de col',
               price: 6.5,
+              allergenCollection: ['gluten', 'lactosa', 'mostaza'],
             },
             {
               name: "Chicharron's Burguer",
               description:
                 'Pan rústico, Carne picada & chicharrones, A elegir: queso semicurado o queso de cabra, Lechuga, tomate y cebolla pochada',
               price: 5.5,
+              allergenCollection: ['gluten', 'lactosa', 'mostaza'],
             },
             {
               name: 'Buey Burguer',
               description:
                 'Pan de sésamo, Carne de Buey, bacon, Queso, Cebolla blanca, lechuga y tomate',
               price: 5.5,
+              allergenCollection: ['gluten', 'lactosa', 'sesamo', 'mostaza'],
             },
             {
               name: 'Burguer completa',
               description:
                 'Pan de sésamo, Carne de vacuno, Queso, Cebolla blanca, lechuga y tomate',
               price: 4.8,
+              allergenCollection: ['gluten', 'lactosa', 'sesamo', 'mostaza'],
             },
           ],
         },
@@ -69,6 +75,7 @@ export const db: DB = {
               name: 'Hot Dog XL',
               description: 'Con pico de gallo o queso y cebolla frita',
               price: 3,
+              allergenCollection: ['gluten', 'lactosa'],
             },
           ],
         },
@@ -97,33 +104,39 @@ export const db: DB = {
               name: 'De la Casa',
               description: 'Lechuga, tomate, maiz, remolacha, zanahoria, atún',
               price: 8,
+              allergenCollection: [],
             },
             {
               name: 'Especial',
               description:
                 'Lechuga, tomate, manzana, palmito, espárragos, nueces, pasas, salsa rosa',
               price: 10,
+              allergenCollection: ['frutos secos con cascara', 'huevos'],
             },
             {
               name: 'Queso de Cabra',
               description: 'Lechuga, tomate, maiz, remolacha, zanahoria, atún',
               price: 12,
+              allergenCollection: ['lactosa'],
             },
             {
               name: 'Cogollos de Lechuga a la Cordobesa',
               description:
                 'Cortados en cuartos y aliñados con ajo, aceite y pimientos asados',
               price: 5.5,
+              allergenCollection: [],
             },
             {
               name: 'Tomate',
               description: null,
               price: 5,
+              allergenCollection: [],
             },
             {
               name: 'Tomate con Atún',
               description: null,
               price: 7,
+              allergenCollection: [],
             },
           ],
         },
@@ -134,21 +147,25 @@ export const db: DB = {
               name: 'Porra de la Casa',
               description: null,
               price: 3.8,
+              allergenCollection: [],
             },
             {
               name: 'Migas Caseras',
               description: null,
               price: 3.5,
+              allergenCollection: ['gluten'],
             },
             {
               name: 'Anchoa Lolin (unidad)',
               description: 'Tosta de pan, tomate triturado y aceite de oliva',
               price: 1.7,
+              allergenCollection: [],
             },
             {
               name: 'Pulpo a la gallega',
               description: null,
               price: 14,
+              allergenCollection: [],
             },
           ],
         },
@@ -176,54 +193,64 @@ export const db: DB = {
               name: 'Pollo',
               description: 'Mahonesa, Tomate, Lechuga y Pollo',
               price: 3.5,
+              allergenCollection: ['gluten', 'huevos'],
             },
             {
               name: 'Bacon',
               description: 'Mahonesa, Tomate, Lechuga y Bacon',
               price: 3.5,
+              allergenCollection: ['gluten', 'huevos'],
             },
             {
               name: 'Lomo',
               description: 'Mahonesa, Tomate, Lechuga y Lomo',
               price: 3.5,
+              allergenCollection: ['gluten', 'huevos'],
             },
             {
               name: 'Española',
               description: 'Mahonesa, Tomate, Lechuga, Tortilla de Patatas',
               price: 3.5,
+              allergenCollection: ['gluten', 'huevos'],
             },
             {
               name: 'Francesa',
               description: 'Mahonesa, Tomate, Lechuga, Tortilla Francesa',
               price: 3.5,
+              allergenCollection: ['gluten', 'huevos'],
             },
             {
               name: 'Barbacoa',
               description:
                 'Mahonesa, Tomate, Lechuga, Queso, Pollo, Bacon, Salsa Barbacoa',
               price: 4,
+              allergenCollection: ['gluten', 'huevos', 'lactosa'],
             },
             {
               name: 'Kebat',
               description: 'Mahonesa, Tomate, Lechuga, Kebat',
               price: 4,
+              allergenCollection: ['gluten', 'huevos'],
             },
             {
               name: 'Pollo con Roquefort',
               description: 'Mahonesa, Tomate, Lechuga, Roquefort',
               price: 4,
+              allergenCollection: ['gluten', 'huevos', 'lactosa'],
             },
             {
               name: 'Serranito',
               description:
                 'Mahonesa, Tomate, Lechuga, Pimiento, Jamón Serrano y Pollo',
               price: 4,
+              allergenCollection: ['gluten', 'huevos'],
             },
             {
               name: 'Ballena',
               description:
                 'Mahonesa, Tomate, Lechuga, Pollo, Tortilla Francesa',
               price: 4,
+              allergenCollection: ['gluten', 'huevos'],
             },
           ],
         },
@@ -235,82 +262,97 @@ export const db: DB = {
               description:
                 'Tomate, Champiñones, Jamón Cocido, Salchichas, Atún, Mozzarella y Orégano',
               price: 7,
+              allergenCollection: ['gluten', 'lactosa'],
             },
             {
               name: 'Tropical',
               description: 'Tomate, Jamón Cocido, Piña, Mozzarella y Orégano',
               price: 7,
+              allergenCollection: ['gluten', 'lactosa'],
             },
             {
               name: 'Napolitana',
               description: 'Tomate, Anchoas, Mozzarella y Orégano',
               price: 7,
+              allergenCollection: ['gluten', 'lactosa'],
             },
             {
               name: 'Chip',
               description: 'Tomate, Roquefort, Mozzarella y Orégano',
               price: 7,
+              allergenCollection: ['gluten', 'lactosa'],
             },
             {
               name: 'Bianca',
               description:
                 'Tomate, Bacon, Champiñones, Nata, Mozzarella y Orégano',
               price: 7,
+              allergenCollection: ['gluten', 'lactosa'],
             },
             {
               name: 'Kebat',
               description: 'Tomate, Kebat, Champiñones, Salsa Kebat y Orégano',
               price: 7,
+              allergenCollection: ['gluten', 'lactosa', 'huevos'],
             },
             {
               name: 'Proscuito',
               description: 'Tomate, Jamón Cocido, Mozzarella y Orégano',
               price: 7,
+              allergenCollection: ['gluten', 'lactosa'],
             },
             {
               name: 'Tres Quesos',
               description: 'Tomate, Mozzarella y Orégano',
               price: 7,
+              allergenCollection: ['gluten', 'lactosa'],
             },
             {
               name: 'Frontentina',
               description: 'Tomate, Jamón Cocido, Huevo y Orégano',
               price: 7,
+              allergenCollection: ['gluten', 'lactosa', 'huevos'],
             },
             {
               name: 'Chorizo',
               description: 'Tomate, Chorizo, Champiñones, Mozzarella y Orégano',
               price: 7,
+              allergenCollection: ['lactosa'],
             },
             {
               name: 'Capricho Manolín',
               description:
                 'Tomate, Jamón Serrano, Huevo Cocido, Champiñones, Mozzarella y Orégano',
               price: 7,
+              allergenCollection: ['gluten', 'lactosa', 'huevos'],
             },
             {
               name: 'Vegetal',
               description:
                 'Tomate, Cebolla, Pimiento Rojo y Verde, Aceitunas, Maiz, Champiñones, Mozzarella y Orégano',
               price: 7,
+              allergenCollection: ['gluten', 'lactosa'],
             },
             {
               name: 'Tormentosa',
               description:
                 'Tomate, Cebolla, Pimiento Morrón, Mozzarella y Orégano',
               price: 7,
+              allergenCollection: ['gluten', 'lactosa'],
             },
             {
               name: 'Barbacoa',
               description:
                 'Tomate, Carne, Salsa Barbacoa, Mozzarella y Orégano',
               price: 7,
+              allergenCollection: ['gluten', 'lactosa'],
             },
             {
               name: 'Calzone Manolín',
               description:
                 'Mozzarella, Tomate, Champiñones, Bacón, Queso Roquefort, Chorizo y Huevo',
               price: 7,
+              allergenCollection: ['gluten', 'lactosa', 'huevos'],
             },
           ],
         },

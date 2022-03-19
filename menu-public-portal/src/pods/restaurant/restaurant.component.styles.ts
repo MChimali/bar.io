@@ -8,6 +8,15 @@ export const headingContainer = css`
   align-items: center;
 `;
 
+export const allergensContainer = css`
+  margin-top: 0.3rem;
+`;
+
+export const allergenImage = css`
+  display: inline-block;
+  padding-right: 0.2rem;
+`;
+
 export const accordion = css`
   margin-top: 1rem;
   @media (min-width: ${defaultTheme.breakpoints.values.sm}px) {
