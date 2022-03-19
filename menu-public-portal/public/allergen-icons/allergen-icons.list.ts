@@ -1,0 +1,16 @@
+export const urlIconsPng: string[] = [
+  'allergen-icons/png/altramuces.png',
+  'allergen-icons/png/apio.png',
+  'allergen-icons/png/cacahuetes.png',
+  'allergen-icons/png/crustaceos.png',
+  'allergen-icons/png/frutosSecosConCascara.png',
+  'allergen-icons/png/gluten.png',
+  'allergen-icons/png/huevos.png',
+  'allergen-icons/png/lactosa.png',
+  'allergen-icons/png/moluscos.png',
+  'allergen-icons/png/mostaza.png',
+  'allergen-icons/png/pescados.png',
+  'allergen-icons/png/sesamo.png',
+  'allergen-icons/png/soja.png',
+  'allergen-icons/png/dioxidoDeAzufreYsulfitos.png',
+];

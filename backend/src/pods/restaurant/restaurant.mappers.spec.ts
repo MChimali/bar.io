@@ -222,7 +222,6 @@ describe('restaurant.mapper', () => {
                       },
                     ],
                   },
-                  allergenCollection: ['lactosa'],
                 },
               ],
             },

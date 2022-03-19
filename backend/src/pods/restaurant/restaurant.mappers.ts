@@ -159,6 +159,7 @@ const mapFromSubItemPriceToPriceByRation = (
 const mapListFromItemModelToItemApi = (item: model.Item[]): apiModel.Item[] =>
   mapToCollection(item, mapFromItemModelToItemModelApi);
 
+//model to Apimodel
 const mapFromItemModelToItemModelApi = (item: model.Item): apiModel.Item => ({
   name: item.name,
   description: item.description,

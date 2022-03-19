@@ -36,6 +36,10 @@ export const db: DB = {
               description:
                 'Pan de sésamo, 200 gr. de carne de Angus, bacon, Doble de queso Chedar, Cebolla blanca pochada con BBQ, canónigos',
               price: 7,
+              allergenCollection: [
+                'frutos secos con cascara',
+                'dioxido de azufre y sulfitos',
+              ],
             },
             {
               name: 'Pulled Pork',

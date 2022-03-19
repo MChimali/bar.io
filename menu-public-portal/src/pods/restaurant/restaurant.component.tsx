@@ -6,7 +6,10 @@ import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 import PlaceIcon from '@mui/icons-material/Place';
 import * as classes from './restaurant.component.styles';
 import { RestaurantInfo, Item, PriceByRation } from './restaurant.vm';
-import { AccordionSummaryStyled } from 'common/components';
+import {
+  AccordionSummaryStyled,
+  AllergenSummaryStyled,
+} from 'common/components';
 import { useTheme } from '@mui/material/styles';
 import Link from 'next/link';
 import { CommunityMenuFooter } from './components/communityMenuFooter.component';
@@ -197,6 +200,16 @@ export const RestaurantComponent: React.FC<Props> = (props) => {
       <Typography variant="caption" component="h2" className={classes.menuDate}>
         {menuDate}
       </Typography>
+      <div className={classes.accordion}>
+        <Accordion>
+          <AllergenSummaryStyled>
+            <Typography>Lista de Alérgenos</Typography>
+          </AllergenSummaryStyled>
+          <AccordionDetails>
+            <Typography>Lista de Alérgenos</Typography>
+          </AccordionDetails>
+        </Accordion>
+      </div>
     </div>
   );
 };
