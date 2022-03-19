@@ -1,78 +1,126 @@
 import { AllergenEnum } from 'pods/restaurant/api';
+
 export interface AllergenInfo {
   name: AllergenEnum;
   iconUrl: string;
 }
+
+const baseUrlPng = '/allergen-icons/png';
+const baseUrlWebp = '/allergen-icons/webp';
+
 export const urlIconsPng: AllergenInfo[] = [
   {
     name: 'altramuces',
-    iconUrl: 'allergen-icons/png/altramuces.png',
+    iconUrl: `${baseUrlPng}/altramuces.png`,
   },
   {
     name: 'apio',
-    iconUrl: 'allergen-icons/png/apio.png',
+    iconUrl: `${baseUrlPng}/apio.png`,
   },
   {
     name: 'cacahuetes',
-    iconUrl: 'allergen-icons/png/cacahuetes.png',
+    iconUrl: `${baseUrlPng}/cacahuetes.png`,
   },
   {
     name: 'crustaceos',
-    iconUrl: 'allergen-icons/png/crustaceos.png',
+    iconUrl: `${baseUrlPng}/crustaceos.png`,
   },
   {
     name: 'frutos secos con cascara',
-    iconUrl: 'allergen-icons/png/frutosSecosConCascara.png',
+    iconUrl: `${baseUrlPng}/frutosSecosConCascara.png`,
   },
   {
     name: 'gluten',
-    iconUrl: 'allergen-icons/png/gluten.png',
+    iconUrl: `${baseUrlPng}/gluten.png`,
   },
   {
     name: 'huevos',
-    iconUrl: 'allergen-icons/png/huevos.png',
+    iconUrl: `${baseUrlPng}/huevos.png`,
   },
   {
     name: 'lactosa',
-    iconUrl: 'allergen-icons/png/lactosa.png',
+    iconUrl: `${baseUrlPng}/lactosa.png`,
   },
   {
     name: 'moluscos',
-    iconUrl: 'allergen-icons/png/moluscos.png',
+    iconUrl: `${baseUrlPng}/moluscos.png`,
   },
   {
     name: 'pescados',
-    iconUrl: 'allergen-icons/png/pescados.png',
+    iconUrl: `${baseUrlPng}/pescados.png`,
   },
   {
     name: 'mostaza',
-    iconUrl: 'allergen-icons/png/mostaza.png',
+    iconUrl: `${baseUrlPng}/mostaza.png`,
   },
   {
     name: 'sesamo',
-    iconUrl: 'allergen-icons/png/sesamo.png',
+    iconUrl: `${baseUrlPng}/sesamo.png`,
   },
   {
     name: 'soja',
-    iconUrl: 'allergen-icons/png/soja.png',
+    iconUrl: `${baseUrlPng}/soja.png`,
   },
   {
     name: 'dioxido de azufre y sulfitos',
-    iconUrl: 'allergen-icons/png/dioxidoDeAzufreYsulfitos.png',
+    iconUrl: `${baseUrlPng}/dioxidoDeAzufreYsulfitos.png`,
   },
 ];
-
-/* 'allergen-icons/png/altramuces.png',
-  'allergen-icons/png/apio.png',
-  'allergen-icons/png/cacahuetes.png',
-  'allergen-icons/png/crustaceos.png',
-  'allergen-icons/png/frutosSecosConCascara.png',
-  'allergen-icons/png/gluten.png',
-  'allergen-icons/png/huevos.png',
-  'allergen-icons/png/lactosa.png',
-  'allergen-icons/png/moluscos.png',
-  'allergen-icons/png/mostaza.png',
-  'allergen-icons/png/pescados.png',
-  'allergen-icons/png/sesamo.png',
-  'allergen-icons/png/soja.png',
-  'allergen-icons/png/dioxidoDeAzufreYsulfitos.png', */
+export const urlIconsWebp: AllergenInfo[] = [
+  {
+    name: 'altramuces',
+    iconUrl: `${baseUrlWebp}/altramuces.webp`,
+  },
+  {
+    name: 'apio',
+    iconUrl: `${baseUrlWebp}/apio.webp`,
+  },
+  {
+    name: 'cacahuetes',
+    iconUrl: `${baseUrlWebp}/cacahuetes.webp`,
+  },
+  {
+    name: 'crustaceos',
+    iconUrl: `${baseUrlWebp}/crustaceos.webp`,
+  },
+  {
+    name: 'frutos secos con cascara',
+    iconUrl: `${baseUrlWebp}/apio.webp`,
+  },
+  {
+    name: 'gluten',
+    iconUrl: `${baseUrlWebp}/gluten.webp`,
+  },
+  {
+    name: 'huevos',
+    iconUrl: `${baseUrlWebp}/huevos.webp`,
+  },
+  {
+    name: 'lactosa',
+    iconUrl: `${baseUrlWebp}/lactosa.webp`,
+  },
+  {
+    name: 'moluscos',
+    iconUrl: `${baseUrlWebp}/moluscos.webp`,
+  },
+  {
+    name: 'pescados',
+    iconUrl: `${baseUrlWebp}/pescados.webp`,
+  },
+  {
+    name: 'mostaza',
+    iconUrl: `${baseUrlWebp}/mostaza.webp`,
+  },
+  {
+    name: 'sesamo',
+    iconUrl: `${baseUrlWebp}/sesamo.webp`,
+  },
+  {
+    name: 'soja',
+    iconUrl: `${baseUrlWebp}/soja.webp`,
+  },
+  {
+    name: 'dioxido de azufre y sulfitos',
+    iconUrl: `${baseUrlWebp}/dioxidoDeAzufreYsulfitos.webp`,
+  },
+];

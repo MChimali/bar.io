@@ -91,6 +91,13 @@ export const typographyHeader = css`
   padding-right: 1rem;
 `;
 
+export const allergenLegendBox = css`
+  display: 'flex';
+  justify-content: 'space-between';
+  align-items: 'stretch';
+  align-content: 'stretch';
+`;
+
 export const rowIndent = css`
   display: flex;
   justify-content: space-between;
@@ -147,12 +154,3 @@ export const rationDishContainer = (theme: Theme) => css`
   flex-direction: column;
   margin-bottom: ${theme.spacing(2)}; // Todo use relative margin mui
 `;
-
-/* export const allergenDisplay = (imageUrl: string) => css`
-width: "100%",
-gridColumnStart: "1",
-gridColumnEnd: "2",
-backgroundRepeat: "no-repeat",
-backgroundSize: "contain",
-backgroundImage: url(${imageUrl}),
-},`; */

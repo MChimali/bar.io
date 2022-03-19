@@ -5,7 +5,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 import PlaceIcon from '@mui/icons-material/Place';
 import * as classes from './restaurant.component.styles';
-import { urlIconsPng } from '../../../public/allergen-icons/allergen-icons.list';
+import { AllergenInfo } from '../../../public/allergen-icons/allergen-icons.list';
 import { RestaurantInfo, Item, PriceByRation } from './restaurant.vm';
 import {
   AccordionSummaryStyled,
@@ -20,12 +20,18 @@ import { OfficialMenuHeader } from './components/officialMenuHeader.component';
 import Image from 'next/image';
 
 interface PropsAllergens {
-  urlAllergenList: string[];
+  urlAllergenList: AllergenInfo[];
 }
 
-const AllergensLengend: React.FC = () => {
-  return <></>;
-};
+/* const AllergensLengend: React.FC = () => {
+  return (
+    <>
+      <div className={classes.allergenLegendBox}>
+      {urlIconsPng}
+      </div>
+    </>
+  );
+}; */
 
 const AllergensComponent: React.FC<PropsAllergens> = (props) => {
   const { urlAllergenList } = props;
@@ -34,9 +40,9 @@ const AllergensComponent: React.FC<PropsAllergens> = (props) => {
     <>
       {urlAllergenList.length > 0 ? (
         <div className={classes.allergensContainer}>
-          {urlAllergenList.map((url) => (
+          {urlAllergenList.map((item) => (
             <div className={classes.allergenImage}>
-              <Image src={url} height={35} width={35} />
+              <Image src={item.iconUrl} height={35} width={35} />
             </div>
           ))}
         </div>
@@ -89,7 +95,6 @@ export const DishesComponent: React.FC<PropsItemsComponent> = (props) => {
     <div className={classes.dishesContainer(theme)}>
       {items.map((item) => (
         <div className={classes.dishContainer(theme)} key={item.name}>
-          {console.log(item)}
           <div className={classes.fullWidth(theme)}>
             <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>
               {item.name}
@@ -211,7 +216,7 @@ export const RestaurantComponent: React.FC<Props> = (props) => {
             <Typography>Lista de Alérgenos</Typography>
           </AllergenSummaryStyled>
           <AccordionDetails>
-            <Typography>Lista de Alérgenos</Typography>
+            <div>hola</div>
           </AccordionDetails>
         </Accordion>
       </div>

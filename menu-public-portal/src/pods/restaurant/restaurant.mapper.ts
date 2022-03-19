@@ -2,6 +2,10 @@ import * as restaurantApi from './api/restaurant.api.model';
 import * as restaurantVm from './restaurant.vm';
 import { mapToCollection } from 'common/mappers';
 import { emptyRestaurantInfo } from './restaurant.vm';
+import {
+  urlIconsWebp,
+  AllergenInfo,
+} from '../../../public/allergen-icons/allergen-icons.list';
 
 export const mapDatefromApiToModel = (date: string): string => {
   const dateToDateFormat = new Date(date);
@@ -54,14 +58,17 @@ export const mapFromItemsApiToItemsVm = (
 
 const mapAllergenCollectionToAllergenIconsUrl = (
   allergenCollection: restaurantApi.AllergenEnum[]
-): string[] =>
+): AllergenInfo[] =>
   allergenCollection.length > 0
-    ? allergenCollection.map(AllergenToimageUrl)
+    ? allergenCollection.map(AllergenToURLobject)
     : [];
 
 export const AllergenToimageUrl = (allergen) => {
   return `/allergen-icons/webp/${allergen.replace(/\s/g, '')}.webp`;
 };
+
+export const AllergenToURLobject = (allergen): AllergenInfo =>
+  urlIconsWebp.find((item) => item.name === allergen);
 
 const mapListFromCategoryEntryApitoCategoryEntryVm = (
   category: restaurantApi.CategoryEntry[]
