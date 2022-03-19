@@ -5,6 +5,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 import PlaceIcon from '@mui/icons-material/Place';
 import * as classes from './restaurant.component.styles';
+import { urlIconsPng } from '../../../public/allergen-icons/allergen-icons.list';
 import { RestaurantInfo, Item, PriceByRation } from './restaurant.vm';
 import {
   AccordionSummaryStyled,
@@ -21,6 +22,10 @@ import Image from 'next/image';
 interface PropsAllergens {
   urlAllergenList: string[];
 }
+
+const AllergensLengend: React.FC = () => {
+  return <></>;
+};
 
 const AllergensComponent: React.FC<PropsAllergens> = (props) => {
   const { urlAllergenList } = props;
