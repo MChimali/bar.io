@@ -25,7 +25,7 @@ export const db: DB = {
           categoryName: 'Burguers',
           items: [
             {
-              name: 'Paluba salchicha',
+              name: 'Paluba Burguer',
               description:
                 'Pan Brioche, 285 gr. de carne de Buey, Queso Chedar, Lechuga, tomate, cebolla roja a la plancha, pepinillo',
               price: 7.8,
