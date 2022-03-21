@@ -210,14 +210,6 @@ export const RestaurantComponent: React.FC<Props> = (props) => {
           </Accordion>
         ))}
       </div>
-      {official ? (
-        <OfficialMenuFooter />
-      ) : (
-        <CommunityMenuFooter communitySourceUrl={communitySourceUrl} />
-      )}
-      <Typography variant="caption" component="h2" className={classes.menuDate}>
-        {menuDate}
-      </Typography>
       <div className={classes.accordion}>
         <Accordion>
           <AllergenSummaryStyled>
@@ -228,6 +220,24 @@ export const RestaurantComponent: React.FC<Props> = (props) => {
           </AccordionDetails>
         </Accordion>
       </div>
+      {official ? (
+        <OfficialMenuFooter />
+      ) : (
+        <CommunityMenuFooter communitySourceUrl={communitySourceUrl} />
+      )}
+      <Typography variant="caption" component="h2" className={classes.menuDate}>
+        {menuDate}
+      </Typography>
     </div>
   );
 };
+var myMethod = function () {
+  console.log(this);
+};
+
+var myObject = {
+  myMethod: myMethod,
+};
+
+myObject.myMethod(); // this === myObject
+myMethod(); // this === window

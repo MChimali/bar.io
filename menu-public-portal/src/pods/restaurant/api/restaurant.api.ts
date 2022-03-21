@@ -9,6 +9,5 @@ export const getRestaurantByName = async (
   ).then((response) => {
     return response.json();
   });
-  console.log('***1', restaurant.menu[0], restaurant.allergenCollection);
   return restaurant as RestaurantApi;
 };
