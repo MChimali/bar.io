@@ -231,13 +231,3 @@ export const RestaurantComponent: React.FC<Props> = (props) => {
     </div>
   );
 };
-var myMethod = function () {
-  console.log(this);
-};
-
-var myObject = {
-  myMethod: myMethod,
-};
-
-myObject.myMethod(); // this === myObject
-myMethod(); // this === window

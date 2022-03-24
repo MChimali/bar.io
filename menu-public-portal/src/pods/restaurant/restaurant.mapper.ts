@@ -52,16 +52,9 @@ export const mapFromItemsApiToItemsVm = (
     : null,
   unit: item.unit ? item.unit : null,
   allergenIconsUrl: item.allergenCollection
-    ? mapAllergenCollectionToAllergenIconsUrl(item.allergenCollection)
+    ? mapToCollection(item.allergenCollection, AllergenToURLobject)
     : null,
 });
-
-const mapAllergenCollectionToAllergenIconsUrl = (
-  allergenCollection: restaurantApi.AllergenEnum[]
-): AllergenInfo[] =>
-  allergenCollection.length > 0
-    ? allergenCollection.map(AllergenToURLobject)
-    : [];
 
 export const AllergenToURLobject = (allergen): AllergenInfo =>
   urlIconsWebp.find((item) => item.name === allergen);

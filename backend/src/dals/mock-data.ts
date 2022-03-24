@@ -29,7 +29,6 @@ export const db: DB = {
               description:
                 'Pan Brioche, 285 gr. de carne de Buey, Queso Chedar, Lechuga, tomate, cebolla roja a la plancha, pepinillo',
               price: 7.8,
-              allergenCollection: [],
             },
             {
               name: 'Black Angus XL',
