@@ -54,14 +54,7 @@ const AllergensComponent: React.FC<PropsAllergens> = (props) => {
             </div>
           ))}
         </div>
-      ) : (
-        <Typography
-          variant="subtitle1"
-          sx={{ color: 'green', marginTop: '0.25rem' }}
-        >
-          Este plato no contiene ningún alérgeno
-        </Typography>
-      )}
+      ) : null}
     </>
   );
 };
