@@ -174,11 +174,11 @@ describe('restaurant.mapper', () => {
         allergenIconsUrl: [
           {
             name: 'lactosa',
-            iconUrl: '/allergen-icons/webp/lactosa.webp',
+            iconUrl: '/allergen-icons/lactosa.webp',
           },
           {
             name: 'altramuces',
-            iconUrl: '/allergen-icons/webp/altramuces.webp',
+            iconUrl: '/allergen-icons/altramuces.webp',
           },
         ],
       });
