@@ -3,7 +3,6 @@ import { styled } from '@mui/material/styles';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { AccordionSummaryProps } from '@mui/material/AccordionSummary';
-import { breweryTheme, varsRestaurantType } from 'core/theme';
 
 export const AccordionSummaryStyled = styled((props: AccordionSummaryProps) => (
   <MuiAccordionSummary
@@ -23,6 +22,6 @@ export const AllergenSummaryStyled = styled((props: AccordionSummaryProps) => (
   />
 ))(({ theme }) => ({
   color: theme.palette.text.secondary,
-  backgroundColor: varsRestaurantType.brewery.secondaryColor,
+  backgroundColor: theme.palette.secondary.main,
   marginBottom: theme.spacing(0.3),
 }));

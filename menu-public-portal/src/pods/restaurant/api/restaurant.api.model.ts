@@ -1,20 +1,5 @@
 import { ThemeName } from 'core/theme';
-
-export type AllergenEnum =
-  | 'gluten'
-  | 'lactosa'
-  | 'huevos'
-  | 'pescados'
-  | 'crustaceos'
-  | 'moluscos'
-  | 'soja'
-  | 'cacahuetes'
-  | 'frutos secos con cascara'
-  | 'sesamo'
-  | 'mostaza'
-  | 'apio'
-  | 'altramuces'
-  | 'dioxido de azufre y sulfitos';
+import { AllergenEnum } from 'common-app/models';
 
 export interface RationType {
   unit: string;
@@ -31,7 +16,7 @@ export interface Item {
   price?: number;
   priceByRation?: PriceByRation;
   unit?: string;
-  allergenCollection?: AllergenEnum[];
+  allergens?: AllergenEnum[];
 }
 
 export interface CategoryEntry {

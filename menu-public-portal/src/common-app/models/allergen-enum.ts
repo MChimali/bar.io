@@ -1,0 +1,15 @@
+export type AllergenEnum =
+  | 'gluten'
+  | 'lactosa'
+  | 'huevos'
+  | 'pescados'
+  | 'crustaceos'
+  | 'moluscos'
+  | 'soja'
+  | 'cacahuetes'
+  | 'frutos secos con cascara'
+  | 'sesamo'
+  | 'mostaza'
+  | 'apio'
+  | 'altramuces'
+  | 'dioxido de azufre y sulfitos';

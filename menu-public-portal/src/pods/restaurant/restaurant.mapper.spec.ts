@@ -115,7 +115,7 @@ describe('restaurant.mapper', () => {
     });
   });
   describe('mapFromItemsApiToItemsVm', () => {
-    it('should return mapped Item with null property allergenIconsUrl when it feeds no allergenCollection', () => {
+    it('should return mapped Item with null property allergenIconsUrl when it feeds no allergens', () => {
       // Arrange
       const item: restaurantApi.Item = {
         name: 'burguer',
@@ -133,13 +133,13 @@ describe('restaurant.mapper', () => {
       });
     });
 
-    it('should return mapped item with empty array in allergenIconsUrl when it feeds empty allergenCollection list', () => {
+    it('should return mapped item with empty array in allergenIconsUrl when it feeds empty allergens list', () => {
       // Arrange
       const item: restaurantApi.Item = {
         name: 'burguer',
-        allergenCollection: [],
+        allergens: [],
       };
-      const urlMapper = jest.spyOn(mappers, 'AllergenToURLobject');
+      const urlMapper = jest.spyOn(mappers, 'AllergenToUrlObject');
       // Act
       const result: restaurantVm.Item = mapFromItemsApiToItemsVm(item);
       // Assert
@@ -154,14 +154,14 @@ describe('restaurant.mapper', () => {
       expect(urlMapper).not.toHaveBeenCalled();
     });
 
-    it('should return mapped item with array of strings at allergenIconsUrl when it feeds allergenCollection list ', () => {
+    it('should return mapped item with array of strings at allergenIconsUrl when it feeds allergens list ', () => {
       // Arrange
 
       const item: restaurantApi.Item = {
         name: 'burguer',
-        allergenCollection: ['lactosa', 'altramuces'],
+        allergens: ['lactosa', 'altramuces'],
       };
-      const urlMapper = jest.spyOn(mappers, 'AllergenToURLobject');
+      const urlMapper = jest.spyOn(mappers, 'AllergenToUrlObject');
       // Act
       const result: restaurantVm.Item = mapFromItemsApiToItemsVm(item);
       // Assert

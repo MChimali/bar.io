@@ -21,14 +21,14 @@ export const restaurant: RestaurantApiModel = {
           name: 'De la Casa',
           description: 'Lechuga, tomate, maiz, remolacha, zanahoria, atún',
           price: 8,
-          allergenCollection: ['crustaceos', 'moluscos', 'pescados'],
+          allergens: ['crustaceos', 'moluscos', 'pescados'],
         },
         {
           name: 'Especial',
           description:
             'Lechuga, tomate, manzana, palmito, espárragos, nueces, pasas, salsa rosa',
           price: 10,
-          allergenCollection: [
+          allergens: [
             'cacahuetes',
             'lactosa',
             'frutos secos con cascara',
@@ -39,7 +39,7 @@ export const restaurant: RestaurantApiModel = {
           name: 'Queso de Cabra',
           description: 'Lechuga, tomate, maiz, remolacha, zanahoria, atún',
           price: 12,
-          allergenCollection: [
+          allergens: [
             'gluten',
             'cacahuetes',
             'lactosa',
@@ -51,17 +51,17 @@ export const restaurant: RestaurantApiModel = {
           description:
             'Cortados en cuartos y aliñados con ajo, aceite y pimientos asados',
           price: 5.5,
-          allergenCollection: ['dioxido de azufre y sulfitos'],
+          allergens: ['dioxido de azufre y sulfitos'],
         },
         {
           name: 'Tomate',
           price: 5,
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Tomate con Atún',
           price: 7,
-          allergenCollection: ['crustaceos', 'moluscos', 'pescados'],
+          allergens: ['crustaceos', 'moluscos', 'pescados'],
         },
       ],
     },
@@ -71,18 +71,12 @@ export const restaurant: RestaurantApiModel = {
         {
           name: 'Porra de la Casa',
           price: 3.8,
-          allergenCollection: [
-            'gluten',
-            'crustaceos',
-            'huevos',
-            'pescados',
-            'moluscos',
-          ],
+          allergens: ['gluten', 'crustaceos', 'huevos', 'pescados', 'moluscos'],
         },
         {
           name: 'Migas Caseras',
           price: 3.5,
-          allergenCollection: [
+          allergens: [
             'gluten',
             'soja',
             'lactosa',
@@ -93,12 +87,12 @@ export const restaurant: RestaurantApiModel = {
           name: 'Anchoa Lolin (unidad)',
           description: 'Tosta de pan, tomate triturado y aceite de oliva',
           price: 1.7,
-          allergenCollection: ['gluten', 'pescados'],
+          allergens: ['gluten', 'pescados'],
         },
         {
           name: 'Pulpo a la gallega',
           price: 14,
-          allergenCollection: ['crustaceos', 'moluscos', 'pescados'],
+          allergens: ['crustaceos', 'moluscos', 'pescados'],
         },
       ],
     },
@@ -108,22 +102,22 @@ export const restaurant: RestaurantApiModel = {
         {
           name: 'Chorizo Jalapeño (picante)',
           price: 3.4,
-          allergenCollection: ['dioxido de azufre y sulfitos'],
+          allergens: ['dioxido de azufre y sulfitos'],
         },
         {
           name: 'Chorizo Criollo',
           price: 3.4,
-          allergenCollection: ['dioxido de azufre y sulfitos'],
+          allergens: ['dioxido de azufre y sulfitos'],
         },
         {
           name: 'Morcilla de Burgos',
           price: 4.3,
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Pata de Pulpo',
           price: 14,
-          allergenCollection: ['crustaceos', 'moluscos', 'pescados'],
+          allergens: ['crustaceos', 'moluscos', 'pescados'],
         },
         {
           name: 'Chorizo Ibérico',
@@ -140,7 +134,7 @@ export const restaurant: RestaurantApiModel = {
               },
             ],
           },
-          allergenCollection: ['lactosa'],
+          allergens: ['lactosa'],
         },
         {
           name: 'Salchichón Ibérico',
@@ -157,7 +151,7 @@ export const restaurant: RestaurantApiModel = {
               },
             ],
           },
-          allergenCollection: ['lactosa'],
+          allergens: ['lactosa'],
         },
         {
           name: 'Queso de Oveja',
@@ -175,7 +169,7 @@ export const restaurant: RestaurantApiModel = {
               },
             ],
           },
-          allergenCollection: ['lactosa', 'huevos'],
+          allergens: ['lactosa', 'huevos'],
         },
         {
           name: 'Lomito Ibérico',
@@ -192,7 +186,7 @@ export const restaurant: RestaurantApiModel = {
               },
             ],
           },
-          allergenCollection: ['lactosa'],
+          allergens: ['lactosa'],
         },
         {
           name: 'Surtido Ibérico',
@@ -209,7 +203,7 @@ export const restaurant: RestaurantApiModel = {
               },
             ],
           },
-          allergenCollection: ['lactosa'],
+          allergens: ['lactosa'],
         },
       ],
     },
@@ -220,12 +214,12 @@ export const restaurant: RestaurantApiModel = {
           name: 'Tosta al Pil-Pil',
           description: 'Langostino con salsa al pil-pil',
           price: 8,
-          allergenCollection: ['gluten', 'pescados', 'moluscos'],
+          allergens: ['gluten', 'pescados', 'moluscos'],
         },
         {
           name: 'Tosta de Queso de Cabra',
           description: 'Rulo de queso de cabra con mermelada de tomate',
-          allergenCollection: ['gluten', 'lactosa'],
+          allergens: ['gluten', 'lactosa'],
         },
       ],
     },
@@ -235,7 +229,7 @@ export const restaurant: RestaurantApiModel = {
         {
           name: 'Patata Asada',
           price: 2.8,
-          allergenCollection: ['lactosa'],
+          allergens: ['lactosa'],
         },
       ],
     },
@@ -245,27 +239,27 @@ export const restaurant: RestaurantApiModel = {
         {
           name: 'A la Pimienta',
           price: 2,
-          allergenCollection: ['gluten', 'lactosa'],
+          allergens: ['gluten', 'lactosa'],
         },
         {
           name: 'Queso Azul',
           price: 2,
-          allergenCollection: ['gluten', 'lactosa'],
+          allergens: ['gluten', 'lactosa'],
         },
         {
           name: 'Miel y Mostaza',
           price: 2,
-          allergenCollection: ['lactosa', 'mostaza'],
+          allergens: ['lactosa', 'mostaza'],
         },
         {
           name: 'Champiñones',
           price: 2,
-          allergenCollection: ['gluten', 'lactosa'],
+          allergens: ['gluten', 'lactosa'],
         },
         {
           name: 'Chile Dulce',
           price: 2,
-          allergenCollection: [],
+          allergens: [],
         },
       ],
     },
@@ -275,93 +269,93 @@ export const restaurant: RestaurantApiModel = {
         {
           name: 'Costilla de Cerdo',
           price: 11,
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Costillitas de Cerdo al Infierno',
           price: 11,
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Solomillo de Cerdo',
           price: 11.5,
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Brocheta de Solomillo de Cerdo',
           price: 11.5,
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Presa Ibérica de Cerdo de Jabugo',
           price: 15.5,
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Codillo de Cerdo en su Jugo al Horno',
           price: 12,
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Cochinillo de Cerdo Segoviano al Horno',
           description: '1/4 para dos personas',
           price: 35,
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Entrecot Añojo Irlandés',
           price: 16,
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Solomillo de Añojo Irlandés',
           price: 20,
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Brocheta Solomillo de Añojo',
           price: 15.5,
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Centro Chuletón Añojo Irlandés',
           price: 28,
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Chuletitas de Cordero Lechal',
           price: 17.5,
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Pierna de Cordero Lechal al Horno',
           price: 18,
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Paletilla de Cordero Lechal al Horno',
           price: 21,
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Filete de Pavo Aliñado',
           price: 9.5,
-          allergenCollection: ['soja'],
+          allergens: ['soja'],
         },
         {
           name: 'Pinchito de Pollo',
           price: 3.6,
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Brocheta de Pollo',
           price: 10.5,
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Pechuga de Pollo',
           price: 9,
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Alitas de Pollo',
@@ -378,12 +372,12 @@ export const restaurant: RestaurantApiModel = {
               },
             ],
           },
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Patita de Chivo en su Jugo al Horno',
           price: 18,
-          allergenCollection: [],
+          allergens: [],
         },
       ],
     },
@@ -393,17 +387,17 @@ export const restaurant: RestaurantApiModel = {
         {
           name: 'Chuleta de Atún (Ventresca)',
           price: 11.5,
-          allergenCollection: ['pescados'],
+          allergens: ['pescados'],
         },
         {
           name: 'Pez Espada',
           price: 11.5,
-          allergenCollection: ['pescados'],
+          allergens: ['pescados'],
         },
         {
           name: 'Calamar',
           price: 16,
-          allergenCollection: ['moluscos'],
+          allergens: ['moluscos'],
         },
       ],
     },
@@ -413,19 +407,19 @@ export const restaurant: RestaurantApiModel = {
         {
           name: 'Filete de Hamburguesa mixta / Filete de Hamburguesa hereford ',
           price: 5,
-          allergenCollection: ['dioxido de azufre y sulfitos'],
+          allergens: ['dioxido de azufre y sulfitos'],
         },
         {
           name: 'Filete de Hamburguesa de pollo / Filete de Hamburguesa picante',
           price: 5,
-          allergenCollection: ['soja', 'dioxido de azufre y sulfitos'],
+          allergens: ['soja', 'dioxido de azufre y sulfitos'],
         },
         {
           name: 'Hamburguesa Mixta',
           description:
             'Pan, Carne de Cerdo y Hereford, Queso Cheddar, Tomate Natural, Lechuga y Cebolla caramelizada con Patatas Chips',
           price: 9,
-          allergenCollection: [
+          allergens: [
             'gluten',
             'huevos',
             'soja',
@@ -441,7 +435,7 @@ export const restaurant: RestaurantApiModel = {
           description:
             'Pan, Carne Hereford, Queso Cheddar, Tomate Natural, Lechuga y Cebolla caramelizada con Patatas Chips',
           price: 9.5,
-          allergenCollection: [
+          allergens: [
             'gluten',
             'huevos',
             'soja',
@@ -457,7 +451,7 @@ export const restaurant: RestaurantApiModel = {
           description:
             'Pan, Carne de Hereford, Queso de Cabra, Lechuga, Tomate Natural, Cebolla Caramelizada y Nueces con Patatas Chips',
           price: 10,
-          allergenCollection: [
+          allergens: [
             'gluten',
             'huevos',
             'cacahuetes',
@@ -475,7 +469,7 @@ export const restaurant: RestaurantApiModel = {
           description:
             'Pan, Carne de Cerdo y Hereford, Queso Cheddar, Lechuga, Tomate y Cebolla Frita y ali-oli con Patatas Chips',
           price: 8,
-          allergenCollection: [
+          allergens: [
             'gluten',
             'huevos',
             'soja',
@@ -491,7 +485,7 @@ export const restaurant: RestaurantApiModel = {
           description:
             'Pan, Carne de Pollo, Queso Cheddar, Lechuga, Tomate y Cebolla caramelizada con Patatas Chips',
           price: 8.5,
-          allergenCollection: [
+          allergens: [
             'gluten',
             'huevos',
             'soja',
@@ -507,7 +501,7 @@ export const restaurant: RestaurantApiModel = {
           description:
             'Pan, Soja, Queso Cheddar, Tomate Natural, Lechuga y Cebolla Caramelizada con Patatas Chips',
           price: 9.5,
-          allergenCollection: [
+          allergens: [
             'gluten',
             'huevos',
             'soja',
@@ -525,26 +519,22 @@ export const restaurant: RestaurantApiModel = {
         {
           name: 'Pinchito de Cordero',
           price: 6.5,
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Entrecot de Angus Americano',
           price: 16,
-          allergenCollection: [],
+          allergens: [],
         },
         {
           name: 'Rabo de Toro al Vino Tino',
           price: 16,
-          allergenCollection: [
-            'gluten',
-            'apio',
-            'dioxido de azufre y sulfitos',
-          ],
+          allergens: ['gluten', 'apio', 'dioxido de azufre y sulfitos'],
         },
         {
           name: 'Bacalao a la Riojana',
           price: 14.5,
-          allergenCollection: ['gluten', 'pescados'],
+          allergens: ['gluten', 'pescados'],
         },
       ],
     },

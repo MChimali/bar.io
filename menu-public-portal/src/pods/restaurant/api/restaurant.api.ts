@@ -6,8 +6,6 @@ export const getRestaurantByName = async (
 ): Promise<RestaurantApi> => {
   const restaurant = await fetch(
     `${envConstants.BASE_API_URL}/restaurant/${restaurantName}`
-  ).then((response) => {
-    return response.json();
-  });
+  ).then((response) => response.json());
   return restaurant as RestaurantApi;
 };

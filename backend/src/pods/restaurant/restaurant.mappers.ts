@@ -97,7 +97,7 @@ const mapFromItemApiToItemModel = (item: apiModel.Item): model.Item => ({
     ? mapFromPriceByRationToSubItemPrice(item.priceByRation)
     : null,
   unit: item.unit ? item.unit : null,
-  allergenCollection: item.allergenCollection ? item.allergenCollection : null,
+  allergens: item.allergens ? item.allergens : null,
 });
 
 const mapListFromCategoryEntryToItemsByCategory = (
@@ -168,7 +168,7 @@ const mapFromItemModelToItemModelApi = (item: model.Item): apiModel.Item => ({
     ? mapFromSubItemPriceToPriceByRation(item.priceByRation)
     : null,
   unit: item.unit ? item.unit : null,
-  allergenCollection: item.allergenCollection ? item.allergenCollection : null,
+  allergens: item.allergens ? item.allergens : null,
 });
 
 const mapListFromItemsCategoryToCategoryEntry = (

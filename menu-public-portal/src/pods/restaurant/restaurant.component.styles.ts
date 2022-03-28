@@ -17,6 +17,10 @@ export const allergenImage = css`
   padding-right: 0.2rem;
 `;
 
+export const allergenName = css`
+  font-size: 0.9rem;
+`;
+
 export const legendItem = css`
   display: flex;
   flex-direction: column;

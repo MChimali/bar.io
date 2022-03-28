@@ -5,10 +5,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 import PlaceIcon from '@mui/icons-material/Place';
 import * as classes from './restaurant.component.styles';
-import {
-  AllergenInfo,
-  urlIconsPng,
-} from '../../../public/allergen-icons/allergen-icons.list';
+import { AllergenInfo, urlIconsWebp } from './restaurant.constants';
 import { RestaurantInfo, Item, PriceByRation } from './restaurant.vm';
 import {
   AccordionSummaryStyled,
@@ -30,10 +27,12 @@ const AllergensLengend: React.FC = () => {
   return (
     <>
       <div className={classes.allergenLegendBox}>
-        {urlIconsPng.map((item) => (
+        {urlIconsWebp.map((item) => (
           <div className={classes.legendItem}>
             <Image src={item.iconUrl} height={120} width={120} />
-            <Typography style={{ fontSize: '0.9rem' }}>{item.name}</Typography>
+            <Typography className={classes.allergenName}>
+              {item.name}
+            </Typography>
           </div>
         ))}
       </div>
@@ -46,7 +45,7 @@ const AllergensComponent: React.FC<PropsAllergens> = (props) => {
 
   return (
     <>
-      {urlAllergenList.length > 0 ? (
+      {urlAllergenList.length > 0 && (
         <div className={classes.allergensContainer}>
           {urlAllergenList.map((item) => (
             <div className={classes.allergenImage}>
@@ -54,7 +53,7 @@ const AllergensComponent: React.FC<PropsAllergens> = (props) => {
             </div>
           ))}
         </div>
-      ) : null}
+      )}
     </>
   );
 };
@@ -110,14 +109,7 @@ export const DishesComponent: React.FC<PropsItemsComponent> = (props) => {
             ) : null}
             {item.allergenIconsUrl ? (
               <AllergensComponent urlAllergenList={item.allergenIconsUrl} />
-            ) : (
-              <Typography
-                variant="subtitle1"
-                sx={{ color: 'red', marginTop: '0.25rem' }}
-              >
-                Alérgenos no disponibles
-              </Typography>
-            )}
+            ) : null}
           </div>
           {item.price ? (
             <div className={classes.dishPrice(theme)}>
